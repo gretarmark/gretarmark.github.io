@@ -5,8 +5,31 @@
 <head>
   <meta charset="utf-8">
   <title>♖ Profile</title>
+
+<!-- The section below (style) is a CSS code, therefore it is not possible to put this comment like this inside that section -->
+  <style media="screen">
+  /*This is how you do comment in CSS*/
+    body { /*The body is the element I want to change, this is CSS*/
+      background-color: #EAF6F6; /*This is what I want to change about the body, the background color property*/
+    }
+
+    hr { /*Let's change the style of all the horizontal rules (hr)*/
+      height: 0px;
+      width: auto;
+      border-style: dotted none none;
+      border-color: grey;
+      border-width: 5px;
+      width: 8%;
+    }
+
+    img {
+      height: 200px; /*Here i am changing the height of the profile image*/
+    }
+
+  </style>
 </head>
 
+<!-- <body style="background-color: #EAF6F6"> --> <!-- Here we have added an inline CSS, but we moved it to the style section above -->
 <body>
   <img src="images/Image_Gretar-modified.png" alt="Grétar profile picture"
   width="200"
@@ -20,7 +43,7 @@
     My main interest is R&D related projects, embedded software and circuit design, control system algorithm design <br>
     (e.g. Model Predictive Control, LQR, LQG), robotics, and math. I have always had a passion for solving complex systems <br>
     and to participate in individual or group projects that require state-of-the-art technology to become a reality.</p>
-  
+
     <p>Link to my Linked-In profile can be found here: <a href="https://www.linkedin.com/in/gretarmark/"><strong>Linked-in Profile</strong></a></p>
     <p>Follow this link to go to my GitHub page: <a href="https://github.com/gretarmark"><strong>GitHub Page</strong></a></p>
 
@@ -42,10 +65,16 @@
   <p>Address: Iceland, Reykjavík <br>
   Phone: +354-6610448 <br>
   Email Address: gretarmark@gmail.com</p>
-  
-  <br>
-  
-  
+
+  <form action="mailto:gretarmark@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="yourName" value=""> <br>
+    <label>Your Email:</label>
+    <input type="email" name="yourEmail" value=""> <br>
+    <label>Your Message:</label> <br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea> <br>
+    <input type="submit" name="">
+  </form>
 
 </body>
 
