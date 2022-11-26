@@ -1,0 +1,30 @@
+
+/*This is how you do comment in CSS*/
+  body { /*The body is the element I want to change, this is CSS*/
+    background-color: #EAF6F6; /*This is what I want to change about the body, the background color property*/
+  }
+
+  hr { /*Let's change the style of all the horizontal rules (hr)*/
+    height: 0px;
+    width: auto;
+    border-style: dotted none none;
+    border-color: grey;
+    border-width: 5px;
+    width: 8%;
+  }
+
+  img {
+    height: 200px; /*Here i am changing the height of the profile image*/
+  }
+
+  h1 {
+    color: #66BFBF;
+  }
+
+  h2 {
+    color: #66BFBF;
+  }
+
+  h3 {
+    color: #66BFBF;
+  }
