@@ -1,1 +1,10 @@
+---
+layout: post
+title: PID for Hydro Power Plant    
+---
+
+Hydro power plants are very similar to water tanks. You have water flow into the reservoir $$Q_{in}(t)$$ and you have water flow out of it $$Q_{out}(t)$$ (unit: [$$m^3/s$$]). 
+The reservoir is used to store a gravitational potential energy. At the end of the power plant there are radial gates and machines that are used to keep the water height of the
+reservoir at a certain water height above sea level (a.s.l.). 
+
 
