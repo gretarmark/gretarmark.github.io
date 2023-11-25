@@ -14,3 +14,4 @@ ODE problems are usually divided into "stiff" and "non-stiff" problems. "non-sti
 
 [3] Manchester, Zak, "You Tube video, Advanced Robot Dynamics (CMU 16-715)". [Link to reference](https://www.youtube.com/watch?v=hb5rUV3rzeQ&t=707s)
 
+[4] Brunton, Steve, "You Tube Video, Runge-Kutta Integrator Overview". [Link to reference](https://www.youtube.com/watch?v=HOWJp8NV5xU)
