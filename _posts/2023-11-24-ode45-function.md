@@ -12,6 +12,3 @@ ODE problems are usually divided into "stiff" and "non-stiff" problems. "non-sti
 
 [2] Kidger, Patrick, "How to choose a solver, Diffrax" [Link or reference]([https://website-name.com](https://docs.kidger.site/diffrax/usage/how-to-choose-a-solver/#:~:text=%22Stiffness%22%20generally%20refers%20to%20how,implicit%20Runge%2D%2DKutta%20methods.)) 
 
-[3] Douglas, Brian. “Control System Lectures - Bode Plots, Introduction.” <https://www.youtube.com/watch?v=_eh1conN6YM&list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk&index=9> Visited on 08/14/2019. 
-
-[4] Cheever, Erik. “Bode Plots Overview.” <https://lpsa.swarthmore.edu/Bode/Bode.html> Visited on 08/15/2019.
