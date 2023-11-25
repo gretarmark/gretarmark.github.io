@@ -10,5 +10,7 @@ ODE problems are usually divided into "stiff" and "non-stiff" problems. "non-sti
 #### References
 [1] Matlab Documentations. [Link to reference](https://se.mathworks.com/help/matlab/ref/ode45.html)
 
-[2] Kidger, Patrick, "How to choose a solver, Diffrax" [Link or reference]([https://website-name.com](https://docs.kidger.site/diffrax/usage/how-to-choose-a-solver/#:~:text=%22Stiffness%22%20generally%20refers%20to%20how,implicit%20Runge%2D%2DKutta%20methods.)) 
+[2] Kidger, Patrick, "How to choose a solver, Diffrax". [Link or reference]([https://website-name.com](https://docs.kidger.site/diffrax/usage/how-to-choose-a-solver/#:~:text=%22Stiffness%22%20generally%20refers%20to%20how,implicit%20Runge%2D%2DKutta%20methods.)) 
+
+[3] Manchester, Zak, "You Tube video, Advanced Robot Dynamics (CMU 16-715)". [Link to reference](https://www.youtube.com/watch?v=hb5rUV3rzeQ&t=707s)
 
