@@ -71,4 +71,17 @@ $$ \vert B \vert \int_0^{2\pi} \vert r^{'}(t) \vert dt $$
 
 The length of the velocity vector is 
 
-$$ \vert r^{'}(t) \vert $$
+$$ \vert r^{'}(t) \vert = \vert - r \sin(t) \hat{i} + r \cos(t) \hat{j} \vert$$
+
+$$ \= \sqrt{(-r\sin(t))^2 + (r\cos(t))^2}$$
+
+$$ \= \sqrt{r^2 \sin^2(t) + r^2 \cos^2(t)}$$
+
+$$ \= \sqrt{r^2} = r $$
+
+therefore we get
+
+$$\int_{\mathcal{C}} {\bf B} \cdot d{\bf r} = \vert B \vert r \int_0^{2\pi} dt $$
+
+$$\vert B \vert r \left[ t \right]_0^{2\pi}$$
+
