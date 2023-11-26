@@ -31,7 +31,7 @@ $$\bar{r}(t) = r\cos(t)\hat{i} + r\sin(t)\hat{j} + z \hat{k} \qquad \quad 0 \leq
 
 Now we can see that we can integrate the curve over an interval. We can use line integral of tangential component of $$\bf B$$ along the curve $$\mathcal{C}$$
 
-## --------------------------------------------
+## ----------------------------------------------------------------------------------------
 
 ## Theorem:
 
@@ -39,7 +39,7 @@ Let $${\bf F}(x,y)$$ be a vectorfield and $${\bf r}:[a,b] \rightarrow \mathbb{R}
 
 $$\int_{\mathcal C} {\bf F} \cdot d {\bf r} = \int_{\mathcal{C}} {\bf F} \cdot {\bf T} d{\bf s} = \int_a^b {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt.$$
 
-## --------------------------------------------
+## ----------------------------------------------------------------------------------------
 
 From the theorem above, we can use
 
