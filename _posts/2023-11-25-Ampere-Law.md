@@ -15,3 +15,6 @@ where $${\bf B}$$ is the magnetic field produced by the current $$I$$, and $$k$$
 If the wire is long, thin and straight, and $$\mathcal{C}$$ is a circle centered in the center of the wire that lays in a plane that is perpendicular to the wire, then the magnetic field $$\bf B$$ is tangent to the circle and its magnitude is the same everywhere around the circle. The direction of the magnetic field is determined by the right hand rule. 
 
 The magnitude of the magnetic field $$\bf B$$ with radius $$r$$ away from the center of the wire can be determined by Ampere's law
+
+![Fig 1]({{ site.baseurl }}/images/AmperesLaw_fig1.png "zero order"){:width=75%}  
+**Figure 1: Test.**
