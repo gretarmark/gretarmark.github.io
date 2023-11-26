@@ -19,7 +19,7 @@ The magnitude of the magnetic field $$\bf B$$ with radius $$r$$ away from the ce
 ![Fig 1]({{ site.baseurl }}/images/AmperesLaw_fig1.png "zero order"){:width=75%}  
 **Figure 1: Magnetic field around a straight wire. The wire lies along the z-axis.**
 
-In figure 1, the wire lies along the z-axis and the current $$I$$ is traveling in along the wire in the direction of positive z, represented as $$\bar k$$. Using the right-hand rule, we can see that the magnetic field is traveling counter clock wise around the wire in the xy-plane.
+In figure 1, the wire lies along the z-axis and the current $$I$$ is traveling along the wire in the direction of positive z, represented as $$\bar k$$. Using the right-hand rule, we can see that the magnetic field is traveling counter clock wise around the wire in the xy-plane.
 
 Notice that we integrate over the magnetic field $$\bf B$$ and in each step we only take a tiny little bit of the parametric curve of the magnetic field, therefore we need to find a parametrization of the magnetic field.
 
