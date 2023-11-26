@@ -29,5 +29,7 @@ To parameterize the curve $$\mathcal{C}$$ around the wire, we can use cylindrica
 
 $$\bar{r}(t) = r\cos(t)\hat{i} + r\sin(t)\hat{j} + z \hat{k} \qquad \quad 0 \leq t \leq 2\pi$$
 
+Now we can see that we can integrate the curve over an interval. We can use line integral of tangential component of $$\bf B$$ along the curve $$\mathcal{C}$$
 
+##Theorem:
 
