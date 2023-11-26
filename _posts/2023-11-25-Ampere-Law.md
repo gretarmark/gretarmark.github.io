@@ -39,11 +39,11 @@ $$\int_{\mathcal C} {\bf F} \cdot d {\bf r} = \int_{\mathcal{C}} {\bf F} \cdot {
 
 From the theorem above, we can use
 
-$$\int_{\mathcal C}{\bf F} d{\bf r} = \int_a^b {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt$$
+$$\int_{\mathcal{C}}{\bf F} d{\bf r} = \int_{a}^{b} {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) dt$$
 
 so we get
 
-$$\int_{\mathcal C}{\bf B} d{\bf r} = \int_0^{2\pi} {\bf B}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt$$
+$$\int_{\mathcal{C}}{\bf B} d{\bf r} = \int_{0}^{2\pi} {\bf B}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt$$
 
 By looking at the vector $$\bf B$$ in figure 1 above, we can see that this is the length $$|{\bf B}|$$ multiplied by the unit tangent vector $$\bf T$$. The 
 equation for a unit tangent vector is
