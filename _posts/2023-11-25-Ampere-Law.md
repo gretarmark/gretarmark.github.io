@@ -71,4 +71,4 @@ $$ \vert B \vert \int_0^{2\pi} \vert r^{'}(t) \vert dt $$
 
 The length of the velocity vector is 
 
-$$ \vert r^'(t) \vert $$
+$$ \vert r^{'}(t) \vert $$
