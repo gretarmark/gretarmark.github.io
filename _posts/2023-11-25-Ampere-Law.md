@@ -65,10 +65,10 @@ $${\bf A} \cdot {\bf A} = \vert {\bf A} \vert \cdot \vert {\bf A} \vert \cdot \c
 
 then we get
 
-$$\int_{\mathcal{C}} = {\bf B} \cdot d{\bf r} = \vert B \vert \int_0^{2\pi} \frac{\vert r^'(t) \vert^2}{\vert r^'(t) \vert} dt$$ 
+$$\int_{\mathcal{C}} = {\bf B} \cdot d{\bf r} = \vert B \vert \int_0^{2\pi} \frac{ \vert r^{'}(t) \vert^2 }{ \vert r^{'}(t) \vert } dt$$ 
 
-$$\vert B \vert \int_0^{2\pi} \vert r^'(t) \vert dt$$
+$$ \vert B \vert \int_0^{2\pi} \vert r^{'}(t) \vert dt $$
 
 The length of the velocity vector is 
 
-$$\vert r^'(t) \vert$$
+$$ \vert r^'(t) \vert $$
