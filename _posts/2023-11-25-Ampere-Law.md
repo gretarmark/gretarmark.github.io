@@ -31,7 +31,7 @@ $$\bar{r}(t) = r\cos(t)\hat{i} + r\sin(t)\hat{j} + z \hat{k} \qquad \quad 0 \leq
 
 Now we can see that we can integrate the curve over an interval. We can use line integral of tangential component of $$\bf B$$ along the curve $$\mathcal{C}$$
 
-##Theorem:
+## Theorem:
 
 Let $${\bf F}(x,y)$$ be a vectorfield and $${\bf r}:[a,b] \rightarrow \mathbb{R}^2$$ be a parametrization on the curve $$\mathcal{C}$$ and let's assume that the parametric curve $$\bf r$$ is continuously differentiable by sections. The integral of the vectorfield $${\bf F}(x,y)$$ along the curve $$\mathcal C$$ is defined as
 
@@ -45,4 +45,4 @@ so we get
 
 $$\int_{\mathcal{C}}{\bf B} d{\bf r} = \int_{0}^{2\pi} {\bf B}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt$$
 
-By looking at the vector $$\bf B$$ in figure 1 above, we can see that this is the length $$\sysdelim| {\bf B}\right \sysdelim|$$
+By looking at the vector $$\bf B$$ in figure 1 above, we can see that this is the length $$ | {\bf B}\right | $$
