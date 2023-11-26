@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stability in robotic dynamics
-published: true
+published: false
 ---
 
 In this post I am going to write about stability which is very important topic in control theory and robot dynamics.
