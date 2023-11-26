@@ -37,3 +37,6 @@ Let $${\bf F}(x,y)$$ be a vectorfield and $${\bf r}:[a,b] \rightarrow \mathbb{R}
 
 $$\int_{\mathcal C} {\bf F} \cdot d {\bf r} = \int_{\mathcal{C}} {\bf F} \cdot {\bf T} d{\bf s} = \int_a^b {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt.$$
 
+From the theorem above, we can use
+
+$$\int_{\mathcal{C}}{\bf F} d{\bf r} = \int_{a}^{b} {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) dt$$
