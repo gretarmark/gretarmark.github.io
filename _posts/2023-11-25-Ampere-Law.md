@@ -59,3 +59,10 @@ $$\int_{\mathcal{C}} {\bf B} \cdot d{\bf r} = \int_0^{2\pi} {\bf B}({\bf r}(t)) 
  
 $$ \= \int_0^{2\pi} \vert B \vert \cdot \frac{r^{'}(t)}{\vert r^{'}(t) \vert} \cdot {\bf r}^{'}(t) dt$$ 
 
+Next we can use the rule $${\bf A}{\bf A} = \vert {\bf A} \vert^2$$, the proof for this rule is
+
+$${\bf A} \cdot {\bf A} = \vert {\bf A} \vert \cdot \vert {\bf A} \vert \cdot \cos(0) = \vert {\bf A} \vert^2$$
+
+then we get
+
+
