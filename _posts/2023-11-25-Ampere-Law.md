@@ -17,4 +17,6 @@ If the wire is long, thin and straight, and $$\mathcal{C}$$ is a circle centered
 The magnitude of the magnetic field $$\bf B$$ with radius $$r$$ away from the center of the wire can be determined by Ampere's law
 
 ![Fig 1]({{ site.baseurl }}/images/AmperesLaw_fig1.png "zero order"){:width=75%}  
-**Figure 1: Test.**
+**Figure 1: Magnetic field around a straight wire. The wire lies along the z-axis.**
+
+In figure 1, the wire lies along the z-axis and the current $$I$$ is traveling in along the wire in the direction of positive z, represented as $$\bar k$$.
