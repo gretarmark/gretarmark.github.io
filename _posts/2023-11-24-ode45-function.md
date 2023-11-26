@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ode45 functions in Matlab
+published: false
 ---
 
 The ode45 function in Matlab is used to solve nonstiff differential equations. The function is based on an explicit Runge-Kutta (4,5) method.
