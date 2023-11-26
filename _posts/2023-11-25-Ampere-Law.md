@@ -51,10 +51,5 @@ $${\bf T} = \frac{ {\bf r}^{'}(t) } { \vert {\bf r}^{'}(t) \vert}$$
 
 now we can see that
 
-$${\bf B} = \vert B \vert \cdot {\bf T} = \vert B \vert \cdot \frac{r^'(t)}{\vert r^'(t) \vert}$$
-
-and we get
-
-$$\int_{\mathcal{C}} {\bf B} \cdot d{\bf r} &= \int^0^{2\pi} {\bf B}({\bf r}(t)) \cdot {\bf r}^{'} dt \\ &= \int_0^{2\pi} \vert B \vert \cdot \frac{r^'(t)}{\vert 
-r^'(t) \vert} \cdot {\bf r}^'(t) \, dt$$ 
+$${\bf B} = \vert B \vert \cdot {\bf T} = \vert B \vert \cdot \frac{r^{'}(t)}{ \vert r^{'}(t) \vert }$$
 
