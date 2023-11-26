@@ -48,7 +48,7 @@ $$\int_{\mathcal C}{\bf B} d{\bf r} = \int_0^{2\pi} {\bf B}({\bf r}(t)) \cdot {\
 By looking at the vector $$\bf B$$ in figure 1 above, we can see that this is the length $$|{\bf B}|$$ multiplied by the unit tangent vector $$\bf T$$. The 
 equation for a unit tangent vector is
 
-$${\bf T} = \frac{{\bf r}'(t)}{|{\bf r}'(t)|}$$
+$${\bf T} = \frac{{\bf r}^'(t)}{|{\bf r}^'(t)|}$$
 
 
 
