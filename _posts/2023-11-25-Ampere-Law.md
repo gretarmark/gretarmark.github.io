@@ -45,4 +45,4 @@ so we get
 
 $$\int_{\mathcal{C}}{\bf B} d{\bf r} = \int_{0}^{2\pi} {\bf B}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt$$
 
-By looking at the vector $$\bf B$$ in figure 1 above, we can see that this is the length $$\|{\bf B}\|$$
+By looking at the vector $$\bf B$$ in figure 1 above, we can see that this is the length $$\left|{\bf B}\right|$$
