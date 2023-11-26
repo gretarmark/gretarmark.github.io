@@ -57,7 +57,7 @@ and we get
 
 $$\int_{\mathcal{C}} {\bf B} \cdot d{\bf r} = \int_0^{2\pi} {\bf B}({\bf r}(t)) \cdot {\bf r}^{'} dt $$ 
  
-$$ \= \int_0^{2\pi} \vert B \vert \cdot \frac{r^{'}(t)}{\vert r^{'}(t) \vert} \cdot {\bf r}^{'}(t) dt$$ 
+$$ = \int_0^{2\pi} \vert B \vert \cdot \frac{r^{'}(t)}{\vert r^{'}(t) \vert} \cdot {\bf r}^{'}(t) dt$$ 
 
 Next we can use the rule $${\bf A}{\bf A} = \vert {\bf A} \vert^2$$, the proof for this rule is
 
@@ -73,11 +73,11 @@ The length of the velocity vector is
 
 $$ \vert r^{'}(t) \vert = \vert - r \sin(t) \hat{i} + r \cos(t) \hat{j} \vert$$
 
-$$ \= \sqrt{(-r\sin(t))^2 + (r\cos(t))^2}$$
+$$ = \sqrt{(-r\sin(t))^2 + (r\cos(t))^2}$$
 
-$$ \= \sqrt{r^2 \sin^2(t) + r^2 \cos^2(t)}$$
+$$ = \sqrt{r^2 \sin^2(t) + r^2 \cos^2(t)}$$
 
-$$ \= \sqrt{r^2} = r $$
+$$ = \sqrt{r^2} = r $$
 
 therefore we get
 
