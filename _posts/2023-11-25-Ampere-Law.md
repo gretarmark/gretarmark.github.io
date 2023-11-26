@@ -83,5 +83,13 @@ therefore we get
 
 $$\int_{\mathcal{C}} {\bf B} \cdot d{\bf r} = \vert B \vert r \int_0^{2\pi} dt $$
 
-$$\vert B \vert r \left[ t \right]_0^{2\pi}$$
+$$ \= \vert B \vert r \left[ t \right]_0^{2\pi}$$
+
+$$ \= \vert B \vert r 2 \pi$$
+
+so, the magnitude of the magnetic field around a wire is given by
+
+$$k I = \vert B \vert 2 \pi r$$
+
+$$\vert B \vert = \frac{k I}{2 \pi r}$$
 
