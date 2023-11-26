@@ -25,30 +25,7 @@ Notice that we integrate over the magnetic field $$\bf B$$ and in each step we o
 
 It can also be seen that the vector of the magnetic field is tangent vector on the curve $$\mathcal{C}$$ which is enveloped around the wire and that the tangent vector $$\bf B$$ is parallel to the velocity vector. Therefore, the angle between these two vectors is going to be $$0^{\circ}$$ and $$\cos(0) = 1$$, and the length of the curve around the wire is $2\pi$.
 
-To parameterize the curve $$\mathcal{C}$$ around the wire, we can use cylindrical coordinates to get
 
-$$\bar{r}(t) = r\cos(t)\hat{i} + r\sin(t)\hat{j} + z \hat{k} \qquad \quad 0 \leq t \leq 2\pi$$
-
-Now we can see that we can integrate the curve over an interval. We can use line integral of tangential component of $$\bf B$$ along the curve $$\mathcal{C}$$
-
-##Theorem:
-
-Let $${\bf F}(x,y)$$ be a vectorfield and $${\bf r}:[a,b] \rightarrow \mathbb{R}^2$$ be a parametrization on the curve $$\mathcal{C}$$ and let's assume that the parametric curve $$\bf r$$ is continuously differentiable by sections. The integral of the vectorfield $${\bf F}(x,y)$$ along the curve $$\mathcal C$$ is defined as
-
-$$\int_{\mathcal C} {\bf F} \cdot d {\bf r} = \int_{\mathcal{C}} {\bf F} \cdot {\bf T} d{\bf s} = \int_a^b {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt.$$
-
-From the theorem above, we can use
-
-$$\int_{\mathcal{C}}{\bf F} d{\bf r} = \int_{a}^{b} {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) dt$$
-
-so we get
-
-$$\int_{\mathcal{C}}{\bf B} d{\bf r} = \int_{0}^{2\pi} {\bf B}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt$$
-
-By looking at the vector $$\bf B$$ in figure 1 above, we can see that this is the length $$|{\bf B}|$$ multiplied by the unit tangent vector $$\bf T$$. The 
-equation for a unit tangent vector is
-
-$${\bf T} = \frac{{\bf r}^{'}(t)}{|{\bf r}^{'}(t)|}$$
 
 
 
