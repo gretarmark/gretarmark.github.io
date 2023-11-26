@@ -35,3 +35,5 @@ Now we can see that we can integrate the curve over an interval. We can use line
 
 Let $${\bf F}(x,y)$$ be a vectorfield and $${\bf r}:[a,b] \rightarrow \mathbb{R}^2$$ be a parametrization on the curve $$\mathcal{C}$$ and let's assume that the parametric curve $$\bf r$$ is continuously differentiable by sections. The integral of the vectorfield $${\bf F}(x,y)$$ along the curve $$\mathcal C$$ is defined as
 
+$$\int_{\mathcal C} {\bf F} \cdot d {\bf r} = \int_{\mathcal{C}} {\bf F} \cdot {\bf T} d{\bf s} = \int_a^b {\bf F}({\bf r}(t)) \cdot {\bf r}^{'}(r) \, dt.$$
+
