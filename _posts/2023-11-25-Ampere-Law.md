@@ -19,4 +19,21 @@ The magnitude of the magnetic field $$\bf B$$ with radius $$r$$ away from the ce
 ![Fig 1]({{ site.baseurl }}/images/AmperesLaw_fig1.png "zero order"){:width=75%}  
 **Figure 1: Magnetic field around a straight wire. The wire lies along the z-axis.**
 
-In figure 1, the wire lies along the z-axis and the current $$I$$ is traveling in along the wire in the direction of positive z, represented as $$\bar k$$.
+In figure 1, the wire lies along the z-axis and the current $$I$$ is traveling in along the wire in the direction of positive z, represented as $$\bar k$$. Using the right-hand rule, we can see that the magnetic field is traveling counter clock wise around the wire in the xy-plane.
+
+Notice that we integrate over the magnetic field $$\bf B$$ and in each step we only take a tiny little bit of the parametric curve of the magnetic field, therefore we need to find a parametrization of the magnetic field.
+
+It can also be seen that the vector of the magnetic field is tangent vector on the curve $$\mathcal{C}$$ which is enveloped around the wire and that the tangent vector $$\bf B$$ is parallel to the velocity vector. Therefore, the angle between these two vectors is going to be $$0^{\circ}$$ and $$\cos(0) = 1$$, and the length of the curve around the wire is $2\pi$.
+
+To parameterize the curve $$\mathcal{C}$$ around the wire, we can use cylindrical coordinates to get
+
+$$\bar{r}(t) = r\cos(t)\hat{i} + r\sin(t)\hat{j} + z \hat{k} \qquad \quad 0 \leq t \leq 2\pi$$
+
+Now we can see that we can integrate the curve over an interval. We can use line integral of tangential component of $$\bf B$$ along the curve $$\mathcal{C}$$
+
+##Theorem:
+
+Let $${\bf F}(x,y)$$ be a vectorfield and $${\bf r}:[a,b] \rightarrow \mathbb{R}^2$$ be a parametrization on the curve $$\mathcal{C}$$ and let's assume that the parametric curve $$\bf r$$ is continuously differentiable by sections. The integral of the vectorfield $${\bf F}(x,y)$$ along the curve $$\mathcal C$$ is defined as
+
+$$\int_{\mathcal C}$$ {\bf F} \cdot d {\bf r} = \int_{\mathcal{C}} {\bf F} \cdot {\bf T} d{\bf s} = \int_a^b {\bf F}({\bf r}(t)) \cdot {\bf r}^'(r) \, dt.
+
