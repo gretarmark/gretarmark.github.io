@@ -19,6 +19,9 @@ On the other hand, dark energy is a mysterious form of energy that is thought to
 <!--It is usually talked about if dark matter really exist or if we need to rethink our current understanding of gravity. 
 
 weakly interacting massive particles (WIMPs) and axions-->
+
+![Fig 1]({{ site.baseurl }}/images/DarkMatter.jpg "zero order"){:width=75%}  
+
 #### References
 [1] Nasa. [Link to reference](https://science.nasa.gov/astrophysics/focus-areas/what-is-dark-energy/)
 
