@@ -18,6 +18,6 @@ According to [2], scientists believe that dark matter is some kind of new, stran
 
 
 
-## References
+#### References
 [1] Nasa. [Link to reference](https://science.nasa.gov/astrophysics/focus-areas/what-is-dark-energy/)
 [2] Paul M. Sutter, WIMPS vs. Acions. [Link to reference](https://www.universetoday.com/151836/wimps-vs-axions-what-is-dark-matter/)
