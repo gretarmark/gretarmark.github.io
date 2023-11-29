@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dark Matter
+title: Dark Matter & Dark Energy
 published: true
 ---
 
@@ -13,6 +13,8 @@ The majority of the mass in the universe is thought to be composed of dark matte
 According to [3], the existence of dark matter is still just a theory providing us with a better scientific model to understand the collisions and formations of galaxies or stars. However, it is said that some scientists don't believe in dark matter, and they suggest alternative theories that say we don't actually need dark matter.
 
 Nasa and the European Space Agency have built a telescope named Euclid, designed to study the existence of dark matter. The telescope recently observed the first image of the dark universe. The telescope was launched to space by Space-X on July 1st 2023. The final destination is 1.5 million km away from earth where the James Web telescope is in orbit. Uclid takes images in optical and near infrared light. 
+
+On the other hand, dark energy is a mysterious form of energy that is thought to permeate all of space and is responsible for the observed accelerated expansion of the universe. Unlike dark matter, which exerts gravitational forces and clumps together with visible matter, dark energy appears to have a repulsive effect, causing the expansion of the universe to accelerate.
 
 <!--It is usually talked about if dark matter really exist or if we need to rethink our current understanding of gravity. -->
 #### References
