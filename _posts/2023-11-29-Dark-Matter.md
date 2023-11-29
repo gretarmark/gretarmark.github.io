@@ -16,7 +16,9 @@ Nasa and the European Space Agency have built a telescope named Euclid, designed
 
 On the other hand, dark energy is a mysterious form of energy that is thought to permeate all of space and is responsible for the observed accelerated expansion of the universe. Unlike dark matter, which exerts gravitational forces and clumps together with visible matter, dark energy appears to have a repulsive effect, causing the expansion of the universe to accelerate.
 
-<!--It is usually talked about if dark matter really exist or if we need to rethink our current understanding of gravity. -->
+<!--It is usually talked about if dark matter really exist or if we need to rethink our current understanding of gravity. 
+
+weakly interacting massive particles (WIMPs) and axions-->
 #### References
 [1] Nasa. [Link to reference](https://science.nasa.gov/astrophysics/focus-areas/what-is-dark-energy/)
 
