@@ -97,3 +97,5 @@ $$k I = \vert B \vert 2 \pi r$$
 
 $$\vert B \vert = \frac{k I}{2 \pi r}$$
 
+#### References
+[1] Robert Adams & Christopher Essex. Calculus, A Complete Course, 9th edition.
