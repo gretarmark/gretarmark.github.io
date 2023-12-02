@@ -9,7 +9,7 @@ BLOB Analysis (Binary Large OBject Analysis) is a method where pixels in an imag
 Pixels are grouped together using 4- or 8-connectivity methods. This methology is about checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. If a pixel have 4/8 or more neighbours, the connectivity check is fulfilled.
 
 ![Fig 1]({{ site.baseurl }}/images/BlobAnalysis_4_8_Connected.png "zero order"){:width="50%"}  
-**Figure 1: 4- and 8- Connectivity Kernels.**
+**Figure 1: BLOB 4- and 8-Connectivity Kernels.**
 
 ![Fig 2]({{ site.baseurl }}/images/BlobAnalysis_Image1.png "zero order"){:width="40%"}  
 **Figure 2: Binary Image. Blue represents 1 and white represents 0. The coordinate system is attached to the upper left corner.**
@@ -37,12 +37,17 @@ The function "imagesc" displays the data matrix as an image that uses the full r
 ![Fig 3]({{ site.baseurl }}/images/BlobAnalysis_Matlab1.png "zero order"){:width="60%"}  
 **Figure 3: The image after using the Matlab function "imagesc()".**
 
-Let's now apply 4- and 8- connectivity kernels on the image. It can be seen that using 4-connectivity, the algorithm detects 5 objects in the image. On the other hand, by applying the 8-connectivity kernel on the image, the algorithm detects 4 objects in the image as shown in figure 4.
+Let's now apply 4- and 8-connectivity kernels on the image using the Matlab function bwlabel(). It can be seen that using 4-connectivity, the algorithm detects 5 objects in the image. On the other hand, by applying the 8-connectivity kernel on the image, the algorithm detects 4 objects in the image as shown in figure 4.
 
 ![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="80%"}  
 **Figure 4: 4- and 8- connectivity applied to the image.**
 
+To visualize the image better, it's good to use the Matlab function label2rgb() to obtain the image in figure [5]
 
+![Fig 5]({{ site.baseurl }}/images/BlobAnalysis_Matlab3.png "zero order"){:width="80%"}  
+**Figure 5: label2rgb() applied to the image.**
+
+It is possible to count the objects using the 
 
 <!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
