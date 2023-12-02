@@ -43,13 +43,15 @@ Let's now apply 4- and 8- connectivity kernels on the image. It can be seen that
 **Figure 4: 4- and 8- connectivity applied to the image.**
 
 
-When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
+
+<!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
 Robots interact with its environment using cameras, this is known as computer vision and is one of the most powerful sensing modalities that currently exist. In this post I will talk about 4- and 8- connectivity
 
 * Median filter
 * Average filter
 * 
+-->
 
 #### References
 [1] imagesc [Link to reference](https://se.mathworks.com/help/matlab/ref/imagesc.html)
