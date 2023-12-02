@@ -13,6 +13,9 @@ Pixels are grouped together using 4- or 8 connectivity methods. After objects ha
 ![Fig 1]({{ site.baseurl }}/images/BlobAnalysis_4_8_Connected.png "zero order"){:width=75%}  
 **Figure 1: 4- and 8- Connectivity Kernels.**
 
+![Fig 2]({{ site.baseurl }}/images/BlobAnalysis_Image1.png "zero order"){:width=75%}  
+**Figure 2: Binary Image.**
+
 
 Robots interact with its environment using cameras, this is known as computer vision and is one of the most powerful sensing modalities that currently exist. In this post I will talk about 4- and 8- connectivity
 
