@@ -6,7 +6,7 @@ published: true
 
 BLOB Analysis (Binary Large OBject Analysis) is a method where pixels in an image are grouped together if they are connected. BLOB Analysis is also often called Connected Component Analysis or Object Labelling. 
 
-Pixels are grouped together using 4- or 8-connectivity methods. This methology involves checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. If a pixel have 4 or more neighbours (or 8 for 8-connectivity), the connectivity check is fulfilled.
+Pixels are grouped together using 4- or 8-connectivity methods. This methology involves checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. 
 
 ![Fig 1]({{ site.baseurl }}/images/BlobAnalysis_4_8_Connected.png "zero order"){:width="50%"}  
 **Figure 1: BLOB 4- and 8-Connectivity Kernels.**
@@ -62,8 +62,23 @@ It is possible to count the area of each object using the Matlab function region
 * Area of object 3: 1 pixels
 * Area of object 4: 13 pixels
 
-The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and the scans the entire image from left to right and from top to bottom.
-At some point during the scan, an object pixel (white pixel) is encountered. 
+"The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and then scans the entire image from left to right and from top to bottom.
+At some point during the scan, an object pixel (white pixel) is encountered. At this point you can imagine yourself standing in a field covered with dry grass. Imagine you have four arms"
+
+The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and then scans the entire image from left to right and from top to bottom. When an object pixel is encountered, you can imagine that you are standing in that pixel and all around you is a field covered with a dry grass. Let's say you have four arms and in each of them you are holding a burning match. You then stretch out your arms and drops the burning matches. When they are dropped, they will start a fire which will spread in four different directions (right, down, left, up). This will result in a great fire where each single straw that is connected to your initial position will burn. This is the explanation of the algorithm.
+
+In the binary image, the pixels of the objects are the dry grass I talked about, and the non-object pixels are water. If we use 4-connectivity, the algorithm looks into four different directions. If it finds a pixel which can be burned (object pixel), it does two things:
+
+1. In the output image, it will give that pixel an object label (some ID).
+2. It will burn that pixel in the input image and set it to zero. Setting it to zero indicates it has been burned and therefore it will not be part of another fire.
+
+In computers, the algorithm is performed as follows:
+* The first object pixel is labeld 1, let's say it's at (1,7) as in the binary image above. This pixel has to be marked so the computer knows it has been burned. 
+* Next, the algorithm tries to start a fire at the first neighbour (1,8), it checks if it is an object pixel, since it's not, the pixel (1,8) is not marked as a burned pixel, it's just a water.
+* Since (1,8) is water, the algorithm will search for the next pixel that can be burned, which is (2,4)
+
+![Fig 6]({{ site.baseurl }}/images/BlobAnalysis_Matlab4.png "zero order"){:width="100%"}  
+**Figure 6: The 4-connectivity Grass-Fire Algorithm applied to the binary image above.**
 
 <!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
