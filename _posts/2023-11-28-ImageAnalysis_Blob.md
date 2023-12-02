@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Analysis - BLOB Analysis
-published: false
+published: true
 ---
 
 BLOB Analysis (Binary Large Object Analysis) is a method where pixels in an image are grouped together if they are connected.
