@@ -86,18 +86,21 @@ In computers, the algorithm is performed as follows:
 
 
 BLOB Analysis serves as the foundation for more advanced methods in feature detection, forming the basis for artificial intelligence to recognize specific objects such as humans, fruits, animals, and car number plates. Further exploration in this field can include topics like:
-* "BLOB Bounding Box".
-* "Bounding Box Ratio".
-* "Bounding Circle".
-* "Convex Hull"
-* "Compactness"
-* "Center of Mass" for image analysis
-* "Perimeter"
-* "Circularity"
-* "BLOB Classification"
+* BLOB Bounding Box
+* Bounding Box Ratio
+* Bounding Circle
+* Convex Hull
+* Compactness
+* Center of Mass" for image analysis
+* Perimeter
+* Circularity
+* BLOB Classification
 * Training Data by learning the best features
 * Feature Selection and Feature Ranges
 * Evaluation of classification
+* Object labelling
+* Object recognition
+* Image segmentation
 * and much more...
 
 
