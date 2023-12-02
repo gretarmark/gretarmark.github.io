@@ -39,7 +39,7 @@ The function "imagesc" displays the data matrix as an image that uses the full r
 
 Let's now apply 4- and 8- connectivity kernels on the image. It can be seen that using 4-connectivity, the algorithm detects 5 objects in the image. On the other hand, by applying the 8-connectivity kernel on the image, the algorithm detects 4 objects in the image as shown in figure 4.
 
-![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="40%"}  
+![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="60%"}  
 **Figure 4: 4- and 8- connectivity applied to the image.**
 
 
@@ -55,4 +55,5 @@ Robots interact with its environment using cameras, this is known as computer vi
 
 #### References
 [1] imagesc [Link to reference](https://se.mathworks.com/help/matlab/ref/imagesc.html)
+
 [2] Bla
