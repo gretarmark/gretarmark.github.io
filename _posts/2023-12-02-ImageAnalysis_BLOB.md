@@ -69,7 +69,7 @@ Robots interact with its environment using cameras, this is known as computer vi
 * Median filter
 * Average filter
 * 
--->
+
 
 #### References
 [1] imagesc [Link to reference](https://se.mathworks.com/help/matlab/ref/imagesc.html)
@@ -78,4 +78,6 @@ Robots interact with its environment using cameras, this is known as computer vi
 
 [3] label2rgb() [Link to reference](https://se.mathworks.com/help/images/ref/label2rgb.html)
 
-[]
+[4] regionprops() [Link to reference](https://se.mathworks.com/help/images/ref/label2rgb.html)
+
+-->
