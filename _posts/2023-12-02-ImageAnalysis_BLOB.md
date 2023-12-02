@@ -47,7 +47,20 @@ To visualize the image more effectively, it's advisable to use the Matlab functi
 ![Fig 5]({{ site.baseurl }}/images/BlobAnalysis_Matlab3.png "zero order"){:width="100%"}  
 **Figure 5: label2rgb() applied to the image.**
 
-It is possible to count the objects using the 
+It is possible to count the area of each object using the Matlab function regionprops(). The area of the objects is as follows
+
+4-Connectivity (5 objects):
+* Area of object 1: 5 pixels
+* Area of object 2: 10 pixels
+* Area of object 3: 1 pixels
+* Area of object 4: 5 pixels
+* Area of object 5: 8 pixels
+
+8-Connectivity (4 objects):
+* Area of object 1: 5 pixels
+* Area of object 2: 10 pixels
+* Area of object 3: 1 pixels
+* Area of object 4: 13 pixels
 
 <!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
@@ -64,3 +77,5 @@ Robots interact with its environment using cameras, this is known as computer vi
 [2] bwlabel() [Link to reference](https://se.mathworks.com/help/images/ref/bwlabel.html)
 
 [3] label2rgb() [Link to reference](https://se.mathworks.com/help/images/ref/label2rgb.html)
+
+[]
