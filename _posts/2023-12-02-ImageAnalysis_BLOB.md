@@ -37,6 +37,11 @@ The function "imagesc" displays the data matrix as an image that uses the full r
 ![Fig 3]({{ site.baseurl }}/images/BlobAnalysis_Matlab1.png "zero order"){:width="40%"}  
 **Figure 3: The image after using the Matlab function "imagesc()".**
 
+Let's now apply 4- and 8- connectivity kernels on the image. It can be seen that using 4-connectivity, the algorithm detects 5 objects in the image. On the other hand, by applying the 8-connectivity kernel on the image, the algorithm detects 4 objects in the image as shown in figure 4.
+
+![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="40%"}  
+**Figure 4: 4- and 8- connectivity applied to the image.**
+
 
 When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
