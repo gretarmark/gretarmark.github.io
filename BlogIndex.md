@@ -10,7 +10,7 @@ Here you can quickly navigate and discover content by browsing through my post h
 
 * [Calculus](#calculus)
 * [Physics](#physics)
-* [Image Analysis](#imageanalysis)
+* [Image Analysis](#image-analysis)
 
 ---
 ## Index
