@@ -99,14 +99,7 @@ BLOB Analysis is the beginning of more advanced methods in geature detection. It
 * Feature Selection and Feature Ranges
 * Evaluation of classification
 * and much more...
-<!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
-Robots interact with its environment using cameras, this is known as computer vision and is one of the most powerful sensing modalities that currently exist. In this post I will talk about 4- and 8- connectivity
-
-* Median filter
-* Average filter
-* 
--->
 
 #### References
 [1] "Connected Component Labeling." Wikipedia. Visited 2. Dec 2023: [Link to reference](https://en.wikipedia.org/wiki/Connected-component_labeling)
