@@ -84,6 +84,21 @@ In computers, the algorithm is performed as follows:
 * Next it checks pixel (2,9) and figures out it is a water. Then it checks pixel (3,8) and it burns that pixel by marking it with 1 in the lower right corner.
 * This is how the algorithm works and it scans like this through the whole image.
 
+
+BLOB Analysis is the beginning of more advanced methods in geature detection. It is the base used for artificial intelligence to recognise objects as some specific objects like humans, fruits, animals, number plates on cars and so on. Further reading can be topics like: 
+* "BLOB Bounding Box".
+* "Bounding Box Ratio".
+* "Bounding Circle".
+* "Convex Hull"
+* "Compactness"
+* "Center of Mass" for image analysis
+* "Perimeter"
+* "Circularity"
+* "BLOB Classification"
+* Training Data by learning the best features
+* Feature Selection and Feature Ranges
+* Evaluation of classification
+* and much more...
 <!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
 Robots interact with its environment using cameras, this is known as computer vision and is one of the most powerful sensing modalities that currently exist. In this post I will talk about 4- and 8- connectivity
@@ -91,15 +106,10 @@ Robots interact with its environment using cameras, this is known as computer vi
 * Median filter
 * Average filter
 * 
-
+-->
 
 #### References
-[1] imagesc [Link to reference](https://se.mathworks.com/help/matlab/ref/imagesc.html)
+[1] "Connected Component Labeling." Wikipedia. Visited 2. Dec 2023: [Link to reference](https://en.wikipedia.org/wiki/Connected-component_labeling)
 
-[2] bwlabel() [Link to reference](https://se.mathworks.com/help/images/ref/bwlabel.html)
 
-[3] label2rgb() [Link to reference](https://se.mathworks.com/help/images/ref/label2rgb.html)
 
-[4] regionprops() [Link to reference](https://se.mathworks.com/help/images/ref/label2rgb.html)
-
--->
