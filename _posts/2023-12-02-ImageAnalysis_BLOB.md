@@ -42,7 +42,7 @@ Let's now apply 4- and 8-connectivity kernels on the image using the Matlab func
 ![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="90%"}  
 **Figure 4: 4- and 8- connectivity applied to the image.**
 
-To visualize the image in a better way, it's good to use the Matlab function label2rgb() to obtain the image in figure [5]
+To visualize the image more effectively, it's advisable to use the Matlab function label2rgb() to obtain the image shown in figure [5].
 
 ![Fig 5]({{ site.baseurl }}/images/BlobAnalysis_Matlab3.png "zero order"){:width="100%"}  
 **Figure 5: label2rgb() applied to the image.**
