@@ -39,12 +39,12 @@ The function "imagesc" displays the data matrix as an image that uses the full r
 
 Let's now apply 4- and 8-connectivity kernels on the image using the Matlab function bwlabel(). It can be seen that using 4-connectivity, the algorithm detects 5 objects in the image. On the other hand, by applying the 8-connectivity kernel on the image, the algorithm detects 4 objects in the image as shown in figure 4.
 
-![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="80%"}  
+![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="90%"}  
 **Figure 4: 4- and 8- connectivity applied to the image.**
 
-To visualize the image better, it's good to use the Matlab function label2rgb() to obtain the image in figure [5]
+To visualize the image in a better way, it's good to use the Matlab function label2rgb() to obtain the image in figure [5]
 
-![Fig 5]({{ site.baseurl }}/images/BlobAnalysis_Matlab3.png "zero order"){:width="80%"}  
+![Fig 5]({{ site.baseurl }}/images/BlobAnalysis_Matlab3.png "zero order"){:width="100%"}  
 **Figure 5: label2rgb() applied to the image.**
 
 It is possible to count the objects using the 
@@ -61,4 +61,6 @@ Robots interact with its environment using cameras, this is known as computer vi
 #### References
 [1] imagesc [Link to reference](https://se.mathworks.com/help/matlab/ref/imagesc.html)
 
-[2] Bla
+[2] bwlabel() [Link to reference](https://se.mathworks.com/help/images/ref/bwlabel.html)
+
+[3] label2rgb() [Link to reference](https://se.mathworks.com/help/images/ref/label2rgb.html)
