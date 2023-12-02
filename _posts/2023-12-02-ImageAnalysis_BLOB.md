@@ -34,12 +34,12 @@ size(img)
 
 The function "imagesc" displays the data matrix as an image that uses the full range of colors in the colormap. The image is an $$m \times n = 10 \times 9$$ grid of pixels where $$m$$ is number of rows and $$n$$ is number of columns. The new image is shown in figure 3.
 
-![Fig 3]({{ site.baseurl }}/images/BlobAnalysis_Matlab1.png "zero order"){:width="40%"}  
+![Fig 3]({{ site.baseurl }}/images/BlobAnalysis_Matlab1.png "zero order"){:width="60%"}  
 **Figure 3: The image after using the Matlab function "imagesc()".**
 
 Let's now apply 4- and 8- connectivity kernels on the image. It can be seen that using 4-connectivity, the algorithm detects 5 objects in the image. On the other hand, by applying the 8-connectivity kernel on the image, the algorithm detects 4 objects in the image as shown in figure 4.
 
-![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="60%"}  
+![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="80%"}  
 **Figure 4: 4- and 8- connectivity applied to the image.**
 
 
