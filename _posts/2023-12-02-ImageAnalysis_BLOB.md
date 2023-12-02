@@ -47,7 +47,7 @@ To visualize the image more effectively, it's advisable to use the Matlab functi
 ![Fig 5]({{ site.baseurl }}/images/BlobAnalysis_Matlab3.png "zero order"){:width="100%"}  
 **Figure 5: label2rgb() applied to the image.**
 
-It is possible to count the area of each object using the Matlab function regionprops(). The area of the objects is as follows
+It is possible to count the area of each object using the Matlab function regionprops(). The area of each object is as follows:
 
 4-Connectivity (5 objects):
 * Area of object 1: 5 pixels
