@@ -12,7 +12,7 @@ Pixels are grouped together using 4- or 8-connectivity methods. This methology i
 **Figure 1: BLOB 4- and 8-Connectivity Kernels.**
 
 ![Fig 2]({{ site.baseurl }}/images/BlobAnalysis_Image1.png "zero order"){:width="40%"}  
-**Figure 2: Binary Image. Blue represents 1 and white represents 0. The coordinate system is attached to the upper left corner.**
+**Figure 2: Binary Image. Blue represents 1 and white represents 0. The coordinate system is attached to the upper left corner. In Matlab, the first pixel is at (1,1), but in a camera system the first pixel is at (0,0).**
 
 The image in figure [2] can be implemented in Matlab by using the following matrix code snip: 
 
@@ -61,6 +61,9 @@ It is possible to count the area of each object using the Matlab function region
 * Area of object 2: 10 pixels
 * Area of object 3: 1 pixels
 * Area of object 4: 13 pixels
+
+The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and the scans the entire image from left to right and from top to bottom.
+At some point during the scan, an object pixel (white pixel) is encountered. 
 
 <!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
