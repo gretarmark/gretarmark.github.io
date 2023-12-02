@@ -72,13 +72,17 @@ In the binary image, the pixels of the objects are the dry grass I talked about,
 1. In the output image, it will give that pixel an object label (some ID).
 2. It will burn that pixel in the input image and set it to zero. Setting it to zero indicates it has been burned and therefore it will not be part of another fire.
 
-In computers, the algorithm is performed as follows:
-* The first object pixel is labeld 1, let's say it's at (1,7) as in the binary image above. This pixel has to be marked so the computer knows it has been burned. 
-* Next, the algorithm tries to start a fire at the first neighbour (1,8), it checks if it is an object pixel, since it's not, the pixel (1,8) is not marked as a burned pixel, it's just a water.
-* Since (1,8) is water, the algorithm will search for the next pixel that can be burned, which is (2,4)
-
 ![Fig 6]({{ site.baseurl }}/images/BlobAnalysis_Matlab4.png "zero order"){:width="100%"}  
 **Figure 6: The 4-connectivity Grass-Fire Algorithm applied to the binary image above.**
+
+In computers, the algorithm is performed as follows:
+* The first object pixel is labeld 1, let's say it's at (1,7) as in the binary image in figure [6]. This pixel has to be marked so the computer knows it has been burned, it is marked by 1 in the lower right corner. 
+* Next, the algorithm tries to start a fire at the first neighbour (1,8), it checks if it is an object pixel, since it's not, the pixel (1,8) is not marked as a burned pixel, it's just a water.
+* The algorithm next checks pixel (2,7), since it is an object pixel it will "burn" the pixel and mark it as burned by adding 1 to the lower right corner.
+* Each time the algorithm "burns" an pixel, it will move the center of the 4-connectivity kernel to that pixel, therefore the next pixel to check is the neighbour at pixel (2,8).
+* Since (2,8) is an object pixel, the center of the 4-connectivity kernel is moved to that pixel, and pixel (2,8) is marked with 1 in the lower right corner. 
+* Next it checks pixel (2,9) and figures out it is a water. Then it checks pixel (3,8) and it burns that pixel by marking it with 1 in the lower right corner.
+* This is how the algorithm works and it scans like this through the whole image.
 
 <!--When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
