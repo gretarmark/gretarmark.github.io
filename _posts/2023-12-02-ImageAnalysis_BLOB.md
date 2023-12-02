@@ -6,7 +6,7 @@ published: true
 
 BLOB Analysis stands for "Binary Large OBject Analysis" and is a topic used in image processing and computer vision. BLOB extraction is a sub-topic about grouping pixels in an image together if they are connected and share certain common properties, such as intensity or color. BLOB extraction makes use of Connected Component Analysis (CCA). It referes to the process of identifying and labeling connected components in a binary image.
 
-Pixels are grouped together using 4- or 8-connectivity methods. This methology involves checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. 
+In Connected Component Analysis, pixels are grouped together using 4- or 8-connectivity methods. This methology involves checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. 
 
 ![Fig 1]({{ site.baseurl }}/images/BlobAnalysis_4_8_Connected.png "zero order"){:width="50%"}  
 **Figure 1: BLOB 4- and 8-Connectivity Kernels.**
