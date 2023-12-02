@@ -72,7 +72,7 @@ In the binary image, the pixels of the objects are the dry grass I talked about,
 1. In the output image, it will give that pixel an object label (some ID).
 2. It will burn that pixel in the input image and set it to zero. Setting it to zero indicates it has been burned and therefore it will not be part of another fire.
 
-![Fig 6]({{ site.baseurl }}/images/BlobAnalysis_Matlab4.png "zero order"){:width="100%"}  
+![Fig 6]({{ site.baseurl }}/images/BlobAnalysis_Matlab4.png "zero order"){:width="40%"}  
 **Figure 6: The 4-connectivity Grass-Fire Algorithm applied to the binary image above.**
 
 In computers, the algorithm is performed as follows:
