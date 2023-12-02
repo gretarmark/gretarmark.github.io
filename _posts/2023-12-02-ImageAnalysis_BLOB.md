@@ -85,7 +85,7 @@ In computers, the algorithm is performed as follows:
 * This is how the algorithm works and it scans like this through the whole image.
 
 
-BLOB Analysis is the beginning of more advanced methods in geature detection. It is the base used for artificial intelligence to recognise objects as some specific objects like humans, fruits, animals, number plates on cars and so on. Further reading can be topics like: 
+BLOB Analysis is the beginning of more advanced methods in feature detection. It is the base used for artificial intelligence to recognise objects as some specific objects like humans, fruits, animals, number plates on cars and so on. Further reading can be topics like: 
 * "BLOB Bounding Box".
 * "Bounding Box Ratio".
 * "Bounding Circle".
