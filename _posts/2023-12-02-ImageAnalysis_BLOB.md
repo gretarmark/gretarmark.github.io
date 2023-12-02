@@ -14,7 +14,20 @@ Pixels are grouped together using 4- or 8-connectivity methods. This methology i
 ![Fig 2]({{ site.baseurl }}/images/BlobAnalysis_Image1.png "zero order"){:width="40%"}  
 **Figure 2: Binary Image. Blue represents 1 and white represents 0. The coordinate system is attached to the upper left corner.**
 
+The image in figure [2] can be implemented in Matlab by using the following code snip: 
 
+```Matlab
+img = [0 0 0 0 0 0 1 0 0
+       0 0 0 1 0 1 1 1 0
+       0 1 0 0 0 0 1 1 0
+       1 1 1 0 0 0 0 1 1
+       0 1 0 0 0 1 1 0 0
+       0 0 0 0 1 1 1 0 0
+       0 0 0 0 0 0 0 0 0
+       0 1 1 1 0 0 0 0 0
+       0 1 1 1 1 0 0 0 0
+       0 1 1 1 0 0 0 0 0];
+```
 
 When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
