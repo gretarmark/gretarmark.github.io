@@ -4,7 +4,7 @@ title: Image Analysis - BLOB Analysis
 published: true
 ---
 
-BLOB Analysis (Binary Large OBject Analysis) is a method where pixels in an image are grouped together if they are connected. BLOB Analysis is also often called Connected Component Analysis or Object Labelling. 
+BLOB Analysis stands for "Binary Large OBject Analysis". BLOB extraction is a sub-topic about grouping pixels in an image together if they are connected. BLOB extraction makes use of Connected Component Analysis or Object Labelling. 
 
 Pixels are grouped together using 4- or 8-connectivity methods. This methology involves checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. 
 
