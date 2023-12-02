@@ -8,7 +8,7 @@ BLOB Analysis (Binary Large OBject Analysis) is a method where pixels in an imag
 
 Pixels are grouped together using 4- or 8-connectivity methods. This methology is about checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. If a pixel have 4/8 or more neighbours, the connectivity check is fulfilled.
 
-When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now have their own ID.  
+When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
 ![Fig 1]({{ site.baseurl }}/images/BlobAnalysis_4_8_Connected.png "zero order"){:width=20%}  
 **Figure 1: 4- and 8- Connectivity Kernels.**
