@@ -14,7 +14,7 @@ Pixels are grouped together using 4- or 8-connectivity methods. This methology i
 ![Fig 2]({{ site.baseurl }}/images/BlobAnalysis_Image1.png "zero order"){:width="40%"}  
 **Figure 2: Binary Image. Blue represents 1 and white represents 0. The coordinate system is attached to the upper left corner.**
 
-The image in figure [2] can be implemented in Matlab by using the following code snip: 
+The image in figure [2] can be implemented in Matlab by using the following matrix code snip: 
 
 ```Matlab
 img = [0 0 0 0 0 0 1 0 0
@@ -27,7 +27,16 @@ img = [0 0 0 0 0 0 1 0 0
        0 1 1 1 0 0 0 0 0
        0 1 1 1 1 0 0 0 0
        0 1 1 1 0 0 0 0 0];
+
+imagesc(img);
+size(img)
 ```
+
+The function "imagesc" displays the data matrix as an image that uses the full range of colors in the colormap. The image is an $$m \times n = 10 \times 9$$ grid of pixels where $$m$$ is number of rows and $$n$$ is number of columns. The new image is shown in figure 3.
+
+![Fig 3]({{ site.baseurl }}/images/BlobAnalysis_Matlab1.png "zero order"){:width="40%"}  
+**Figure 3: The image after using the Matlab function "imagesc()".**
+
 
 When connectivity of each pixel in the image beeing worked on have been analysed, we can say that all objects in the image have been grouped and can now be given their own ID.   
 
@@ -36,3 +45,7 @@ Robots interact with its environment using cameras, this is known as computer vi
 * Median filter
 * Average filter
 * 
+
+#### References
+[1] imagesc [Link to reference](https://se.mathworks.com/help/matlab/ref/imagesc.html)
+[2] Bla
