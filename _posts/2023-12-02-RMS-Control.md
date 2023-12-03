@@ -18,7 +18,7 @@ and the average value is given by
 
 $$\bar{f} = \frac{1}{b-a} \int_a^b f(t) \, dt = \frac{1}{2\pi}\int_0^{2\pi} sin(t) \, dt = 0 \qquad \qquad (2)$$
 
-The sine wave is plotted with a red line and the average value with a blue line in figure 1.
+The sine wave is plotted with a red line and the average value with a blue line in figure 1. In reality, this is not correct, we always have some energy in the AC signal, therefore the average value cannot be zero. According to [1], for AC current, the RMS is equal to the value of the constant direct current that would produce the same power dissipation in a resistive load. 
 
 ![Fig 1]({{ site.baseurl }}/images/RMS/RMS_fig1.png "zero order"){:width="80%"}  
 **Figure 1: Sine wave (red) and average value (blue).**
