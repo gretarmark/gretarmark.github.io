@@ -62,8 +62,8 @@ It is possible to count the area of each object using the Matlab function region
 * Area of object 3: 1 pixels
 * Area of object 4: 13 pixels
 
-"The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and then scans the entire image from left to right and from top to bottom.
-At some point during the scan, an object pixel (white pixel) is encountered. At this point you can imagine yourself standing in a field covered with dry grass. Imagine you have four arms"
+<!--The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and then scans the entire image from left to right and from top to bottom.
+At some point during the scan, an object pixel (white pixel) is encountered. At this point you can imagine yourself standing in a field covered with dry grass. -->
 
 The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and then scans the entire image from left to right and from top to bottom. When an object pixel is encountered, you can imagine that you are standing in that pixel and all around you is a field covered with a dry grass. Let's say you have four arms and in each of them you are holding a burning match. You then stretch out your arms and drops the burning matches. When they are dropped, they will start a fire which will spread in four different directions (right, down, left, up). This will result in a great fire where each single straw that is connected to your initial position will burn. This is the explanation of the algorithm.
 
