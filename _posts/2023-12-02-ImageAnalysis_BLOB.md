@@ -85,7 +85,7 @@ In computers, the algorithm is performed as follows:
 * This is how the algorithm works and it scans like this through the whole image.
 
 
-BLOB Analysis serves as the foundation for more advanced methods in feature detection, forming the basis for artificial intelligence to recognize specific objects such as humans, fruits, animals, and car number plates. Further exploration in this field can include topics like:
+BLOB Analysis serves as the foundation for more advanced methods in feature detection, forming the basis for artificial intelligence to recognize specific objects such as humans, fruits, animals, licence plates, and anything you like. Further exploration in this field can include topics like:
 * BLOB Bounding Box
 * Bounding Box Ratio
 * Bounding Circle
