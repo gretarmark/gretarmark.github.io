@@ -4,11 +4,15 @@ title: Root Mean Square
 published: true
 ---
 
-Root Mean Square (RMS) [1] is a mathematical method used widely in science and engineering. When finding the average value of a function that have both positive and negative values, it will not show the true average value. Therefore it is necessary to square the signal and take the square root of it, that's what RMS is about.
+Root Mean Square (RMS) [1] is indeed a mathematical method widely used in science and engineering, particularly in signal processing. It is used to find the effective or "root mean square" value of a set of values, which includes both positive and negative values.
 
-Phil have already talked about this topic on his You Tube channel [2], but I want to take it a bit further and show how it is used in control theory. 
+However, the primary reason for squaring the values is not necessarily to find the "true average value" but rather to eliminate the effects of the sign (positive or negative) and emphasize on the magnitude of the values. Squaring has the added benefit of making all values positive. 
 
-AC signals in the socket in your wall is a sine wave that have both positive and negative parts. A simple sine wave is given by
+The RMS value is then obtained by taking the square root of the mean (average) of the squared values. This process is useful in situations where the magnitude of a signal is more relevant than its instantaneous values. For example, in electrical engineering, RMS is often used to express the average power of an alternating current (AC).
+
+Phil in "Phil's Lab" have already talked about this topic on his You Tube channel [2], but I wanted to take it a bit further and show how it is used in control theory. 
+
+The AC signal in the socket of your wall is a sine wave that have both positive and negative parts. A simple sine wave is given by
 
 $$f(t) = sin(t) \qquad \quad 0\leq t \leq 2\pi \qquad \qquad (1)$$
 
