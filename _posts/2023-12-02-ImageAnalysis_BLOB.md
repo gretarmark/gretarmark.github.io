@@ -91,7 +91,7 @@ BLOB Analysis serves as the foundation for more advanced methods in feature dete
 * Bounding Circle
 * Convex Hull
 * Compactness
-* Center of Mass" for image analysis
+* Center of Mass for image analysis
 * Perimeter
 * Circularity
 * BLOB Classification
