@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Root Mean Squared
+title: Root Mean Square
 published: true
 ---
 
