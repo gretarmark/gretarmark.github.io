@@ -4,9 +4,7 @@ title: Root Mean Square
 published: true
 ---
 
-Root Mean Square (RMS) [1] is a mathematical method used widely in science and engineering.
-
-When finding the average value of a function that have both positive and negative values, it will not show the true average value. Therefore it is necessary to square the signal and take the square root of it, that's what RMS is about.
+Root Mean Square (RMS) [1] is a mathematical method used widely in science and engineering. When finding the average value of a function that have both positive and negative values, it will not show the true average value. Therefore it is necessary to square the signal and take the square root of it, that's what RMS is about.
 
 Phil have already talked about this topic on his You Tube channel [2], but I want to take it a bit further and show how it is used in control theory. 
 
@@ -35,6 +33,11 @@ In figure 2, the squared signal is plotted as a black line and the RMS value is 
 
 ![Fig 2]({{ site.baseurl }}/images/RMS/RMS_fig2.png "zero order"){:width="80%"}  
 **Figure 2: Squared sine wave (black) and its RMS value (red).**
+
+<!--From this, let's move on to control theory and take a look at how it is used there. 
+
+In optimal control, the quadratic cost function 
+-->
 
 
 
