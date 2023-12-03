@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Model Predictive Control
-published: true
+published: false
 ---
 
 For the last 40 years the theory and technology of Model Predictive Control (MPC), also known as receding horizon control, have been developed rapidly. 
