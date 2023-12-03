@@ -46,7 +46,7 @@ where $$r(t)$$ is a input step to a system and $$y(t)$$ is the response. The are
 
 $$\int_0^{\infty} (r(t) - y(t))^2 \, dt \qquad \qquad (6)$$
 
-
+$$y(t)$$ is often replaced by a general state vector $${\bf x}(t)$$. From equation 6, the optimal control signal is one that gives $$y(t) = r(t) \quad \forall t$$.
 
 #### References
 
