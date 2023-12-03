@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Model Predictive Control - Introduction
+title: Model Predictive Control
 published: true
 ---
 
