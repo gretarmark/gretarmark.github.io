@@ -38,10 +38,13 @@ In figure 2, the squared signal is plotted as a black line and the RMS value is 
 ![Fig 2]({{ site.baseurl }}/images/RMS/RMS_fig2.png "zero order"){:width="80%"}  
 **Figure 2: Squared sine wave (black) and its RMS value (red).**
 
-<!--From this, let's move on to control theory and take a look at how it is used there. 
+From this, let's move on to control theory and take a look at how it is used there. In optimal control, the quadratic cost function is calculated using similar method. From [3], a performance index is given by
 
-In optimal control, the quadratic cost function 
--->
+$$\int_0^{\infty} |r(t) - y(t)| \, dt \qquad \qquad (5)$$
+
+where $$r(t)$$ is a input step to a system and $$y(t)$$ is the response. The area is given by equation 5 above. This performance index is a valid function to minimize because it is limited by zero from below. However, it is easier to use a quadratic performance index of the form
+
+$$\int_0^{\infty} (r(t) - y(t))^2 \, dt \qquad \qquad (6)$$
 
 
 
