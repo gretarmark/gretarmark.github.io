@@ -10,9 +10,9 @@ However, the primary reason for squaring the values is not necessarily to find t
 
 The RMS value is then obtained by taking the square root of the mean (average) of the squared values. This process is useful in situations where the magnitude of a signal is more relevant than its instantaneous values. For example, in electrical engineering, RMS is often used to express the average power of an alternating current (AC).
 
-Phil in "Phil's Lab" have already talked about this topic on his You Tube channel [2], but I wanted to take it a bit further and show how it is used in control theory. 
+Phil in "Phil's Lab" has already discussed this topic on his You Tube channel [2], but I wanted to delve a bit deeper and demonstrate how it is used in control theory. 
 
-The AC signal in the socket of your wall is a sine wave that have both positive and negative parts. A simple sine wave is given by
+The AC signal in the socket on your wall is a sine wave that has both positive and negative parts. A simple sine wave is given by
 
 $$f(t) = sin(t) \qquad \quad 0\leq t \leq 2\pi \qquad \qquad (1)$$
 
