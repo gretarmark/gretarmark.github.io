@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Root Mean Square
-published: true
+published: false
 ---
 
 Root Mean Square (RMS) [1] is indeed a mathematical method widely used in science and engineering, particularly in signal processing. It is used to find the effective or "root mean square" value of a set of values, which includes both positive and negative values.
