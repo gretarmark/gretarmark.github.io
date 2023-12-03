@@ -46,7 +46,12 @@ where $$r(t)$$ is a input step to a system and $$y(t)$$ is the response. The are
 
 $$\int_0^{\infty} (r(t) - y(t))^2 \, dt \qquad \qquad (6)$$
 
-$$y(t)$$ is often replaced by a general state vector $${\bf x}(t)$$. From equation 6, the optimal control signal is one that gives $$y(t) = r(t) \quad \forall t$$.
+$$y(t)$$ is often replaced by a general state vector $${\bf x}(t)$$. From equation 6, the optimal control signal is one that gives $$y(t) = r(t) \quad \forall t$$. 
+To keep the state close to a stationary operating point, the deviation from that point is added to eq. 6, which is zero in linearized models. This leads to an index of the form
+
+$$J = \int_{t_0}^{t_1} \Big[ {\bf x}^T(t){\bf R}_1{\bf x}(t) + {\bf u}^T(t) {\bf R}_2 {\bf u}(t) \Big] \, dt$$
+
+
 
 #### References
 
