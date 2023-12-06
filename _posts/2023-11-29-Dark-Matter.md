@@ -22,9 +22,17 @@ weakly interacting massive particles (WIMPs) and axions-->
 
 ![Fig 1]({{ site.baseurl }}/images/DarkMatter.jpg "zero order"){:width=75%}  
 
+<!--
+## Update - 2023.12.06
+
+According to [4], people know that dark matter exists because of its gravitational force. Dark matter have very big gravitational force compared to particles. Gravity is very weak force compared to other forces
+-->
+
 #### References
 [1] Nasa. [Link to reference](https://science.nasa.gov/astrophysics/focus-areas/what-is-dark-energy/)
 
 [2] Paul M. Sutter, WIMPS vs. Acions. [Link to reference](https://www.universetoday.com/151836/wimps-vs-axions-what-is-dark-matter/)
 
 [3] "Euclid's First Images Proved that Dark Matter is Real! But there a Problem...", You Tube. [Link to reference](https://www.youtube.com/watch?v=rw9XbNG546U)
+
+[4] "Lisa Randall: Dark Matter, Theoretical Physics, and Extinction Events | Lex Fridman Podcast #403". Lex Fridman & Lisa Randall. [Ling to reference](https://www.youtube.com/watch?v=VPaOy3G1-2A)
