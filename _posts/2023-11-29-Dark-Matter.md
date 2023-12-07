@@ -26,6 +26,12 @@ weakly interacting massive particles (WIMPs) and axions-->
 ## Update - 2023.12.06
 
 According to [4], people know that dark matter exists because of its gravitational force. Dark matter have very big gravitational force compared to particles. Gravity is very weak force compared to other forces
+
+* Getur Dark Matter ferðast hraðar en ljós? Nei: https://www.physicsforums.com/threads/does-dark-matter-travel-faster-than-light.972852/
+* https://www.quora.com/Can-dark-matter-travel-faster-than-light-Why-is-a-shadow-faster-than-light
+* Dark matter interacts by gravitation, so it has nonzero mass. Therefore it can't travel at, and nothing does travel faster than the speed of light.
+* Remember: Light has no mass, it has energy.
+
 -->
 
 #### References
