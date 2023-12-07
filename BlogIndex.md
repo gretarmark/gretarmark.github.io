@@ -28,5 +28,5 @@ Examples and theory of Physics.
 ### Image Analysis
 Examples and theory of Image Analysis. 
 
-* [Image Analysis - BLOB Analysis](https://gretarmark.github.io/ImageAnalysis_BLOB/)
+* [Image Analysis - BLOB](https://gretarmark.github.io/ImageAnalysis_BLOB/)
 
