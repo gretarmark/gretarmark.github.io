@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Analysis - BLOB Analysis
+title: Image Analysis - BLOB
 published: true
 ---
 
