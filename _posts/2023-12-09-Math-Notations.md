@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: Mathematical Notations
+published: true
+---
 
 Mathematical Notations
 
@@ -6,3 +10,7 @@ Mathematical Notations
 * $$\in$$ is an element of
 * $$\forall$$ for all
 * 
+
+#### References
+
+[1] 
