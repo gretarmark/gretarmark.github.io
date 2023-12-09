@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quadratic Programming
-published: true
+published: false
 ---
 
 Convex Optimization is a topic in mathematics and engineering. It's about minimizing (or maximizing) a convex objective function (also called cost function). 
