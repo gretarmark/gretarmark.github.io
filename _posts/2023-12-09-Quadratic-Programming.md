@@ -43,7 +43,9 @@ $$\\
 \\$$
 
 * $$P_i \in {\bf S}_+^{n}$$; objective and constraints are convex quadratic.
-* Minimize a convex quadratic function over a polyhedron.
+* if $$P_1,...,P_m \in {\bf S}_{++}^{n}$$, feasible region is intersection of $$m$$ ellipsoids and an affine set.
+
+
 
 
 #### References
