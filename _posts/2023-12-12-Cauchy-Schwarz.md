@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: Cauchy Schwarz Inequalities
+published: false
+---
 
 
 Cauchy Schwarz Inequalities are...
