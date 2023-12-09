@@ -13,6 +13,7 @@ $$|<x,y>| \leq \vert \vert x \vert \vert \cdot \vert \vert y \vert \vert$$
 
 This means that the absolute value of the norm $$<x,y>$$ is less or equal to the two norms multiplied, and this is called the Cauchy-Schwarz Inequality.
 
+When we have $$|<x,y>| = \vert \vert x \vert \vert \cdot \vert \vert y \vert \vert$$, it means that $$x,y$$ are linearly dependent.
 
 
 
