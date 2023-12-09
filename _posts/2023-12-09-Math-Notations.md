@@ -6,9 +6,9 @@ published: true
 
 Mathematical Notations
 
-* $$\exists$$ ensp there exists
-* $$\in$$ ensp is an element of
-* $$\forall$$ ensp for all
+* $$\exists$$ &ensp there exists
+* $$\in$$ &ensp is an element of
+* $$\forall$$ &ensp for all
 * 
 
 #### References
