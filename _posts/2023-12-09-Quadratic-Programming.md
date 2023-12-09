@@ -10,9 +10,7 @@ This can be done in a computer very quickly by using Quadratic Programming (QP).
 Quadratic Programming (QP) is on the following form
 
 $
-\begin{aligned}
 \text{minimize} \quad & \frac{1}{2}x^TPx + q^Tx + r \\
 \text{such that (s.t.)} \quad & Gx \preceq h \\
 & Ax = b
-\end{aligned}
 $
