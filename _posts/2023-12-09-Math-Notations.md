@@ -13,4 +13,5 @@ Mathematical Notations
 
 #### References
 
-[1] 
+[1] Model Predictive Control: Theory, Computation, and Design. 2nd Edition. [Link to reference](https://sites.engineering.ucsb.edu/~jbraw/mpc/)
+
