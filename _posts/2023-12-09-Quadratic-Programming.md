@@ -35,7 +35,7 @@ $$\\
 \begin{align}
 
 \text{minimize} \quad & \frac{1}{2}x^TP_0x + q_0^Tx + r_0 \\
-\text{s.t.} \frac{1}{2}x^TP_ix + q_i^Tx + r_i, \quad i=1,...,m \\
+\text{s.t.} \quad & \frac{1}{2}x^TP_ix + q_i^Tx + r_i, \quad i=1,...,m \\
 & Ax = b
 
 \end{align}
