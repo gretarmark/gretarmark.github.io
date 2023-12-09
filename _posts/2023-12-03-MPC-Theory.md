@@ -13,3 +13,8 @@ specified restrictions on input and output variables. It is videly used for adva
 ![Fig 1]({{ site.baseurl }}/images/MPC/MPC_fig1.png "zero order"){:width="80%"}  
 **Figure 1: Block diagram of MPC controller system.**
 
+#### References
+
+[1] Model Predictive Control: Theory, Computation, and Design. 2nd Edition. [Link to reference](https://sites.engineering.ucsb.edu/~jbraw/mpc/)
+
+[2]
