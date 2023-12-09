@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: Affine Sets
+published: true
+---
 
 Affine set is a topic in mathematical analysis, used e.g. in Convex Optimization. 
 
