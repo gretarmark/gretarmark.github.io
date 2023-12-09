@@ -14,7 +14,7 @@ $$\\
 \begin{align}
 
 \text{minimize} \quad & \frac{1}{2}x^TPx + q^Tx + r \\
-\text{such that (s.t.)} \quad & Gx \preceq h \\
+\text{s.t.} \quad & Gx \preceq h \\
 & Ax = b
 
 \end{align}
