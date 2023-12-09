@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cauchy Schwarz Inequalities
-published: true
+published: false
 ---
 
 
