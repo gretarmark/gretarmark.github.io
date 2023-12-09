@@ -6,7 +6,7 @@ published: true
 
 Mathematical Notations
 
-* $$a$$ there exists
+* $$\exists$$ there exists
 * $$\in$$ is an element of
 * $$\forall$$ for all
 * 
