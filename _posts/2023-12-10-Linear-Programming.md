@@ -6,7 +6,7 @@ published: true
 
 I've always been really interested in making things work efficiently, especially in designing control systems. One thing I want to talk about is Linear Programming, which is a part of optimization theory. In this post, I'll break down what Linear Programming is all about and show you why it's so important for creating smart and efficient control systems.
 
-Linear Programming is about having a optimization objective function that is linear and all the constraint equalities/inequalities are also linear.
+Linear Programming is about having a optimization objective function that is linear and all the constraint equalities and the constraint inequalities are also linear.
 
 The formulation of a Linear Programming problem is on the form
 
@@ -23,18 +23,21 @@ $$\\
 
 \\$$
 
-where $$ {\bf f}^T $$ is a transposed vector of coefficients, $$\bf x$$ is a vector of the optimization variables, and these two form the cost function {\bf f}^T {\bf x}. $$\min$$ stands for minimize, s.t. stands for "such that".
+where $$ {\bf f}^T $$ is a transposed vector of coefficients, $$\bf x$$ is a vector of the optimization variables, and these two form the objective function {\bf f}^T {\bf x}. $$\min$$ stands for minimize and s.t. stands for "such that".
 The lower part under s.t. defines the equality and inequality constraints. $${\bf A}$$ is a matrix, $$\bf b$$ is a vector, $$ {\bf A}_{eq} $$ is a matrix, $${\bf b}_{eq}$$ is a vector, the lower and upper bounds $${\bf l}_b$$ and $${\bf u}_{b}$$ are vectors. 
 
 
-Minimizing the objective function is the same as maximizing the negative of it.
+Minimizing the objective function (also called cost function) is the same as maximizing the negative of it.
 
-that can have values like 
-$$ {\bf f}^T = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix}$$ and $${\bf x}$$ is also a vector that includes the $$x_i$$ values we want to minimize.
-It can have the form $${\bf x} = \begin{bmatrix} x_1 & x_2 & x_3 \end{bmatrix}^T$$.
-The objective function can take the form
+Let's take a look at an example. Let's choose
 
-$${\bf f}^T {\bf x} = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 2x_1 + 4x_2 + 10x_3$$ 
+$$ {\bf f}^T = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix}$$ 
+
+so the objective function becomes
+
+$${\bf f}^T {\bf x} = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 2x_1 + 4x_2 + 10x_3$$
+
+ 
 
 
 <!-- https://www.youtube.com/watch?v=bOKbSSxo8TA -->
