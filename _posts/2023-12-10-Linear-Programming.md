@@ -61,10 +61,16 @@ $${\bf f}^T {\bf x} = \begin{bmatrix} 2 & -4 & 10 \end{bmatrix} \begin{bmatrix} 
 
 such that
 
-$$
-\underbrace{\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix}}_{\bf A} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 140 \\ 60 \end{bmatrix}}_{{\bf b}}
-$$
 
+$$\\
+
+\begin{align}
+\underbrace{\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix}}_{\bf A} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 140 \\ 60 \end{bmatrix}}_{{\bf b}}  \\
+\underbrace{\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix}}_{{\bf l}_{b}} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix}}_{{\bf u}_{b}} \\
+\underbrace{\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix}}_{\bf A} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{{\bf x}} \leq \underbrace{\begin{bmatrix} 20 \\ -10 \end{bmatrix}}_{\bf b}
+\end{align}
+
+\\$$
 
 
 #### References
