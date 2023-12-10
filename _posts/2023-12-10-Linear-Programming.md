@@ -24,7 +24,7 @@ $$\\
 \\$$
 
 where $$ {\bf f}^T $$ is a vector that can have values like 
-$$ {\bf f}^T = \begin{bmatrix} 2 4 10 \end{bmatrix}^T$$
+$$ {\bf f}^T = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix}^T$$
 
 
 <!-- https://www.youtube.com/watch?v=bOKbSSxo8TA -->
