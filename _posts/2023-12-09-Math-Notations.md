@@ -29,6 +29,18 @@ Mathematical Notations
 * $$tr(A)$$  trace of matrix $$A$$
 * $$\det(A)$$  determinant of matrix $$A$$
 
+<div class="row">
+    <div class="col-md-6">
+        {{ include-code-blocks }}
+    </div>
+    <div class="col-md-6">
+        {{ include-texts }}
+        {{ include-headers }}
+        {{ include-what-you-want }}
+    </div>
+</div>
+
+
 #### References
 
 [1] Model Predictive Control: Theory, Computation, and Design. 2nd Edition. [Link to reference](https://sites.engineering.ucsb.edu/~jbraw/mpc/)
