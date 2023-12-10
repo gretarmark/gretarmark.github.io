@@ -24,7 +24,11 @@ $$\\
 \\$$
 
 where $$ {\bf f}^T $$ is a vector that can have values like 
-$$ {\bf f}^T = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix}^T$$
+$$ {\bf f}^T = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix}$$ and $${\bf x}$$ is also a vector that includes the $$x_i$$ values we want to minimize.
+It can have the form $${\bf x} = \begin{bmatrix} x_1 & x_2 & x_3 \end{bmatrix}^T$$.
+The objective function can take the form
+
+$${\bf f}^T {\bf x} = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 2x_1 + 4x_2 + 10x_3$$ 
 
 
 <!-- https://www.youtube.com/watch?v=bOKbSSxo8TA -->
