@@ -8,7 +8,7 @@ I've always been really interested in making things work efficiently, especially
 
 Linear Programming is about having a optimization objective function that is linear and all the constraint equalities/inequalities are also linear.
 
-The formulation of Linear Programming is given by
+The formulation of a Linear Programming problem is on the form
 
 $$\\
 
