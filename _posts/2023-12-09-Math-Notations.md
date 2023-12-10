@@ -6,7 +6,7 @@ published: true
 
 Mathematical Notations
 
-* $$\exists$$     there exists
+* $$\exists$$  &nbsp; &nbsp;   there exists
 * $$\in$$         is an element of
 * $$\forall$$     for all
 * $$\implies$$    implies
@@ -29,16 +29,7 @@ Mathematical Notations
 * $$tr(A)$$  trace of matrix $$A$$
 * $$\det(A)$$  determinant of matrix $$A$$
 
-<div class="row">
-    <div class="col-md-6">
-        {{ include-code-blocks }}
-    </div>
-    <div class="col-md-6">
-        {{ include-texts }}
-        {{ include-headers }}
-        {{ include-what-you-want }}
-    </div>
-</div>
+
 
 
 #### References
