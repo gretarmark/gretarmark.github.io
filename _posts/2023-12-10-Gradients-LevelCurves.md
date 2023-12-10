@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: Gradients and Level Curves
+published: false
+---
 
 
 
