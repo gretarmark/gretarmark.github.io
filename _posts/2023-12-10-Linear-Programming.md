@@ -14,7 +14,7 @@ $$\\
 
 \begin{align}
 
-\minimize_{x} \quad & {\bf f}^T {\bf x} \\
+\min_{x} \quad & {\bf f}^T {\bf x} \\
 \text{s.t.} \quad & {\bf Ax} \leq {\bf b} \\
 & {\bf A}_{eq} {\bf x} = {\bf b}_{eq} \\
 & {\bf l}_{b} \leq {\bf x} \leq {\bf u}_{b}
