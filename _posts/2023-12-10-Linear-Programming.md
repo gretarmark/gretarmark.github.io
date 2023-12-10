@@ -29,6 +29,8 @@ The lower part under s.t. defines the equality and inequality constraints. $${\b
 
 Minimizing the objective function (also called cost function) is the same as maximizing the negative of it.
 
+<br>
+
 Let's take a look at an example. Let's choose
 
 $$ {\bf f}^T = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix}$$ 
