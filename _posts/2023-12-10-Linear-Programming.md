@@ -60,9 +60,10 @@ We want to minimize the objective function
 $${\bf f}^T {\bf x} = \begin{bmatrix} 2 & -4 & 10 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 2x_1 - 4x_2 + 10x_3$$
 
 such that
-<span>
-$$\underbrace{\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix}}_{\bf A} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 140 \\ 60 \end{bmatrix}}_{{\bf b}}$$
-</span>
+
+$$\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 140 \\ 60 \end{bmatrix} \\
+\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix} \\
+\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 20 \\ -10 \end{bmatrix}$$
 
 
 #### References
