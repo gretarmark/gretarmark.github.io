@@ -23,17 +23,9 @@ $$\\
 
 \\$$
 
-where 
+where $$ {\bf f}^T $$ is a vector that can have values like 
+$$ {\bf f}^T = \begin{bmatrix} 2 4 10 \end{bmatrix}^T$$
 
-$$\\
-
-\begin{mini}|l|
-	  {w,u}{f(w)+ R(w+6x)}{}{}
-	  \addConstraint{g(w_k)+h(w_k)}{=0,}{k=0,\ldots,N-1}
-	  \addConstraint{l(w_k)}{=5u,\quad}{k=0,\ldots,N-1}
-\end{mini}
-
-\\$$
 
 <!-- https://www.youtube.com/watch?v=bOKbSSxo8TA -->
 
