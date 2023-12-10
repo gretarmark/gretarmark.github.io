@@ -64,7 +64,7 @@ such that
 $$
 \underbrace{\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix}}_{\bf A} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 140 \\ 60 \end{bmatrix}}_{{\bf b}}
 $$
-
+<br>
 $$
 \underbrace{\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix}}_{\bf A} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 140 \\ 60 \end{bmatrix}}_{{\bf b}}
 $$
