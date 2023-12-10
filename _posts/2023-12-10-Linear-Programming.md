@@ -6,6 +6,8 @@ published: true
 
 I've always been really interested in making things work efficiently, especially in designing control systems. One thing I want to talk about is Linear Programming, which is a part of optimization theory. In this post, I'll break down what Linear Programming is all about and show you why it's so important for creating smart and efficient control systems.
 
+<br>
+
 Linear Programming is about having a optimization objective function that is linear and all the constraint equalities and the constraint inequalities are also linear.
 
 The formulation of a Linear Programming problem is on the form
@@ -29,6 +31,7 @@ The lower part under s.t. defines the equality and inequality constraints. $${\b
 
 Minimizing the objective function (also called cost function) is the same as maximizing the negative of it.
 
+<br>
 <br>
 
 Let's take a look at an example. Let's choose
