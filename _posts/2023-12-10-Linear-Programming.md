@@ -23,7 +23,7 @@ $$\\
 
 \\$$
 
-where $$ {\bf f}^T $$ is a transposed vector of coefficients, $$\bf x$$ is a vector of the optimization variables, and these two form the objective function {\bf f}^T {\bf x}. $$\min$$ stands for minimize and s.t. stands for "such that".
+where $$ {\bf f}^T $$ is a transposed vector of coefficients, $$\bf x$$ is a vector of the optimization variables, and these two form the objective function $${\bf f}^T {\bf x}$$. $$\min$$ stands for minimize and s.t. stands for "such that".
 The lower part under s.t. defines the equality and inequality constraints. $${\bf A}$$ is a matrix, $$\bf b$$ is a vector, $$ {\bf A}_{eq} $$ is a matrix, $${\bf b}_{eq}$$ is a vector, the lower and upper bounds $${\bf l}_b$$ and $${\bf u}_{b}$$ are vectors. 
 
 
