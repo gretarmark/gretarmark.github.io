@@ -23,7 +23,13 @@ $$\\
 
 \\$$
 
-where $$ {\bf f}^T $$ is a vector that can have values like 
+where $$ {\bf f}^T $$ is a transposed vector of coefficients, $$\bf x$$ is a vector of the optimization variables. $$\min$$ stands for minimize, s.t. stands for "such that".
+The lower part under s.t. defines the equality and inequality constraints. $${\bf A}$$ is a matrix, $$\bf b$$ is a vector, $$ {\bf A}_{eq} $$ is a matrix, $${\bf b}_{eq}$$ is a vector, the lower and upper bounds $${\bf l}_b$$ and $${\bf u}_{b}$$ are vectors. 
+
+
+Minimizing the objective function is the same as maximizing the negative of it.
+
+that can have values like 
 $$ {\bf f}^T = \begin{bmatrix} 2 & 4 & 10 \end{bmatrix}$$ and $${\bf x}$$ is also a vector that includes the $$x_i$$ values we want to minimize.
 It can have the form $${\bf x} = \begin{bmatrix} x_1 & x_2 & x_3 \end{bmatrix}^T$$.
 The objective function can take the form
