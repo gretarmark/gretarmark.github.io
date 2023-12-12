@@ -42,7 +42,7 @@ $$
 {\bf f} = \begin{bmatrix} 2 \\ -4 \\ 10 \end{bmatrix} \qquad \text{and} \qquad {\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}
 $$
 
-The liner programming setup can be formulated as follows:
+The liner programming problem can be formulated as follows:
 
 $$\\
 
