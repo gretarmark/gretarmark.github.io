@@ -16,10 +16,10 @@ $$\\
 
 \begin{align}
 
-\min_{x} \quad & {\bf f}^T {\bf x} \\
-\text{s.t.} \quad & {\bf Ax} \leq {\bf b} \\
-& {\bf A}_{eq} {\bf x} = {\bf b}_{eq} \\
-& {\bf l}_{b} \leq {\bf x} \leq {\bf u}_{b}
+\min_{x} \quad & {\bf f}^T {\bf x} \tag{1.1}\\
+\text{s.t.} \quad & {\bf Ax} \leq {\bf b} \tag{1.2}\\
+& {\bf A}_{eq} {\bf x} = {\bf b}_{eq} \tag{1.3}\\
+& {\bf l}_{b} \leq {\bf x} \leq {\bf u}_{b} \tag{1.4}
 
 \end{align}
 
@@ -79,6 +79,7 @@ $$
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b
 $$
 
+<!--
 Test:
 $$
 \begin{align}
@@ -93,6 +94,7 @@ $$
   V_{sphere} = \frac{4}{3}\pi r^3 = \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{A} \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{B}
 \end{align}
 $$
+-->
 
 <!-- https://www.youtube.com/watch?v=WwMz2fJwUCg -->
 
