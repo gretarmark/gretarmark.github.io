@@ -79,49 +79,9 @@ $$
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b
 $$
 
-<!--
-Test:
-$$
-\begin{align}
-  \tag{1.1}
-  V_{sphere} = \frac{4}{3}\pi r^3 = \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{A} \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{B}
-\end{align}
-$$
 
-$$
-\begin{align}
-  \tag{1.1}
-  V_{sphere} = \frac{4}{3}\pi r^3 = \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{A} \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{B}
-\end{align}
-$$
--->
 
-Test:
-<!--
-$$
-\begin{align}
-  \underbrace{\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix}}_{\bf A} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 140 \\ 60 \end{bmatrix}}_{\bf b}
-\end{align}
-$$
 
-$$
-\begin{align}
-  \underbrace{\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix}}_{{\bf A}_{eq}} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix}}_{{\bf b}_{eq}}
-\end{align}
-$$
-
-$$
-\begin{align}
-  \underbrace{\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix}}\underline{\mathbf{l}\underline{b}} \cdot \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}\underline{\mathbf{x}} \, \leq \, \underbrace{\begin{bmatrix} 20 \\ -10 \end{bmatrix}}\underline{\mathbf{u}\underline{b}}
-\end{align}
-$$
--->
-
-<!--
-$f(\protect\underline{p},t)$
--->
-
-<!-- https://www.youtube.com/watch?v=WwMz2fJwUCg -->
 
 #### References
 
