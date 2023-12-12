@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linear Programming
-published: false
+published: true
 ---
 
 I've always been really interested in making things work efficiently, especially in designing control systems. One thing I want to talk about is Linear Programming, which is a part of optimization theory. Optimization is used in controller techniques like LQR and MPC.
