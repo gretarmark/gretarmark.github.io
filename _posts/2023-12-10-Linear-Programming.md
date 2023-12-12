@@ -36,6 +36,14 @@ Minimizing the objective function (also called cost function) is the same as max
 
 Let's take a look at an example where Matlab is used to solve a Linear Programming problem. 
 
+We have the vectors 
+
+$$
+{\bf f} = \begin{bmatrix} 2 \\ -4 \\ 10 \end{bmatrix} \qquad \text{and} \qquad {\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}
+$$
+
+The liner programming setup can be formulated as follows:
+
 $$\\
 
 \begin{align}
