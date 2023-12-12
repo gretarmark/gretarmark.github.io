@@ -16,7 +16,7 @@ $$\\
 
 \begin{align}
 
-\min_{x} \quad & {\bf f}^T {\bf x} \tag{1.1}\\
+\min_{\bf x} \quad & {\bf f}^T {\bf x} \tag{1.1}\\
 \text{s.t.} \quad & {\bf Ax} \leq {\bf b} \tag{1.2}\\
 & {\bf A}_{eq} {\bf x} = {\bf b}_{eq} \tag{1.3}\\
 & {\bf l}_{b} \leq {\bf x} \leq {\bf u}_{b} \tag{1.4}
@@ -87,14 +87,14 @@ $$
   V_{sphere} = \frac{4}{3}\pi r^3 = \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{A} \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{B}
 \end{align}
 $$
--->
+
 $$
 \begin{align}
   \tag{1.1}
   V_{sphere} = \frac{4}{3}\pi r^3 = \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{A} \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{B}
 \end{align}
 $$
-
+-->
 
 Test:
 <!--
