@@ -87,6 +87,13 @@ $$
 \end{align}
 $$
 
+$$
+\begin{align}
+  \tag{1.1}
+  V_{sphere} = \frac{4}{3}\pi r^3 = \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{A} \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{B}
+\end{align}
+$$
+
 <!-- https://www.youtube.com/watch?v=WwMz2fJwUCg -->
 
 #### References
