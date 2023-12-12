@@ -6,7 +6,7 @@ published: true
 
 I've always been really interested in making things work efficiently, especially in designing control systems. One thing I want to talk about is Linear Programming, which is a part of optimization theory. Optimization is used in controller techniques like LQR and MPC.
 
-<br>
+---
 
 Linear Programming is about having a optimization objective function that is linear and all the constraint equalities and the constraint inequalities are also linear.
 
@@ -31,8 +31,7 @@ The lower part under s.t. defines the equality and inequality constraints. $${\b
 
 Minimizing the objective function (also called cost function) is the same as maximizing the negative of it.
 
-<br>
-<br>
+---
 
 Let's take a look at an example where Matlab is used to solve a Linear Programming problem. 
 
