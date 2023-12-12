@@ -71,6 +71,14 @@ $$\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x
 \begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix} \\
 \begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 20 \\ -10 \end{bmatrix}$$
 
+which is the same as
+
+$$
+{\bf Ax} \leq {\bf b} \\
+{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \\
+{\bf l}_b \leq {\bf x} \leq {\bf u}_b
+$$
+
 <!-- https://www.youtube.com/watch?v=WwMz2fJwUCg -->
 
 #### References
