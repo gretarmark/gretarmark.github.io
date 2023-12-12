@@ -75,7 +75,7 @@ which is the same as
 
 $$
 {\bf Ax} \leq {\bf b} \\
-{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \\
+{\bf A}\_{eq}{\bf x} \leq {\bf b}\_{eq} \\
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b
 $$
 
