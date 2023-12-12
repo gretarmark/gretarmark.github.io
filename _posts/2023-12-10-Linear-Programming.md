@@ -61,8 +61,6 @@ $$\\
 
 \\$$
 
-The problem can be setup as follows:
-
 We want to minimize the objective function
 
 $${\bf f}^T {\bf x} = \begin{bmatrix} 2 & -4 & 10 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 2x_1 - 4x_2 + 10x_3$$
