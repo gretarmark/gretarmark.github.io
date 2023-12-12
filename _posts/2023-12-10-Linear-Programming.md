@@ -113,7 +113,7 @@ $$
 
 $$
 \begin{align}
-  \underbrace{\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix}}_{\bf{l}_b}  \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf{x}} \leq \underbrace{\begin{bmatrix} 20 \\ -10 \end{bmatrix}}_{\bf{u}_b}
+  \underbrace{\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix}}_{\mathbf{l}_{b}} \cdot \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\mathbf{x}} \, \leq \, \underbrace{\begin{bmatrix} 20 \\ -10 \end{bmatrix}}_{\mathbf{u}_{b}}
 \end{align}
 $$
 
