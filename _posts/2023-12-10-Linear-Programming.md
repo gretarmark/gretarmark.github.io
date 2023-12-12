@@ -109,13 +109,15 @@ $$
   \underbrace{\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix}}_{{\bf A}_{eq}} \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\bf x} \leq \underbrace{\begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix}}_{{\bf b}_{eq}}
 \end{align}
 $$
-
-
+-->
 $$
 \begin{align}
-  \underbrace{\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix}}_{\mathbf{l}_{b}} \cdot \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}_{\mathbf{x}} \, \leq \, \underbrace{\begin{bmatrix} 20 \\ -10 \end{bmatrix}}_{\mathbf{u}_{b}}
+  \underbrace{\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix}}\underline{\mathbf{l}\underline{b}} \cdot \underbrace{\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}}\underline{\mathbf{x}} \, \leq \, \underbrace{\begin{bmatrix} 20 \\ -10 \end{bmatrix}}\underline{\mathbf{u}\underline{b}}
 \end{align}
 $$
+
+<!--
+$f(\protect\underline{p},t)$
 -->
 
 <!-- https://www.youtube.com/watch?v=WwMz2fJwUCg -->
