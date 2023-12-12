@@ -75,8 +75,16 @@ which is the same as
 
 $$
 {\bf Ax} \leq {\bf b} \\
-{\bf A}\_{eq}{\bf x} \leq {\bf b}\_{eq} \\
+{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \\
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b
+$$
+
+Test:
+$$
+\begin{align}
+  \tag{1.1}
+  V_{sphere} = \frac{4}{3}\pi r^3 = \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{A} \underbrace{\begin{bmatrix} A & B \\ C & D \end{bmatrix}}_{B}
+\end{align}
 $$
 
 <!-- https://www.youtube.com/watch?v=WwMz2fJwUCg -->
