@@ -12,12 +12,12 @@ I want this post to be a review of Linear Algebra including definitions and exam
 ----
 
 **Definition 1** <br>
-*Transpose of a matrix $$A$$ is given by $$A^T$$. A matrix $$A$$ with the property that $$A = A^T$$ is a symmetric matrix.*
+Transpose of a matrix $$A$$ is given by $$A^T$$. A matrix $$A$$ with the property that $$A = A^T$$ is a symmetric matrix.
 
 ---
 
 **Definition 2** <br>
-A set of vectors $$V=\{v_1,v_2,...,v_l\]$$ each with the same dimension are said to be linearly independent if
+A set of vectors $$V=\{v_1,v_2,...,v_l\}$$ each with the same dimension are said to be linearly independent if
 
 $$
 \alpha_1 v_1 + \alpha_2 v_2 + ... + \alpha_l v_l = 0 \qquad \text{implies that} \qquad \alpha_1 = \alpha_2 = ... = \alpha_l = 0,
