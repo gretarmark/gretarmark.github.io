@@ -24,10 +24,10 @@ Mathematical Notations
 * $$\det(A)$$ &nbsp; &nbsp; determinant of matrix $$A$$
 
 
-| A  |---| B  |
-|:---|---|:---|
-| $$\exists$$  |---| there exists  |
-| $$\in$$  |---| is an element of  |
+| A  | B  |
+|:---------------|:----------------------------------|
+| $$\exists$$  | there exists  |
+| $$\in$$  | is an element of  |
 
 
 
