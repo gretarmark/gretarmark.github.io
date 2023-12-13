@@ -23,11 +23,15 @@ Mathematical Notations
 * $$tr(A)$$ &nbsp; &nbsp; trace of matrix $$A$$
 * $$\det(A)$$ &nbsp; &nbsp; determinant of matrix $$A$$
 
-| **Symbol** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | **Explanation**  |
+| **Symbol** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | **Meaning**  |
 |:---------------|:----------------------------------|
 | $$\exists$$  | there exists  |
 | $$\in$$  | is an element of  |
 
+<!-- https://www.cambridgeinternational.org/Images/420009-mathematics-notation-list-.pdf 
+https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols
+https://www.rapidtables.com/math/symbols/Basic_Math_Symbols.html
+-->
 
 
 #### References
