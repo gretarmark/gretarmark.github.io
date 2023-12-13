@@ -24,7 +24,7 @@ Mathematical Notations
 * $$\det(A)$$ &nbsp; &nbsp; determinant of matrix $$A$$
 
 
-| A  | B  |
+| <div style="width:290px">Symbol</div>  | Explanation  |
 |:---------------|:----------------------------------|
 | $$\exists$$  | there exists  |
 | $$\in$$  | is an element of  |
