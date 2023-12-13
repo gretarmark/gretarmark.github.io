@@ -24,37 +24,12 @@ Mathematical Notations
 * $$\det(A)$$ &nbsp; &nbsp; determinant of matrix $$A$$
 
 $$
-
-\begin{table}[]
+\begin{table}[H]
 \begin{tabular}{ll}
 $$\exists$$ & there exists \\
-$$\in$$ & is an element of \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- & 
+$$\in$$ & is an element of 
 \end{tabular}
 \end{table}
-
 $$
 
 #### References
