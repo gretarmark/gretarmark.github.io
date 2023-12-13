@@ -23,8 +23,9 @@ Mathematical Notations
 * $$tr(A)$$ &nbsp; &nbsp; trace of matrix $$A$$
 * $$\det(A)$$ &nbsp; &nbsp; determinant of matrix $$A$$
 
-
-| $$\exists$$ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | there exists  |
+| Symbol &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Explanation  |
+|:---------------|:----------------------------------|
+| $$\exists$$  | there exists  |
 | $$\in$$  | is an element of  |
 
 
