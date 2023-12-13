@@ -23,8 +23,39 @@ Mathematical Notations
 * $$tr(A)$$ &nbsp; &nbsp; trace of matrix $$A$$
 * $$\det(A)$$ &nbsp; &nbsp; determinant of matrix $$A$$
 
+$$
 
+\begin{table}[]
+\begin{tabular}{ll}
+$$\exists$$ & there exists \\
+$$\in$$ & is an element of \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+ & 
+\end{tabular}
+\end{table}
 
+$$
 
 #### References
 
