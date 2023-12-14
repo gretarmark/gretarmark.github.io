@@ -11,7 +11,7 @@ I want this post to be a review of Linear Algebra including definitions and exam
 
 ----
 
-**Definition 1** <br>
+### Definition 1
 Transpose of a matrix $$A$$ is given by $$A^T$$. A matrix $$A$$ with the property that $$A = A^T$$ is a symmetric matrix.
 
 ---
@@ -28,6 +28,15 @@ i.e., all scalars are 0. Otherwise, the set of vectors $$V$$ are said to be line
 ---
 
 **Definition 3** <br>
+A square matrix $$A$$ is said to be invertible if there exists a square $$m \times m$$ matrix $$B$$ such that $$AB = I = BA$$ where $$I$$
+is the $$m \times m$$ identity matrix. $$B$$ is called the inverse of $$A$$ and is denoted as $$B = A^{-1}$$. 
+Matrix $$A$$ that has an inverse is said to be invertible of non-singular.
+
+A square $$m \times m$$ matrix $$A$$ is invertible if and only if the $$m$$ columns (rows) of $$A$$ form a linearly independent set of vectors.
+
+It is worth mentioning that inverse of a square matrix 
+
+
 
 #### References
 
