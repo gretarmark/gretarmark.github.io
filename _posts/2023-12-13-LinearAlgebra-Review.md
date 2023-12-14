@@ -32,9 +32,8 @@ A square matrix $$A$$ is said to be invertible if there exists a square $$m \tim
 is the $$m \times m$$ identity matrix. $$B$$ is called the inverse of $$A$$ and is denoted as $$B = A^{-1}$$. 
 Matrix $$A$$ that has an inverse is said to be invertible of non-singular.
 
+#### Theorem 3.1
 A square $$m \times m$$ matrix $$A$$ is invertible if and only if the $$m$$ columns (rows) of $$A$$ form a linearly independent set of vectors.
-
-#### Example
 
 It is worth mentioning that inverse of a square matrix $$A$$ plays an important role in the solution of linear systems of equations of the form
 
@@ -48,6 +47,42 @@ since the solution can be represented mathematically as $$x = A^{-1}b$$
 
 ### Definition 4
 
+1. An $$n \times n$$ symmetric matrix $$A$$ is said to be positive semi-definite (PSD) if $$x^TAx \geq 0$$ for all vectors $$x$$ with dimension $$n$$. 
+2. An $$n \times n$$ symmetric matrix $$A$$ is said to be positive definite (PD) if $$x^TAx > 0$$ for all vectors $$x$$ with dimension $$n$$ and $$x \neq 0$$.
+
+---
+
+#### Theorem 4.1
+
+1. A positive definite matrix $$A$$ is invertible.
+2. If the determinant of a matrix $$A$$ is non-zero, then $$A$$ is invertible.
+
+Knowing whether a matrix is PSD or PD is useful in e.g. linear and quadratic programming, but it can be challenging to show that a matrix is PSD or PD. 
+
+---
+
+### Definition 5 - Determinant test for PD
+
+Let $$A$$ be an $$m \times m$$ symmetric matrix. Let $$\Delta_l$$ be the determinant of the upper $$l \times l$$ submatrix of $$A$$ for $$1 \leq l \leq m$$.
+$$\Delta_l$$ is called the lth principal minor of $$A$$. If $$\Delta_l > 0$$ for $$l = 1,...,m$$, then $$A$$ is positive definite.
+
+#### Example 5.1
+
+Let 
+
+$$
+A = \begin{bmatrix} 2 & -1 & -1 \\ -1 & 2 & 1 \\ -1 & 1 & 2 \end{bmatrix},
+$$  
+
+then $$\Delta_1 = \det(2) = 2 > 0$$, $$\Delta_2 = \det\left(\begin{bmatrix} 2 & -1 \\ -1 & 2 \end{bmatrix}\right) = 3 > 0$$, and $$\Delta_3 = \det\left(\begin{bmatrix} 2 & -1 & -1 \\ -1 & 2 & 1 \\ -1 & 1 & 2 \end{bmatrix}\right) = 2 > 0$$. Therefore $$A$$ is positive definite.
+
+---
+
+### Definition 6 - Eigenvalue test for PD
+
+Another 
+
+---
 ...in progress...
 
 #### References
