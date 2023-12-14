@@ -48,6 +48,8 @@ since the solution can be represented mathematically as $$x = A^{-1}b$$
 
 ### Definition 4
 
+...in progress...
+
 #### References
 
 [1] Roy H. Kwon. Introduction to Linear Optimization and Extensions with Matlab-CRC press. 2013.
