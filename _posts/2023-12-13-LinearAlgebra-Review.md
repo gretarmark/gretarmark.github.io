@@ -16,7 +16,7 @@ Transpose of a matrix $$A$$ is given by $$A^T$$. A matrix $$A$$ with the propert
 
 ---
 
-**Definition 2** <br>
+### Definition 2
 A set of vectors $$V=\{v_1,v_2,...,v_l\}$$ each with the same dimension are said to be linearly independent if
 
 $$
@@ -27,16 +27,26 @@ i.e., all scalars are 0. Otherwise, the set of vectors $$V$$ are said to be line
 
 ---
 
-**Definition 3** <br>
+### Definition 3
 A square matrix $$A$$ is said to be invertible if there exists a square $$m \times m$$ matrix $$B$$ such that $$AB = I = BA$$ where $$I$$
 is the $$m \times m$$ identity matrix. $$B$$ is called the inverse of $$A$$ and is denoted as $$B = A^{-1}$$. 
 Matrix $$A$$ that has an inverse is said to be invertible of non-singular.
 
 A square $$m \times m$$ matrix $$A$$ is invertible if and only if the $$m$$ columns (rows) of $$A$$ form a linearly independent set of vectors.
 
-It is worth mentioning that inverse of a square matrix 
+#### Example
 
+It is worth mentioning that inverse of a square matrix $$A$$ plays an important role in the solution of linear systems of equations of the form
 
+$$
+Ax = b
+$$
+
+since the solution can be represented mathematically as $$x = A^{-1}b$$
+
+---
+
+### Definition 4
 
 #### References
 
