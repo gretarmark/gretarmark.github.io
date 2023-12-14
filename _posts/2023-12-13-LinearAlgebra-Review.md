@@ -80,7 +80,11 @@ then $$\Delta_1 = \det(2) = 2 > 0$$, $$\Delta_2 = \det\left(\begin{bmatrix} 2 & 
 
 ### Definition 6 - Eigenvalue test for PD
 
-Another 
+It is also possible to check the positive definiteness by checking the eigenvalues of $$A$$. Recall that $$\lambda$$ is an eigenvalue for $$A$$ (assume $$A$$ is $$m \times m$$ symmetric) if it satisfies the $$Ax = \lambda x$$ for some non-zero vector $$x$$. In particular, the eigenvalues of $$A$$ are the roots of the (characteristic) equation $$\det(A - \lambda I) = 0$$.
+
+#### Theorem 6.1
+
+Suppose $$A$$ is symmetric. If all eigenvalues of $$A$$ are positive, then $$A$$ is positive definite.
 
 ---
 ...in progress...
