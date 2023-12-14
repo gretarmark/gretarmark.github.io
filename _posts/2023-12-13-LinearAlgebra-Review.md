@@ -87,7 +87,15 @@ It is also possible to check the positive definiteness by checking the eigenvalu
 Suppose $$A$$ is symmetric. If all eigenvalues of $$A$$ are positive, then $$A$$ is positive definite.
 
 ---
-...in progress...
+
+### Some fundamental spaces of Linear Algebra
+
+Let $$A$$ be an $$m \times n$$ matrix.
+1. The set $$R(A) = \{y \vbar y = Ax \quad \text{for some vector x of dimension n}\}$$ is called the column space of $$A$$.
+2. The set $$R(A^T) = \{y \vbar y=A^Tz \quad \text{for some vector z of dimension m}\}$$ is called the row space of $$A$$.
+3. The set $$N(A) = \{p \vbar Ap = 0\}$$ is called the null space of $$A$$.
+
+---
 
 #### References
 
