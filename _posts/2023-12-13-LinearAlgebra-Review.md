@@ -9,6 +9,8 @@ It is very common to approximate nonlinear equations by using Taylor expansion t
 When having a linear model of a system, you can apply linear algebra on it and it's much easier to solve than nonlinear algebra. 
 I want this post to be a review of Linear Algebra including definitions and examples.
 
+The following notes are from Roy H. Kwon[1].
+
 ----
 
 ### Definition 1
