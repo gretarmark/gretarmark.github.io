@@ -76,7 +76,15 @@ $$
 A = \begin{bmatrix} 2 & -1 & -1 \\ -1 & 2 & 1 \\ -1 & 1 & 2 \end{bmatrix},
 $$  
 
-then $$\Delta_1 = \det(2) = 2 > 0$$, $$\Delta_2 = \det\left(\begin{bmatrix} 2 & -1 \\ -1 & 2 \end{bmatrix}\right) = 3 > 0$$, and $$\Delta_3 = \det\left(\begin{bmatrix} 2 & -1 & -1 \\ -1 & 2 & 1 \\ -1 & 1 & 2 \end{bmatrix}\right) = 2 > 0$$. Therefore $$A$$ is positive definite.
+then 
+
+$$\Delta_1 = \det(2) = 2 > 0$$ 
+
+$$\Delta_2 = \det\left(\begin{bmatrix} 2 & -1 \\ -1 & 2 \end{bmatrix}\right) = 3 > 0$$
+
+$$\Delta_3 = \det\left(\begin{bmatrix} 2 & -1 & -1 \\ -1 & 2 & 1 \\ -1 & 1 & 2 \end{bmatrix}\right) = 2 > 0$$. 
+
+Therefore $$A$$ is positive definite.
 
 ---
 
