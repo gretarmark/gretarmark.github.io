@@ -6,7 +6,7 @@ published: true
 
 I've always been really interested in making things work efficiently, especially in designing control systems. One thing I want to talk about is Linear Programming, which is a part of optimization theory. Optimization is used in controller techniques like LQR and MPC.
 
----
+## ---
 
 Linear Programming is about having a optimization objective function that is linear and all the constraint equalities and the constraint inequalities are also linear.
 
@@ -31,7 +31,7 @@ The lower part under s.t. defines the equality and inequality constraints. $${\b
 
 Minimizing the objective function (also called cost function) is the same as maximizing the negative of it.
 
----
+## ---
 
 Let's take a look at an example where Matlab is used to solve a Linear Programming problem. 
 
@@ -81,7 +81,7 @@ $$
 This can be calculated very quickly by using the linprog() function in Matlab [2]. 
 The following Matlab code is used to solve the linear optimization problem above.
 
-##---
+## ---
 
 ```{Matlab}
 f = [2 -4 10];
@@ -99,7 +99,7 @@ options = optimoptions('linprog','Algorithm','interior-point','Display','iter',.
 [x,fval,exitflag,output] = linprog(f,A,b,Aeq,beq,lb,ub,options)
 ```
 
-##---
+## ---
 
 The arguments in the optimoption() function are as follows:
 * 'linprog' is the solver name. It is possible to choose some other solvers [2].
@@ -109,7 +109,7 @@ The arguments in the optimoption() function are as follows:
   + 'OptimalityTolerance': We specify the optimality tolerance as 1e-9
   + 'ConstraintTolerance': Finally we specify the constraint tolerance as 1e-6 
 
-##---
+## ---
 
 ![Fig 1]({{ site.baseurl }}/images/LinearProgramming/LinearProgramming_MatlabOutput1.png "zero order"){:width=75%}  
 **Figure 1: Solution to the linear programming problem above. The figure shows the output from the linprog() function in Matlab.**
