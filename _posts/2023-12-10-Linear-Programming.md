@@ -80,17 +80,31 @@ $$\\
 
 such that
 
-$$\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 140 \\ 60 \end{bmatrix} \tag{1.16}\\
+$$\\
+
+\begin{align}
+
+\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 140 \\ 60 \end{bmatrix} \tag{1.16}\\
 \begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 20 \\ -10 \end{bmatrix} \tag{1.17}\\
-\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix} \leq \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix} \tag{1.18}$$
+\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix} \leq \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix} \tag{1.18}
+
+\end{align}
+
+\\$$
 
 which is the same as
 
-$$
+$$\\
+
+\begin{align}
+
 {\bf Ax} \leq {\bf b} \tag{1.19}\\
 {\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \tag{1.20}\\
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b \tag{1.21}
-$$
+
+\end{align}
+
+\\$$
 
 This can be calculated very quickly by using the linprog() function in Matlab [2]. 
 The following Matlab code is used to solve the linear optimization problem above.
@@ -136,9 +150,15 @@ The solution to the optimization problem in this post is shown in figure 1. Let'
 
 The optimal solution to this problem is therefore
 
-$$
+$$\\
+
+\begin{align}
+
 {\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} -414.5455 \\ 900 \\ -188.7879 \end{bmatrix}. \tag{1.22}
-$$
+
+\end{align}
+
+\\$$
 
 It can be seen that the solution for $$x_2 = 900$$ is exactly on the constraint boundary 900, so this solution is limited to that constraint.
 
