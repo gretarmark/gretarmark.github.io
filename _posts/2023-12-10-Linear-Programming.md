@@ -81,7 +81,7 @@ $$
 This can be calculated very quickly by using the linprog() function in Matlab [2]. 
 The following Matlab code is used to solve the linear optimization problem above.
 
----
+##---
 
 ```{Matlab}
 f = [2 -4 10];
@@ -99,7 +99,7 @@ options = optimoptions('linprog','Algorithm','interior-point','Display','iter',.
 [x,fval,exitflag,output] = linprog(f,A,b,Aeq,beq,lb,ub,options)
 ```
 
----
+##---
 
 The arguments in the optimoption() function are as follows:
 * 'linprog' is the solver name. It is possible to choose some other solvers [2].
@@ -109,12 +109,12 @@ The arguments in the optimoption() function are as follows:
   + 'OptimalityTolerance': We specify the optimality tolerance as 1e-9
   + 'ConstraintTolerance': Finally we specify the constraint tolerance as 1e-6 
 
-The output is shown in figure 1.
+##---
 
 ![Fig 1]({{ site.baseurl }}/images/LinearProgramming/LinearProgramming_MatlabOutput1.png "zero order"){:width=75%}  
 **Figure 1: Solution to the linear programming problem above. The figure shows the output from the linprog() function in Matlab.**
 
-Let's analyze figure 1:
+The solution to the optimization problem in this post is shown in figure 1. Let's analyze what it means:
 * x is the solution to the problem
 * fval is the value of the objective function
 * The exitflag marked as 1 means we have solved the problem. If we get some other value, it means we didn't succesfully solve it.
