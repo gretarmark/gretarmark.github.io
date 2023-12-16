@@ -85,3 +85,11 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+  # _config.yml
+
+- theme: minima
++ remote_theme: jekyll/minima
+
+  plugins:
++ - jekyll-remote-theme
