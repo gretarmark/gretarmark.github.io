@@ -78,7 +78,26 @@ $$
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b
 $$
 
-...In progress...
+This can be calculated very quickly by using the linprog() function in Matlab [2]. 
+The following Matlab code is used to solve the linear optimization problem above.
+
+´´´Matlab
+f = [2 -4 10];
+
+A = [6  3  2 ; 3 -3  4];
+b = [140 ; 60];
+
+Aeq = [1 3 12 ; 3 2 3];
+beq = [20 ; -10];
+
+lb = [-1200 ; -900 ; -1300];
+ub = [1200 ; 900 ; 1300];
+
+
+options = optimoptions('linprog','Algorithm','interior-point','Display','iter','MaxIterations',1500,'OptimalityTolerance',1e-9,'ConstraintTolerance',1e-6);
+
+[x,fval,exitflag,output] = linprog(f,A,b,Aeq,beq,lb,ub,options)
+´´´
 
 <!-- https://www.youtube.com/watch?v=TqN-8fxYUYY -->
 
