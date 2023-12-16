@@ -86,18 +86,24 @@ f = [2 -4 10];
 
 A = [6  3  2 ; 3 -3  4];
 b = [140 ; 60];
-
 Aeq = [1 3 12 ; 3 2 3];
 beq = [20 ; -10];
-
 lb = [-1200 ; -900 ; -1300];
 ub = [1200 ; 900 ; 1300];
-
 
 options = optimoptions('linprog','Algorithm','interior-point','Display','iter','MaxIterations',1500,'OptimalityTolerance',1e-9,'ConstraintTolerance',1e-6);
 
 [x,fval,exitflag,output] = linprog(f,A,b,Aeq,beq,lb,ub,options)
 ```
+
+The arguments in the optimoption() function are as follows:
+* 'linprog' is the solver name
+* 'Algorithm' used is the 'interior-point' method
+* 'Display' and 'iter' means during the solution progress, the iteration will be displayed. We want to display:
+  + 'MaxIteration': The maximum number of iterations, we don't want to go above 1500 iterations
+  + 'OptimalityTolerance': We specify the optimality tolerance as 1e-9
+  + 'ConstraintTolerance': Finally we specify the constraint tolerance as 1e-6 
+
 
 <!-- https://www.youtube.com/watch?v=TqN-8fxYUYY -->
 
