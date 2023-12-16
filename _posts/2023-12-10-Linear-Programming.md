@@ -122,7 +122,9 @@ The solution to the optimization problem in this post is shown in figure 1. Let'
 
 The optimal solution to this problem is therefore
 
-$${\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} -414.5455 \\ 900 \\ -188.7879 \end{bmatrix}$$.
+$$
+{\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} -414.5455 \\ 900 \\ -188.7879 \end{bmatrix}.
+$$
 
 It can be seen that the solution for $$x_2 = 900$$ is exactly on the constraint boundary 900.
 
