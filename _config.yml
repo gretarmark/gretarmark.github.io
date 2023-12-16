@@ -86,10 +86,10 @@ exclude:
   - README.md
   - CNAME
 
-  # _config.yml
-
-- theme: minima
-+ remote_theme: jekyll/minima
-
-  plugins:
-+ - jekyll-remote-theme
+# Build settings
+# theme: minima
+remote_theme: jekyll/minima
+    
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
