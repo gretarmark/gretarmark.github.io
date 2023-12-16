@@ -109,25 +109,11 @@ The arguments in the optimoption() function are as follows:
   + 'OptimalityTolerance': We specify the optimality tolerance as 1e-9
   + 'ConstraintTolerance': Finally we specify the constraint tolerance as 1e-6 
 
-The output is
+The output is shown in figure 1.
 
-LP preprocessing removed 0 inequalities, 1 equalities,
-1 variables, and 6 non-zero elements.
+![Fig 1]({{ site.baseurl }}/images/LinearProgramming/LinearProgramming_MatlabOutput1.png "zero order"){:width=75%}  
+**Figure 1: Solution to the linear programming problem above. The figure shows the output from the linprog() function in Matlab.**
 
- |Iter|            Fval|  Primal Infeas|    Dual Infeas|  Complementarity|
- -------------------------------------------------------------------------
-|    0  |  1.048488e+02 |  7.005008e+01 |  3.122105e+02  |   1.561053e+02  |
-|    1  | -1.525327e+00 |  3.502504e-02 |  1.353011e+01  |   6.709687e+00  |
-|    2  | -6.313812e+03 |  1.956677e-02 |  5.350381e+00  |   1.296430e+00  |
-|    3  | -6.316871e+03 |  9.783387e-06 |  3.916968e-04  |   3.960774e-02  |
-|    4  | -6.316970e+03 |  4.893991e-09 |  1.950199e-13  |   1.980403e-05  |
-|    5  | -6.316970e+03 |  4.547474e-12 |  4.440892e-16  |   9.902017e-09  |
-|    6  | -6.316970e+03 |  2.728484e-12 |  8.881784e-16  |   4.951009e-12  |
-
-Minimum found that satisfies the constraints.
-
-Optimization completed because the objective function is non-decreasing in feasible directions, to within the selected value of the
-function tolerance, and constraints are satisfied to within the selected value of the constraint tolerance.
 
 <!-- https://www.youtube.com/watch?v=TqN-8fxYUYY -->
 
