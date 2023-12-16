@@ -72,15 +72,15 @@ $${\bf f}^T {\bf x} = \begin{bmatrix} 2 & -4 & 10 \end{bmatrix} \begin{bmatrix} 
 
 such that
 
-$$\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 140 \\ 60 \end{bmatrix} \tag{1.16} \\
-\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 20 \\ -10 \end{bmatrix} \tag{1.17} \\
+$$\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 140 \\ 60 \end{bmatrix} \tag{1.16}\\
+\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 20 \\ -10 \end{bmatrix} \tag{1.17}\\
 \begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix} \leq \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix} \tag{1.18}$$
 
 which is the same as
 
 $$
-{\bf Ax} \leq {\bf b} \tag{1.19} \\
-{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \tag{1.20} \\
+{\bf Ax} \leq {\bf b} \tag{1.19}\\
+{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \tag{1.20}\\
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b \tag{1.21}
 $$
 
