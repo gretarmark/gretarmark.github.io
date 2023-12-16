@@ -38,7 +38,13 @@ Let's take a look at an example where Matlab is used to solve a Linear Programmi
 We have the vectors 
 
 $$
-{\bf f} = \begin{bmatrix} 2 \\ -4 \\ 10 \end{bmatrix} \qquad \text{and} \qquad {\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}
+{\bf f} = \begin{bmatrix} 2 \\ -4 \\ 10 \end{bmatrix} \tag{1.5}  
+$$
+
+and
+
+$$
+{\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \tag{1.6}
 $$
 
 The liner programming problem can be formulated as follows:
@@ -47,14 +53,14 @@ $$\\
 
 \begin{align}
 
-\min_{x_1,x_2,x_3} \quad & 2x_1 - 4x_2 + 10x_3 \\
-\text{s.t.} \quad & 6x_1 + 3x_2 + 2x_3 \leq 140 \\
-& 3x_1 - 3x_2 + 4x_3 \leq 60 \\
-& x_1 + 3x_2 + 12x_3 = 20 \\
-& 3x_1 + 2x_2 + 3x_3 = -10 \\
-& -1200 \leq x_1 \leq 1200 \\
-& -900 \leq x_2 \leq 900 \\
-& -1300 \leq x_3 \leq 1300
+\min_{x_1,x_2,x_3} \quad & 2x_1 - 4x_2 + 10x_3 \tag{1.7} \\
+\text{s.t.} \quad & 6x_1 + 3x_2 + 2x_3 \leq 140 \tag{1.8} \\
+& 3x_1 - 3x_2 + 4x_3 \leq 60 \tag{1.9} \\
+& x_1 + 3x_2 + 12x_3 = 20 \tag{1.10} \\
+& 3x_1 + 2x_2 + 3x_3 = -10 \tag{1.11} \\
+& -1200 \leq x_1 \leq 1200 \tag{1.12} \\
+& -900 \leq x_2 \leq 900 \tag{1.13} \\
+& -1300 \leq x_3 \leq 1300 \tag{1.14}
 
 \end{align}
 
@@ -62,20 +68,20 @@ $$\\
 
 We want to minimize the objective function
 
-$${\bf f}^T {\bf x} = \begin{bmatrix} 2 & -4 & 10 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 2x_1 - 4x_2 + 10x_3$$
+$${\bf f}^T {\bf x} = \begin{bmatrix} 2 & -4 & 10 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = 2x_1 - 4x_2 + 10x_3 \tag{1.15}$$
 
 such that
 
-$$\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 140 \\ 60 \end{bmatrix} \\
-\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 20 \\ -10 \end{bmatrix} \\
-\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix} \leq \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix}$$
+$$\begin{bmatrix} 6 & 3 & 2 \\ 3 & -3 & 4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 140 \\ 60 \end{bmatrix} \tag{1.16} \\
+\begin{bmatrix} 1 & 3 & 12 \\ 3 & 2 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 20 \\ -10 \end{bmatrix} \tag{1.17} \\
+\begin{bmatrix} -1200 \\ -900 \\ -1300 \end{bmatrix} \leq \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \leq \begin{bmatrix} 1200 \\ 900 \\ 1300 \end{bmatrix} \tag{1.18}$$
 
 which is the same as
 
 $$
-{\bf Ax} \leq {\bf b} \\
-{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \\
-{\bf l}_b \leq {\bf x} \leq {\bf u}_b
+{\bf Ax} \leq {\bf b} \tag{1.19} \\
+{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \tag{1.20} \\
+{\bf l}_b \leq {\bf x} \leq {\bf u}_b \tag{1.21}
 $$
 
 This can be calculated very quickly by using the linprog() function in Matlab [2]. 
@@ -123,10 +129,10 @@ The solution to the optimization problem in this post is shown in figure 1. Let'
 The optimal solution to this problem is therefore
 
 $$
-{\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} -414.5455 \\ 900 \\ -188.7879 \end{bmatrix}.
+{\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} -414.5455 \\ 900 \\ -188.7879 \end{bmatrix}. \tag{1.22}
 $$
 
-It can be seen that the solution for $$x_2 = 900$$ is exactly on the constraint boundary 900.
+It can be seen that the solution for $$x_2 = 900$$ is exactly on the constraint boundary 900, so this solution is limited to that constraint.
 
 Further topics in constraint optimization are
 * Quadratic Programming
