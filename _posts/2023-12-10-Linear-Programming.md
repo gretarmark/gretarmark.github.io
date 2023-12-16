@@ -114,6 +114,11 @@ The output is shown in figure 1.
 ![Fig 1]({{ site.baseurl }}/images/LinearProgramming/LinearProgramming_MatlabOutput1.png "zero order"){:width=75%}  
 **Figure 1: Solution to the linear programming problem above. The figure shows the output from the linprog() function in Matlab.**
 
+Let's analyze figure 1:
+* x is the solution to the problem
+* fval is the value of the objective function
+* The exitflag marked as 1 means we have solved the problem. If we get some other value, it means we didn't succesfully solve it.
+* The output struct includes more informations about the solution process.
 
 <!-- https://www.youtube.com/watch?v=TqN-8fxYUYY -->
 
