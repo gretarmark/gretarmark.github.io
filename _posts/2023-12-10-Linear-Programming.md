@@ -99,7 +99,7 @@ options = optimoptions('linprog','Algorithm','interior-point','Display','iter',.
 
 The arguments in the optimoption() function are as follows:
 * 'linprog' is the solver name
-* 'Algorithm' used is the 'interior-point' method
+* The 'Algorithm' method that is used is the 'interior-point', but it is possible to use some other methods as seen in [3]
 * 'Display' and 'iter' means during the solution progress, the iteration will be displayed. We want to display:
   + 'MaxIteration': The maximum number of iterations, we don't want to go above 1500 iterations
   + 'OptimalityTolerance': We specify the optimality tolerance as 1e-9
@@ -113,3 +113,5 @@ The arguments in the optimoption() function are as follows:
 [1] Linear Programming. Wikipedia. [Link to reference](https://en.wikipedia.org/wiki/Linear_programming)
 
 [2] Matlab. Linear Programming. [Link to reference](https://se.mathworks.com/help/optim/ug/linprog.html)
+
+[3] Matlab. Linear Programming Algorithms. [Link to reference](https://se.mathworks.com/help/optim/ug/choosing-the-algorithm.html)
