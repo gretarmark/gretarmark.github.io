@@ -10,14 +10,10 @@ There are two types of informations that are passed into a function:
 * A parameter is the variable listed inside the parentheses in the function definition.
 * An argument is the value that is sent to the function when it is called.
 
-There are two parameter passing methods in C:
-1. Pass by value
-2. Pass by address
-
-and three parameter passing methods in C++:
-1. Pass by value
-2. Pass by address
-3. Pass by reference
+There are two parameter passing methods in C but three methods in C++:
+1. Pass by value (C/C++)
+2. Pass by address (C/C++)
+3. Pass by reference (only in C++)
 
 Pass by value (or called by value) is when
 
