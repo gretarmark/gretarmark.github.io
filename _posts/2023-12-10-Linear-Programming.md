@@ -168,6 +168,10 @@ Further topics in constraint optimization are
 * Duality Theory
 * and much more...
 
+Useful links related to Optimization Programming:
+* [Princeton Lectures](https://www.princeton.edu/~aaa/Public/Teaching/ORF523/ORF523_Lec9.pdf)
+* [cvxr.com](http://cvxr.com/cvx/examples/)
+* [Yalmip](https://yalmip.github.io/tutorial/basics/)
 <!-- https://www.youtube.com/watch?v=TqN-8fxYUYY -->
 
 #### References
