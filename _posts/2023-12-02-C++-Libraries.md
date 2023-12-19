@@ -15,9 +15,125 @@ There are two parameter passing methods in C but three methods in C++:
 2. Pass by address (C/C++)
 3. Pass by reference (only in C++)
 
-Pass by value (or called by value) is when
+---
+
+## Pass by Value
+When the code below is compiled, the output is
+
+* a1 = 15
+* b1 = 15
+* a2 = 15
+* b2 = 15
+
+This means that the actual parameters a and b that were passed into the swap() function were actually not swapped. 
+What really happened is that the parameters x and y were assigned the values of a and b, so inside the function, the values became
+
+* x = 15
+* y = 15
+
+and x and y were swapped inside of the function, but these values were never returned from the function so they kind of died after the function finished compiling and a and b in the main() function still had the same value as before.
+
+"Pass by value" is used when you don't have to modify the actual parameters that you pass into your function and you only need to return some result, for example when doing addition and similar things. Swap function is a an example of a function that is not suppose to be written using "pass by value". 
+    
+```{C++}
+// Pass by Value
+#include <stdio.h>
+
+void swap(int x, int y);
+
+int main() {
+    
+    int a,b;
+
+    a = 15;
+    b = 20;
+
+    printf("a1 = %d \n",a);
+    printf("b1 = %d \n",b);
+
+    swap(a,b);
+
+    printf("a2 = %d \n",a);
+    printf("b2 = %d",b);
+
+    return 0;
+}
+
+void swap(int x, int y)
+{
+    int temp;
+    temp = x;
+    x = y;
+    y = temp;
+}
+```
 
 
+
+---
+
+## Pass by Address
+
+When "passed by address", the addresses of the actual parameters are passed to the formal parameters and the formal parameters must be pointers.
+Any changes that are made inside of the function will modify the actual parameters.
+
+"Pass by address" used pointers
+
+* & is an address
+* \* is a pointer
+* Pointers can only take addresses
+
+The Dereferencing of the pointers is made inside of the function by changing the values from x and y to \*x and \*y. 
+Using pass by address needst
+
+x and y are now pointing to the addresses of a and b
+
+The output from the code below is
+* a1 = 15
+* b1 = 20
+* a2 = 20
+* b2 = 15
+
+```{C++}
+// Pass by Address
+
+#include <stdio.h>
+
+void swap(int * x, int * y);
+
+int main() {
+    
+    int a,b;
+
+    a = 15;
+    b = 20;
+
+    printf("a1 = %d \n",a);
+    printf("b1 = %d \n",b);
+
+    swap(&a,&b);
+
+    printf("a2 = %d \n",a);
+    printf("b2 = %d",b);
+
+    return 0;
+}
+
+void swap(int * x, int * y)
+{
+    int temp;
+
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+```
+
+---
+
+## Pass by Reference
+
+Call or pass by reference is only supported in C++. This is not a part of the C language.
 
 
 ```C
