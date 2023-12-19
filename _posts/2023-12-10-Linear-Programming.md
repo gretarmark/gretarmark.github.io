@@ -99,7 +99,7 @@ $$\\
 \begin{align}
 
 {\bf Ax} \leq {\bf b} \tag{1.19}\\
-{\bf A}_{eq}{\bf x} \leq {\bf b}_{eq} \tag{1.20}\\
+{\bf A}_{eq}{\bf x} = {\bf b}_{eq} \tag{1.20}\\
 {\bf l}_b \leq {\bf x} \leq {\bf u}_b \tag{1.21}
 
 \end{align}
