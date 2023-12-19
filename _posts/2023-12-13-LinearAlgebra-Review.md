@@ -110,3 +110,5 @@ Let $$A$$ be an $$m \times n$$ matrix.
 #### References
 
 [1] Roy H. Kwon. Introduction to Linear Optimization and Extensions with Matlab-CRC press. 2013.
+
+<!-- [2] Princeton. [Link to reference](https://www.princeton.edu/~aaa/Public/Teaching/ORF523/ORF523_Lec2.pdf) -->
