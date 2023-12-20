@@ -14,13 +14,13 @@ Two types of information can be passed into a function:
 There are two parameter passing methods in C and three methods in C++:
 
 1. **Pass by value (C/C++):** The actual value of the variable is passed to the function.
-2. **Pass by address (C/C++):** The memory address of the variable æis passed to the function.
+2. **Pass by address (C/C++):** The memory address of the variable is passed to the function.
 3. **Pass by reference (only in C++):** A reference to the variable is passed to the function.
 
 ---
 
 ## Pass by Value
-When the code below is executed, the output is as follows:
+When code 1 below is executed, the output is as follows:
 
 * a1 = 15
 * b1 = 15
@@ -68,6 +68,7 @@ void swap(int x, int y)
     y = temp;
 }
 ```
+**Code 1: Pass by value in C.**
 
 ---
 
@@ -81,7 +82,7 @@ Dereferencing of the pointers is performed within the function by changing the v
 * '\*' denotes a pointer.
 * Pointers exclusively hold addresses.
 
-The output from the code below is as follows:
+The output from code 2 below is as follows:
 
 * a1 = 15
 * b1 = 20
@@ -124,6 +125,7 @@ void swap(int * x, int * y)
     *y = temp;
 }
 ```
+**Code 2: Pass by address in C.**
 
 ---
 
@@ -135,7 +137,14 @@ References do not consume additional memory; they are aliases for existing varia
 
 Although functions typically cannot access variables from other functions directly, call by reference allows the swap function to become part of the main function. This is distinct from 'pass by value' and 'pass by address,' where the swap function remains a separate entity.
 
-In practice, the machine code of the swap function is inserted directly into the main function, akin to a monolithic program. It's essential to note that call by reference is not always recommended, especially for heavy functions. It should be used judiciously, and other commonly used features, such as call by value and call by address, might be more suitable for certain scenarios
+In practice, the machine code of the swap function is inserted directly into the main function, akin to a monolithic program. It's essential to note that call by reference is not always recommended, especially for heavy functions. It should be used judiciously, and other commonly used features, such as call by value and call by address, might be more suitable for certain scenarios.
+
+The output from code 3 below is as follows:
+
+* a1 = 15
+* b1 = 20
+* a2 = 20
+* b2 = 15
 
 ```{C++}
 // Pass by reference
@@ -171,6 +180,7 @@ void swap(int & x, int & y)
     y = temp;
 }
 ```
+**Code 3: Pass by reference in C++.**
 
 ---
 
