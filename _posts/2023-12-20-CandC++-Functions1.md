@@ -14,7 +14,7 @@ Two types of information can be passed into a function:
 There are two parameter passing methods in C and three methods in C++:
 
 1. *Pass by value (C/C++):* The actual value of the variable is passed to the function.
-2. *Pass by address (C/C++):* The memory address of the variable is passed to the function.
+2. *Pass by address (C/C++):* The memory address of the variable æis passed to the function.
 3. *Pass by reference (only in C++):* A reference to the variable is passed to the function.
 
 ---
