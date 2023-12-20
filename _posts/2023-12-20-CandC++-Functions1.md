@@ -4,16 +4,18 @@ title: Parameter Passing in C and C++
 published: true
 ---
 
-Today I am going to talk about how to pass information into a function in C and C++.
+Today, I am going to discuss about how to pass information into a function in C and C++.
 
-There are two types of informations that are passed into a function:
-* A parameter: The variable listed inside the parentheses in the function definition.
-* An argument: The value that is sent to the function when it is called.
+Two types of information can be passed into a function:
 
-There are two parameter passing methods in C but three methods in C++:
-1. Pass by value (C/C++)
-2. Pass by address (C/C++)
-3. Pass by reference (only in C++)
+* *A parameter:* The variable listed inside the parentheses in the function definition.
+* *An argument:* The value sent to the function when it is called.
+
+There are two parameter passing methods in C and three methods in C++:
+
+1. *Pass by value (C/C++):* The actual value of the variable is passed to the function.
+2. *Pass by address (C/C++):* The memory address of the variable is passed to the function.
+3. *Pass by reference (only in C++):* A reference to the variable is passed to the function.
 
 ---
 
