@@ -146,6 +146,8 @@ The output from code 3 below is as follows:
 * a2 = 20
 * b2 = 15
 
+Again, the **swap()** function effectively swaps the values of a and b.
+
 ```{C++}
 // Pass by reference
 
