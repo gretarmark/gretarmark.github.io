@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parameter Passing in C and C++
-published: false
+published: true
 ---
 
 Today I am going to talk about how to pass information into a function in C and C++.
@@ -132,24 +132,46 @@ void swap(int * x, int * y)
 
 Call or pass by reference is only supported in C++. This is not a part of the C language. This is very powerful mechanism of C++. 
 
-In this case, &x is a reference to a and &y is a reference to b. Reference is nothing else than "a nickname" for a variable, so a is x and b is y.  
+In this case, &x is a reference to a, and &y is a reference to b. Reference is nothing else than "a nickname" for a variable, so a is x and b is y.  
 
-Do references take any memory? No, they don't. The existing variables are used but they are simply given another name. The main function is calling the variables a and b, but the swap function is calling them x and y. The formal variables x and y are manipulated and the actual parameters a and b are modified.
+References do not take any memory. The existing variables are used but they are simply given another name. The main function is naming the variables a and b, but the swap function is naming them x and y. The formal variables x and y are manipulated and the actual parameters a and b are modified.
 
 One fact is that a function cannot access the variables of another function directly, it can access indirectly. Now we can ask us, how can the swap function then access the parameters a and b in the main function directly when using "pass by reference"? In this case, the swap function becomes part of the main function which is not the case with "pass by value" and "pass by address".
-When the main code is running, 
+The machine code of the swap function is simply pasted into the main function, so this is similar to monolithic program, the entire code is inside the single main function. The machince code is monolithic though the source code is procedural or modular. Call by reference is not recommended to use for heavy functions, just for small ones, it should be used carefully and cannot be used always. More commonly used features are call by value and call by address.
 
-```C
-int a = 5;   // Data type
-int *p;      // Pointer
-int 
+```C++
+// Pass by reference
+
+#include <stdio.h>
+
+void swap(int & x, int & y);
+
+int main() {
+    
+    int a,b;
+
+    a = 15;
+    b = 20;
+
+    printf("a1 = %d \n",a);
+    printf("b1 = %d \n",b);
+
+    swap(a,b);
+
+    printf("a2 = %d \n",a);
+    printf("b2 = %d",b);
+
+    return 0;
+}
+
+void swap(int & x, int & y)
+{
+    int temp;
+
+    temp = x;
+    x = y;
+    y = temp;
+}
 ```
 
-parameters into a functions in C and C++.
-
-When making functions in C, there are two ways you can pass parameters into your function while there are three ways to do it in C++.
-
-In the C language you can pass by value and 
-
-When making a variable as a reference, you need to add & sign in front of it:
 
