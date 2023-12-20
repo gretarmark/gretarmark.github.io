@@ -4,7 +4,7 @@ title: Parameter Passing in C and C++
 published: true
 ---
 
-Today, I am going to discuss about how to pass information into a function in C and C++.
+Today, I am going to discuss how to pass information into a function in C and C++.
 
 Two types of information can be passed into a function:
 
