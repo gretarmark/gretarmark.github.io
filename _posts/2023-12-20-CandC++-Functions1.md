@@ -18,22 +18,21 @@ There are two parameter passing methods in C but three methods in C++:
 ---
 
 ## Pass by Value
-When the code below is compiled, the output is
+When the code below is executed, the output is as follows:
 
 * a1 = 15
 * b1 = 15
 * a2 = 15
 * b2 = 15
 
-This means that the actual parameters a and b that were passed into the swap() function were actually not swapped. 
-What really happened is that the parameters x and y were assigned the values of a and b, so inside the function, the values became
+This indicates that the actual parameters a and b passed into the *swap()* function were not effectively swapped. What occurred is that the parameters x and y were assigned the values of a and b. Consequently, inside the function, the values became:
 
 * x = 15
 * y = 15
 
-and x and y were swapped inside of the function, but these values were never returned from the function so they kind of died after the function finished compiling and a and b in the main() function still had the same value as before.
+Although x and y were swapped within the function, these values were not returned, and they essentially 'died' after the function finished execution. As a result, a and b in the *main()* function retained their original values.
 
-"Pass by value" is used when you don't have to modify the actual parameters that you pass into your function and you only need to return some result, for example when doing addition and similar things. Swap function is a an example of a function that is not suppose to be written using "pass by value". 
+'Pass by value' is suitable when you don't need to modify the actual parameters in your function, and you only need to return a result, for example, in operations like addition. The swap function is an example of a function that is not meant to be implemented using 'pass by value'.
     
 ```{C++}
 // Pass by Value
@@ -68,30 +67,28 @@ void swap(int x, int y)
 }
 ```
 
-
-
 ---
 
 ## Pass by Address
 
-When "passed by address", the addresses of the actual parameters are passed to the formal parameters of a function and the formal parameters must be pointers.
-Any changes that are made inside of the function will modify the actual parameters.
+When a function is 'passed by address,' the addresses of the actual parameters are passed to the formal parameters, and these formal parameters must be pointers. Any modifications made inside the function will directly affect the values of the actual parameters.
 
-The Dereferencing of the pointers is made inside of the function by changing the values from x and y to \*x and \*y. 
+Dereferencing of the pointers is performed within the function by changing the values from x and y to \*x and \*y:
 
-* & is an address
-* \* is a pointer
-* Pointers can only take addresses
+* '&' represents an address.
+* '\*' denotes a pointer.
+* Pointers exclusively hold addresses.
 
-The output from the code below is
-* a1 = 15
-* b1 = 20
-* a2 = 20
-* b2 = 15
+The output from the code below is as follows:
 
-The swap() function now swaps the values of a and b.
+a1 = 15
+b1 = 20
+a2 = 20
+b2 = 15
 
-```{C++}
+The *swap()* function effectively swaps the values of a and b.
+
+```{C}
 // Pass by Address
 
 #include <stdio.h>
@@ -130,16 +127,15 @@ void swap(int * x, int * y)
 
 ## Pass by Reference
 
-Call or pass by reference is only supported in C++. This is not a part of the C language. This is very powerful mechanism of C++. 
+Call or pass by reference is a powerful mechanism in C++ that is not part of the C language. In this paradigm, references serve as 'nicknames' for variables. For instance, if \&x is a reference to a, and \&y is a reference to b, then a is effectively x, and b is y.
 
-In this case, &x is a reference to a, and &y is a reference to b. Reference is nothing else than "a nickname" for a variable, so a is x and b is y.  
+References do not consume additional memory; they are aliases for existing variables. In the main function, variables are named a and b, while the swap function refers to them as x and y. The manipulation occurs on the formal parameters x and y, modifying the actual parameters a and b.
 
-References do not take any memory. The existing variables are used but they are simply given another name. The main function is naming the variables a and b, but the swap function is naming them x and y. The formal variables x and y are manipulated and the actual parameters a and b are modified.
+Although functions typically cannot access variables from other functions directly, call by reference allows the swap function to become part of the main function. This is distinct from 'pass by value' and 'pass by address,' where the swap function remains a separate entity.
 
-One fact is that a function cannot access the variables of another function directly, it can access indirectly. Now we can ask us, how can the swap function then access the parameters a and b in the main function directly when using "pass by reference"? In this case, the swap function becomes part of the main function which is not the case with "pass by value" and "pass by address".
-The machine code of the swap function is simply pasted into the main function, so this is similar to monolithic program, the entire code is inside the single main function. The machince code is monolithic though the source code is procedural or modular. Call by reference is not recommended to use for heavy functions, just for small ones, it should be used carefully and cannot be used always. More commonly used features are call by value and call by address.
+In practice, the machine code of the swap function is inserted directly into the main function, akin to a monolithic program. It's essential to note that call by reference is not always recommended, especially for heavy functions. It should be used judiciously, and other commonly used features, such as call by value and call by address, might be more suitable for certain scenarios
 
-```C++
+```{C++}
 // Pass by reference
 
 #include <stdio.h>
