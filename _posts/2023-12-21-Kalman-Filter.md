@@ -4,10 +4,41 @@ title: Kalman Filter
 published: false
 ---
 
-Kalman Filter
+The Kalman Filter is an algorithm employed for estimating the state variables of a dynamic system. Dr. Rudolph E. Kalman developed this algorithm during the late 1950s and early 1960s. While it shares roots with the Wiener Filter, Kalman's significant contribution lies in connecting the state estimation problem with state-space models, as well as the fundamental concepts of controllability and observability.
+
+A very clear explanation of the Kalman Filter is described by Roger Labbe in [1]. 
+
+In Kalman Filters we have three important informations to work with:
+
+* **Estimation**
+* **Prediction**
+* **Measurement**
+
+Let's imagine we are using a scale to measure our weight. The first measurement was 158 kg ($$\hat{x}_{t-1}$$). Let's use that as our estimate. If our weight today is 158 kg, what will it be tomorrow?
+Let's say we think we gain 1 kg every day, so our prediction is 159 kg $$x_{t}$$ for tomorrow. We can use this prediction for the next 10 days or more, but then we can ask us why do we need a scale if we can predict our weight? 
+Let's look at the next measurement, now it's 164.2 kg $$z_{t}$$. 
+Now we have:
+
+* **Estimate:** $$\hat{x}_{t-1} = 158 \, kg$$
+* **Prediction:** $$x_t = 159 \, kg$$
+* **Measurement:** $$z_t = 164.4 \, kg$$
+
+We can see that the predicted value $$\hat{x}_{t-1}$$ is not the same as the measured value $$z_t$$. This is exactly what we want. If the predicted value were always the same as the measurement, it would not add any extra information to the filter and there would be no reason to ever measure since the predictions are perfect.
+
+Two key facts we gain from this:
+* If we only use estimates from the measurement then the prediction will not affect the result.
+* If we only use estimates from the prediction then the measurement will be ignored.
+
+If we want the filter to work, we need to take **blend of the prediction and measurement**. The only thing that makes sense is to choose a number between the prediction and the measurement. For example, an estimate of 165 or 157 makes no sense. Our estimate should lie between 159 (the prediction) and 164.4 (the measurement). 
+
+
+
+
 
 #### References
 
-[1] Kalman Filter. [Link to reference](https://drive.google.com/file/d/0By_SW19c1BfhSVFzNHc0SjduNzg/view?resourcekey=0-41olC9ht9xE3wQe2zHZ45A)
+<!--[1] Kalman Filter. [Link to reference](https://drive.google.com/file/d/0By_SW19c1BfhSVFzNHc0SjduNzg/view?resourcekey=0-41olC9ht9xE3wQe2zHZ45A)-->
 
-[2] Kalman Filter. [Link to reference](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python)
+[1] Roger Labbe. Kalman Filter. [Link to reference](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python)
+
+[2] Carl Wunsch. MIT. [Link to reference](https://ocw.mit.edu/courses/12-864-inference-from-data-and-models-spring-2005/e19a413bc30bbe2976a88f4e57930df5_tsamsfmt2_6.pdf)
