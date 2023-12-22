@@ -14,10 +14,10 @@ Kalman Filters include three important informations (four with past and present 
 * **Prediction:** $$x_t$$ is found from previous sample.
 * **Measurement:** Present value $$z_t$$.
 
-We can calculate new estimated value and add a constant scaling factor for the predicted value ($$x_{gain}$$) which has to be chosen carefully:
+We can calculate new estimated value and add a constant scaling factor for the predicted value ($$g$$) which has to be chosen carefully:
 
 $$
-\hat{x}_t = x_t + x_{gain}(z_t - x_t)
+\hat{x}_t = x_t + g \cdot (z_t - x_t)
 $$
 
 The difference $$z_t - x_t$$ is called the *residual*. The estimated values always end up being between the measurement and the prediction as shown in [1] in chapter 1.1.
@@ -35,12 +35,17 @@ It is better to update the prediction in every step by using e.g. two noisy meas
 A new gain $$x_{gain}$$ can be calculated in each step using
 
 $$
-x_{new,gain} = x_{old,gain} + \frac{1}{3} \frac{z_t - x_t}{dt}
+x_{new,gain} = x_{old,gain} + h \cdot \frac{z_t - x_t}{dt}
 $$
 
-where $$1/3$$ is a chosen gain scale factor. By using this feature, it can take few samples for the filter to accurately predict the values being measured. In both the equations above, there were no methodology used to choose the scaling factors of $$\frac{4}{10}$$ and $$\frac{1}{3}$$.
+where $$h$$ is a scaling factor. By using this feature, it can take few samples for the filter to accurately predict the values being measured. In both the equations above, there were no methodology used to choose the scaling factors of $$g$$ and $$h$$. The filter above is called $$g-h$$ filter or $$\alpha-\beta$$ filter.
 
+The g-h filter is the basis for many filters, including Kalman Filter. The Kalman Filter will vary these two factors $$g$$ and $$h$$ dynamically at each time step.
 
+* Multiple data points are more accurate than one data point, so throw nothing away no matter how inaccurate it is.
+* Always choose a number part way between two data points to create a more accurate estimate.
+* Predict the next measurement and rate of change based on the current estimate and how much we think it will change.
+* The new estimate is then chosen as part way between the prediction and next measurement scaled by how accurate is.
 
 
 
