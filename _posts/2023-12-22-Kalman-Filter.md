@@ -22,15 +22,10 @@ $$
 
 The difference $$z_t - x_t$$ is called the *residual*. The estimated values always end up being between the measurement and the prediction as shown in [1] in chapter 1.1.
 
-We can see that the predicted value $$\hat{x}_{t-1}$$ is not the same as the measured value $$z_t$$. This is exactly what we want. If the predicted value were always the same as the measurement, it would not add any extra information to the filter and there would be no reason to ever measure since the predictions are perfect.
-
-Two key facts we gain from this:
+Key facts of the Kalman Filter:
 * If we only use estimates from the measurement then the prediction will not affect the result.
 * If we only use estimates from the prediction then the measurement will be ignored.
-
-If we want the filter to work, we need to take **blend of the prediction and measurement**. The only thing that makes sense is to choose a number between the prediction and the measurement. For example, an estimate of 165 or 157 makes no sense. Our estimate should lie between 159 (the prediction) and 164.4 (the measurement). 
-
-Everything above is very important. When two values are presented with error, we form an estimate part between these two values. 
+* We need to take **blend of the prediction and measurement**.
 
 At every sample $$t$$ we have a previous estimate given by $$\hat{x}_{t-1}$$ and a present measurement $$z_t$$ and a present prediction $$x_t$$ which forms new estimate $$\hat{x}_{t}$$.  
 
