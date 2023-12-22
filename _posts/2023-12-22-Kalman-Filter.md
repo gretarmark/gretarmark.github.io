@@ -11,16 +11,16 @@ A very clear explanation of the Kalman Filter is described by Roger Labbe in [1]
 Kalman Filters include three important informations (four with past and present estimated values):
 
 * **Estimation:** Past value $$\hat{x}_{t-1}$$ and present value $$\hat{x}_{t}$$
-* **Prediction:** $$x_t$$ is the prediction that is made from the previous day's weight.
+* **Prediction:** $$x_t$$ is found from previous sample.
 * **Measurement:** Present value $$z_t$$
 
-We can calculate a new estimated value and add a scaling factor for the predicted value $$x_{gain}$$ which has to be chosen carefully:
+We can calculate new estimated value and add a constant scaling factor for the predicted value ($$x_{gain}$$) which has to be chosen carefully:
 
 $$
 \hat{x}_t = x_t + x_{gain}(z_t - x_t)
 $$
 
-The difference $$z_t - x_t$$ is called the *residual*. The estimated values always end up being between the measurement and prediction.
+The difference $$z_t - x_t$$ is called the *residual*. The estimated values always end up being between the measurement and the prediction as shown in [1] in chapter 1.1.
 
 We can see that the predicted value $$\hat{x}_{t-1}$$ is not the same as the measured value $$z_t$$. This is exactly what we want. If the predicted value were always the same as the measurement, it would not add any extra information to the filter and there would be no reason to ever measure since the predictions are perfect.
 
