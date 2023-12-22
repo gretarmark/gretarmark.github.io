@@ -47,6 +47,10 @@ The g-h filter is the basis for many filters, including Kalman Filter. The Kalma
 * Predict the next measurement and rate of change based on the current estimate and how much we think it will change.
 * The new estimate is then chosen as part way between the prediction and next measurement scaled by how accurate is.
 
+* The system (the plant) is the object we want to estimate, we would maybe want to estimate the weight or the orientation of the object. 
+* The state of the system is the current configuration or values of that system that is of interest.
+* Measurement is a measured value of the system. Measurements can be inaccurate, so it may not have the same value as the state.
+
 
 
 #### References
