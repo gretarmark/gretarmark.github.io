@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kalman Filter
-published: true
+published: false
 ---
 
 The Kalman Filter is an algorithm employed for estimating the state variables of a dynamic system. Dr. Rudolph E. Kalman developed this algorithm during the late 1950s and early 1960s. While it shares roots with the Wiener Filter, Kalman's significant contribution lies in connecting the state estimation problem with state-space models, as well as the fundamental concepts of controllability and observability.
@@ -10,9 +10,9 @@ A very clear explanation of the Kalman Filter is described by Roger Labbe in [1]
 
 Kalman Filters include three important informations (four with past and present estimated values):
 
-* **Estimation:** Past value $$\hat{x}_{t-1}$$ and present value $$\hat{x}_{t}$$
+* **Estimation:** Past value $$\hat{x}_{t-1}$$ and present value $$\hat{x}_{t}$$.
 * **Prediction:** $$x_t$$ is found from previous sample.
-* **Measurement:** Present value $$z_t$$
+* **Measurement:** Present value $$z_t$$.
 
 We can calculate new estimated value and add a constant scaling factor for the predicted value ($$x_{gain}$$) which has to be chosen carefully:
 
@@ -28,6 +28,19 @@ Key facts of the Kalman Filter:
 * We need to take **blend of the prediction and measurement**.
 
 At every sample $$t$$ we have a previous estimate given by $$\hat{x}_{t-1}$$ and a present measurement $$z_t$$ and a present prediction $$x_t$$ which forms new estimate $$\hat{x}_{t}$$.  
+
+For g-h filter as in chapter 1.1 in [1], it is important to choose the initial value for the prediction very well because the further the predicted values are away from the measurements the greater the gap between the values will be, and the estimated values are always between these two values, so bad prediction will result in worse filtering. Filter like that, where you need to correctly guess a rate of change (prediction) is not very useful. Even if the initial guess is correct, the filter will fail as soon as that predicted rate of change changes.
+
+It is better to update the prediction in every step by using e.g. two noisy measurements instead of using a guess. Data is better than a guess. We should never throw information away, instead we should use it although we get two bad measurements, because again, data is better than a guess.  
+A new gain $$x_{gain}$$ can be calculated in each step using
+
+$$
+x_{new,gain} = x_{old,gain} + \frac{1}{3} \frac{z_t - x_t}{dt}
+$$
+
+where $$1/3$$ is a chosen gain scale factor. By using this feature, it can take few samples for the filter to accurately predict the values being measured. In both the equations above, there were no methodology used to choose the scaling factors of $$\frac{4}{10}$$ and $$\frac{1}{3}$$.
+
+
 
 
 
