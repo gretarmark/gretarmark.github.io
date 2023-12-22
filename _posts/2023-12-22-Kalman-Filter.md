@@ -49,7 +49,11 @@ The g-h filter is the basis for many filters, including Kalman Filter. The Kalma
 
 * The system (the plant) is the object we want to estimate, we would maybe want to estimate the weight or the orientation of the object. 
 * The state of the system is the current configuration or values of that system that is of interest.
-* Measurement is a measured value of the system. Measurements can be inaccurate, so it may not have the same value as the state.
+* The measurement is a measured value of the system. Measurements can be inaccurate, so it may not have the same value as the state.
+* The state estimate is the filter's estimate of the state.
+* The state should be understood as the actual value of the system. This value is usually *hidden* to us. If I stepped on a scale you'd then have a measurement. We call this *observable* since you can directly observe this measurement. In contrast, you can never directly observe weight, you can only measure it.
+* Any estimation problem consists of forming an estimate of a hidden state via observable measurements. If you read the literature these terms are used when defining a problem, so you need to be comfortable with them.
+
 
 
 
