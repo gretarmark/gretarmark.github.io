@@ -6,22 +6,21 @@ published: true
 
 The Kalman Filter is an algorithm employed for estimating the state variables of a dynamic system. Dr. Rudolph E. Kalman developed this algorithm during the late 1950s and early 1960s. While it shares roots with the Wiener Filter, Kalman's significant contribution lies in connecting the state estimation problem with state-space models, as well as the fundamental concepts of controllability and observability.
 
-A very clear explanation of the Kalman Filter is described by Roger Labbe in [1]. 
+A very clear explanation of the Kalman Filter is described by Roger Labbe in [1]. The Kalman Filter is also introduced in [3].
 
-Kalman Filters include three important informations:
+Kalman Filters include three important informations (four with past and present estimated values):
 
-* **Estimation**
-* **Prediction**
-* **Measurement**
+* **Estimation:** Past value $$\hat{x}_{t-1}$$ and present value $$\hat{x}_{t}$$
+* **Prediction:** $$x_t$$ is the prediction that is made from the previous day's weight.
+* **Measurement:** Present value $$z_t$$
 
-As Roger Labbe [1] describes the Kalman Filter: Let's imagine we are using a scale to measure our weight. The first measurement was 158 kg ($$\hat{x}_{t-1}$$). Let's use that as our estimate. If our weight today is 158 kg, what will it be tomorrow?
-Let's say we think we gain 1 kg every day, so our prediction is 159 kg $$x_{t}$$ for tomorrow. We can use this prediction for the next 10 days or more, but then we can ask us why do we need a scale if we can predict our weight? 
-Let's look at the next measurement, now it's 164.2 kg $$z_{t}$$. 
-Now we have:
+We can calculate a new estimated value and add a scaling factor for the predicted value $$x_{gain}$$ which has to be chosen carefully:
 
-* **Estimate:** $$\hat{x}_{t-1} = 158 \, kg$$
-* **Prediction:** $$x_t = 159 \, kg$$
-* **Measurement:** $$z_t = 164.4 \, kg$$
+$$
+\hat{x}_t = x_t + x_{gain}(z_t - x_t)
+$$
+
+The difference $$z_t - x_t$$ is called the *residual*. The estimated values always end up being between the measurement and prediction.
 
 We can see that the predicted value $$\hat{x}_{t-1}$$ is not the same as the measured value $$z_t$$. This is exactly what we want. If the predicted value were always the same as the measurement, it would not add any extra information to the filter and there would be no reason to ever measure since the predictions are perfect.
 
@@ -44,3 +43,5 @@ At every sample $$t$$ we have a previous estimate given by $$\hat{x}_{t-1}$$ and
 [1] Roger Labbe. Kalman Filter. [Link to reference](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python)
 
 [2] Carl Wunsch. MIT. [Link to reference](https://ocw.mit.edu/courses/12-864-inference-from-data-and-models-spring-2005/e19a413bc30bbe2976a88f4e57930df5_tsamsfmt2_6.pdf)
+
+[3] Control System Advanced Methods. The Control Handbook 2nd ed. William S. Levine. [Link to reference](https://www.amazon.com/Control-Systems-Handbook-Electrical-Engineering/dp/1420073648)
