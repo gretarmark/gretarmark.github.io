@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Kalman Filter
-published: false
+published: true
 ---
 
 The Kalman Filter is an algorithm employed for estimating the state variables of a dynamic system. Dr. Rudolph E. Kalman developed this algorithm during the late 1950s and early 1960s. While it shares roots with the Wiener Filter, Kalman's significant contribution lies in connecting the state estimation problem with state-space models, as well as the fundamental concepts of controllability and observability.
 
 A very clear explanation of the Kalman Filter is described by Roger Labbe in [1]. 
 
-In Kalman Filters we have three important informations to work with:
+Kalman Filters include three important informations:
 
 * **Estimation**
 * **Prediction**
 * **Measurement**
 
-Let's imagine we are using a scale to measure our weight. The first measurement was 158 kg ($$\hat{x}_{t-1}$$). Let's use that as our estimate. If our weight today is 158 kg, what will it be tomorrow?
+As Roger Labbe [1] describes the Kalman Filter: Let's imagine we are using a scale to measure our weight. The first measurement was 158 kg ($$\hat{x}_{t-1}$$). Let's use that as our estimate. If our weight today is 158 kg, what will it be tomorrow?
 Let's say we think we gain 1 kg every day, so our prediction is 159 kg $$x_{t}$$ for tomorrow. We can use this prediction for the next 10 days or more, but then we can ask us why do we need a scale if we can predict our weight? 
 Let's look at the next measurement, now it's 164.2 kg $$z_{t}$$. 
 Now we have:
