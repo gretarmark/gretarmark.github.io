@@ -31,7 +31,9 @@ Two key facts we gain from this:
 
 If we want the filter to work, we need to take **blend of the prediction and measurement**. The only thing that makes sense is to choose a number between the prediction and the measurement. For example, an estimate of 165 or 157 makes no sense. Our estimate should lie between 159 (the prediction) and 164.4 (the measurement). 
 
+Everything above is very important. When two values are presented with error, we form an estimate part between these two values. 
 
+At every sample $$t$$ we have a previous estimate given by $$\hat{x}_{t-1}$$ and a present measurement $$z_t$$ and a present prediction $$x_t$$ which forms new estimate $$\hat{x}_{t}$$.  
 
 
 
