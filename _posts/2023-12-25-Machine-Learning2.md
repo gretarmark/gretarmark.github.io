@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Machine Learning - Neural Network
-published: false
+published: true
 ---
 
 Neural Network (NN) with two hidden layers will be implemented from scratch in this post.
