@@ -17,8 +17,14 @@ Let's build a NN that classifies images of handwritten digits and tells you what
 We start by $$28 \times 28 = 784$$ pixel training images. Each of these pixels is just a pixel value between $$0$$ (black) and $$255$$ (white).
 We have $$m$$ training images so we can represent it as matrix
 $$
-{\bf x} = \begin{bmatrix} ... x^{(1)}... \\ ... x^{(2)}... \\ ... \\ ... x^{(m)}... \end{bmatrix}^T = \begin{bmatrix} ... & ... &  & ... \\ x^{(1)} & x^{(2)} & ... & x^{(m)} \\ ... & ... & & ... \end{bmatrix}
+{\bf x} = \begin{bmatrix} \cdots x^{(1)} \cdots \\ \cdots x^{(2)} \cdots \\ \vdots \\ \cdots x^{(m)} \cdots \end{bmatrix}^T = \begin{bmatrix} \vdots & \vdots &  & \vdots \\ x^{(1)} & x^{(2)} & \cdots & x^{(m)} \\ \vdots & \vdots & & \vdots \end{bmatrix}
 $$
+
+Each row constitutes an example and each row is going to be 784 columns long because each of them is going to correspond to one pixel in that image. We need to transpose this matrix so each column will be an example instead of each row. The first column is therefore the first example (image) and will therefore have 784 rows corresponding to each pixel and we will have $$m$$ columns corresponding to $$m$$ training samples.
+
+The goal is to take this image, do a bunch of processing and give out a prediction for what digit that image represents. We will do this with a Neural Network (NN).
+
+
 
 
 #### References
