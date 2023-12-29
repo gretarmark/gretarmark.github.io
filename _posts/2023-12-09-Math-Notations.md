@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mathematical Notations
-published: false
+published: true
 ---
 
 Mathematical Notations
@@ -27,6 +27,13 @@ Mathematical Notations
 |:---------------|:----------------------------------|
 | $$\exists$$  | there exists  |
 | $$\in$$  | is an element of  |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 
 <!-- https://www.cambridgeinternational.org/Images/420009-mathematics-notation-list-.pdf 
 https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols
