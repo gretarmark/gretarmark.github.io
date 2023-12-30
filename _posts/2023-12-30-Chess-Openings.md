@@ -6,12 +6,10 @@ published: true
 
 A list of chess openings [1]:
 
-## Themes 
-
-* [Kings Pawn Game](#KingsPawnGame)
-* [Bishop's Opening](#BishopsOpening)
-* Philidor
-* Vienna
+* [Kings Pawn Game](#King's-Pawn-Game)
+* [Bishop's Opening](#Bishop's-Opening)
+* [Philidor](#Philidor)
+* [Vienna](#Vienna)
 * Scotch
 * Two Knights
 * Three Knights
