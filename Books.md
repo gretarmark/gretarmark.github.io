@@ -14,6 +14,7 @@ Books that I have found useful throughout my journey.
 ## Linear Algebra
 
 * **Matrix Analysis, 2013 by Roger and Charles**
+* **The Matrix Cookbook. Kaare Brandt & Michael Syskind. 2012**. [Link to PDF](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
 
 ## Optimization
 
