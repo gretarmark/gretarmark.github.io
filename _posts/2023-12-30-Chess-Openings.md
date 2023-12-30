@@ -6,8 +6,10 @@ published: true
 
 A list of chess openings [1]:
 
-* King' Pawn Game
-* Bishop's Opening
+## Themes 
+
+* [Kings Pawn Game](#KingsPawnGame)
+* [Bishop's Opening](#BishopsOpening)
 * Philidor
 * Vienna
 * Scotch
@@ -79,7 +81,7 @@ A list of chess openings [1]:
   * c4 e5
   * c4 c5
 
-## King' Pawn Game
+### King's Pawn Game
 
 The King's Pawn Game is any chess opening starting with the move:
 
@@ -89,7 +91,7 @@ It is the most popular opening move in chess, followed by the Queen's Pawn Game.
 
 [Link to Wikipedia](https://en.wikipedia.org/wiki/King%27s_Pawn_Game)
 
-## Bishop's Opening
+### Bishop's Opening
 
 The Bishop's Opening is a chess opening that begins with the moves:
 
@@ -98,7 +100,7 @@ The Bishop's Opening is a chess opening that begins with the moves:
 
 [Link to Wikipedia](https://en.wikipedia.org/wiki/Bishop%27s_Opening)
 
-## Philidor
+### Philidor
 
 The Philidor Defence (or Philidor's Defence) is a chess opening characterised by the moves:
 
@@ -107,7 +109,7 @@ The Philidor Defence (or Philidor's Defence) is a chess opening characterised by
 
 [Link to Wikipedia](https://en.wikipedia.org/wiki/Philidor_Defence)
 
-## Vienna
+### Vienna
 
 ... In progress ...
 
