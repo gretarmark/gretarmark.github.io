@@ -4,7 +4,7 @@ title: Chess Openings
 published: true
 ---
 
-A list of chess openings [1]:
+## A list of chess openings [1]:
 
 * [Kings Pawn Game](#King's-Pawn-Game)
 * [Bishop's Opening](#Bishop's-Opening)
@@ -78,6 +78,8 @@ A list of chess openings [1]:
 * English Opening
   * c4 e5
   * c4 c5
+
+## Description
 
 ### King's Pawn Game
 
