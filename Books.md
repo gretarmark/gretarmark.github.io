@@ -8,7 +8,8 @@ Books that I have found useful throughout my journey.
 
 ## Control Theory
 
-* **Optimal Control, 3rd edition by Frank, Draguna and Vassilis** 
+* **Optimal Control, 3rd edition by Frank, Draguna and Vassilis**
+* **Applied Optimal Control - Optimization, Estimation and Control - Bryson & Ho**
 
 ## Linear Algebra
 
