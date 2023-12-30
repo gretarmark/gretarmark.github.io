@@ -17,7 +17,7 @@ A list of chess openings:
 * Scandinavian
 * Center Game
 * Giuoco Piano
-* * Evans Gambit
+  * Evans Gambit
 * King's Indian Attack
 * Alekhine
 * Robatsch
@@ -25,10 +25,17 @@ A list of chess openings:
 * Modern
 * Petrov
 * King's Gambit
-* * Declined
-* * Accepted
+  * Declined
+  * Accepted
 * Caro-Kann
 * French
-* * Classical
+  * Classical
   * Advance
+  * Exchange
+  * Tarrasch
+  * Winawer
+* Ruy Lopez
+  * Closed
+  * Open
+  * Exchanged
 
