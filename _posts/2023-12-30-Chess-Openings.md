@@ -4,12 +4,12 @@ title: Chess Openings
 published: true
 ---
 
-## A list of chess openings [1]:
+A list of chess openings [1]:
 
-* [Kings Pawn Game](#King's-Pawn-Game)
-* [Bishop's Opening](#Bishop's-Opening)
-* [Philidor](#Philidor)
-* [Vienna](#Vienna)
+* Kings Pawn Game
+* Bishop's Opening
+* Philidor
+* Vienna
 * Scotch
 * Two Knights
 * Three Knights
