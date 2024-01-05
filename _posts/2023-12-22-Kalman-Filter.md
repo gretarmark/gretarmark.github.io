@@ -55,7 +55,29 @@ The g-h filter is the basis for many filters, including Kalman Filter. The Kalma
 * Any estimation problem consists of forming an estimate of a hidden state via observable measurements. If you read the literature these terms are used when defining a problem, so you need to be comfortable with them.
 
 
+<!--
+Here is the literature recommendation and the learning path for "quickly" and correctly learning the Kalman filter algorithm. The Kalman filter is actually a "simple" recursive least squares method that is propagated through the state-space model. Here are the five learning steps and the recommended book chapters.
 
+STEP 1: First, learn what is a batch least squares method and how this method is used to solve parameter estimation problems.
+
+-> Section 2.6: "Linear least-squares problems" in "Filtering and System Identification", by M. Verhaegen and V. Verdult.
+
+STEP 2: Then, learn how to implement the batch least squares method in a recursive manner. That is, learn what is a recursive least squares method.
+
+->Section 3.3 in "Optimal State Estimation" by Dan Simon.
+
+STEP 3: Then, learn how the covariance matrices are propagated through linear state-space models.
+
+-> Section 4.1 in "Optimal State Estimation" by Dan Simon.
+
+STEP 4: Learn how to derive the Kalman filter by using the recursive least squares method from STEP 2 and by propagating covariance matrices from STEP 3.
+
+-> Section 5.1 in "Optimal State Estimation" by Dan Simon.
+
+STEP 5: Learn what is an alpha-beta-gamma tracking filter. This is basically a Kalman filter for tracking objects. Try to implement this filter and a numerical example in Python/MATLAB.
+
+-> Section 7.3.2 in in "Optimal State Estimation" by Dan Simon.
+-->
 
 #### References
 
