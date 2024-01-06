@@ -15,3 +15,22 @@ $$\\
 \end{align}
 
 \\$$
+
+* $${\bf P}$$: Unknown $$n \times n$$ symmetric matrix
+* $$\bf A$$, $$\bf B$$, $${\bf R}_1$$, $${\bf R}_2$$: Known real coefficient matrices where $${\bf R}_1$$ and $${\bf R}_2$$ are symmetric
+
+This equation may have multiple solutions, but it can be shown that only one of them is positive semi-definite (provided that the system is stabilizable) and the particular solution leads to the minimum value of the performance index:
+
+$$\\
+
+\begin{align}
+
+J_{\text{min}} = \frac{1}{2} {\bf x}_0^T {\bf P}_{\infty} {\bf x}_0  
+
+\end{align}
+
+\\$$
+
+#### References
+
+[1] Wikipedia. [Link to reference](https://en.wikipedia.org/wiki/Algebraic_Riccati_equation)
