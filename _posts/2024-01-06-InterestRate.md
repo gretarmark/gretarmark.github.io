@@ -44,7 +44,7 @@ $$\\
 \begin{align}
 
 I &= 3,000,000 \text{ ISK} \cdot 0.02482 \% \cdot 91 \\
-&= 3,000,000 \cdot \frac{0.02482}{100} \cdot 91 \\
+&= 3,000,000 \text{ ISK} \cdot \frac{0.02482}{100} \cdot 91 \\
 &\approx 67,759 \text{ ISK}
 
 \end{align}
