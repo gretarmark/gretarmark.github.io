@@ -31,6 +31,11 @@ J_{\text{min}} = \frac{1}{2} {\bf x}_0^T {\bf P}_{\infty} {\bf x}_0
 
 \\$$
 
+
+
+<!-- https://www.youtube.com/watch?v=PKjl0kCMJ0g
+    https://www.youtube.com/watch?v=dX6KyIfpVqk-->
+
 #### References
 
 [1] Wikipedia. [Link to reference](https://en.wikipedia.org/wiki/Algebraic_Riccati_equation)
