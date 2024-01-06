@@ -16,7 +16,7 @@ I = A \cdot I_d \cdot T
 
 \\$$
 
-* $$I$$: Interest in ISK
+* $$I$$: Interest
 * $$A$$: Deposit on account
 * $$I_d$$: Daily interest
 * $$T$$: Total days
