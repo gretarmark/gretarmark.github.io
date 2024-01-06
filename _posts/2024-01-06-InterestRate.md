@@ -18,21 +18,20 @@ I = A \cdot I_d \cdot T
 
 * $$I$$: Interest
 * $$A$$: Deposit on account
-* $$I_d$$: Daily interest
+* $$I_d$$: Daily interest rate
 * $$T$$: Total days
 
 **Example:**
 
-Let's say we deposit 3,000,000 ISK into a saving account and early interest is $$I_y = 9.4 \%$$. 
-Let's say we deposit 1st of july and we keep the deposit stable for 3 months until 30 september, so in total we keep it for 91 days.
-The daily interest is therefore 
+Let's say we deposit 3,000,000 ISK into a saving account and early interest rate is $$I_y = 9.4 \%$$. 
+Let's say we deposit 1st of july and we keep the deposit stable for 3 months until 30 september, so in total we keep it for $$T = 91 \text{ days}$$.
+The daily interest rate is therefore 
 
 $$\\
 
 \begin{align}
 
 I_d &= \frac{9.4 \%}{364 \text{ days in one year}} \approx 0.02482 \% \\
-T &= 91
 
 \end{align}
 
