@@ -23,7 +23,7 @@ I = A \cdot I_d \cdot T
 
 **Example:**
 
-Let's say we deposit 3,000,000 ISK into a saving account and early interest rate is $$I_y = 9.4 \%$$. 
+Let's say we deposit $$3,000,000 \text{ ISK}$$ into a saving account and early interest rate is $$I_y = 9.4 \%$$. 
 Let's say we deposit 1st of july and we keep the deposit stable for 3 months until 30 september, so in total we keep it for $$T = 91 \text{ days}$$.
 The daily interest rate is therefore 
 
