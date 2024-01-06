@@ -52,6 +52,6 @@ I &= 4.500.000 \text{ ISK} \cdot 0.02482 \% \cdot 91 \\
 
 \\$$
 
-So you would gain interest of $$I = 101638 ISK$$ for 3 months.
+So you would gain interest of $$I = 101638 \text{ ISK}$$ for 3 months.
 
 Remember if you deposit money over this period of time you will gain more interest but if you withdraw money you will get less interest.
