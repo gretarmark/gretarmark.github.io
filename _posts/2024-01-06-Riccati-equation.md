@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Riccati Equation
-published: true
+published: false
 ---
 
 The Algebraic Riccati Equation (ARE) for time-invariant systems is given by
