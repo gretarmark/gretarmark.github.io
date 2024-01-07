@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interest Rate on Deposits - Calculation
-published: true
+published: false
 ---
 
 Interest Rate on Deposits is calculated as follows:
