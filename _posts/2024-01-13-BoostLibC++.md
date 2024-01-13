@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Including the Boost C++ library in Visual Studio
+title: Boost library for C++ - Installation
 published: True
 ---
 
@@ -9,7 +9,7 @@ pseudorandom number generation, multithreading, image processing, regular expres
 
 To include the C++ Boost library [1] staticly in Visual Studio, you need to do the following steps [2]:
 
-1. to start by downloading the latest version at [Boost.org](https://www.boost.org/).
+1. Start by downloading the latest version at [Boost.org](https://www.boost.org/) and unzip the file. Try to included it as close the C: as possible.
 2. Go to the directory where you saved the Boost library file ("C:\...\boost_1_84_0").
 3. Open CMD in your computer, I usually just use the "Developer Command Prompt for Visual Studio", run the following code:
    "cd C:\codes\Toolbox\boost_1_84_0"
