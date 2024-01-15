@@ -12,9 +12,9 @@ In this post I will explain how to use Vcpkg [1] to install and include the opti
 For installation I followed the instructions in [3] and for testing the library I used a code example from [4].
 
 1. Install Vcpkg from [1] and choose a good directory for the vcpkg folder. Mine is "C:\codes\Toolbox\vcpkg".
-2. Run you windows powershell. It can be done for example by right-click inside of the vcpkg folder and choose open in terminal.
+2. Run you windows powershell. It can be done for example by right-click inside of the vcpkg folder ("C:\codes\Toolbox\vcpkg") and choose open in terminal.
    Make sure you are in the right folder ("vcpkg").
-4. Write "./vcpkg integrate install" and you should get command something like this: "-DCMAKE_TOOLCHAIN_FILE=CcodesToolboxvcpkgscriptsbuildsystemsvcpkg.cmake".
+4. Write "./vcpkg integrate install" (you must be inside "C:\codes\Toolbox\vcpkg") and you should get command something like this: "-DCMAKE_TOOLCHAIN_FILE=CcodesToolboxvcpkgscriptsbuildsystemsvcpkg.cmake".
 5. Save this command in a text file in the vcpkg folder to use it in the future. The text file can be called CMAKE.
 6. Write ".\vcpkg search nlopt" to see if you can use vcpkg to install that library. You can also search on the website [2].
 7. The nlopt library can be installed using ".\vcpkg install nlopt".
