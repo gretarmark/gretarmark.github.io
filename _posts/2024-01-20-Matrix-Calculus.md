@@ -41,7 +41,11 @@ $$\\
 
 this can be calculated as follows
 
-
+$$\\
+\begin{align}
+\frac{\partial {\bf x}^T{\bf b}}{\partial {\bf x}} = \begin{bmatrix} \frac{\partial {\bf x}^T{\bf b}}{\partial x_1} \\ \vdots \\ \frac{\partial {\bf x}^T{\bf b}}{\partial x_n} \end{bmatrix}
+\end{align}
+\\$$
 
 
 ... This post is in progress.
