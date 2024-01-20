@@ -17,6 +17,8 @@ The references below are very useful material for matrix calculus. The one and o
 
 ## Review of Matrix Derivatives
 
+### 1st order derivative
+
 Let's consider the form $${\bf x}^T{\bf b}$$ where $${\bf x} \in \mathbf{R}^{n\times 1}$$ is a column vector of real numbers of dimension $$n \times 1$$ and $${\bf b}$$ is also a column vector of real numbers of dimension $$n \times 1$$. We can multiply these two vectors together by transposing $$\bf x$$ resulting in a linear combination.
 
 $$\\
@@ -41,6 +43,17 @@ $$\\
 
 \\$$
 
+this can be calculated as follows
+
+$$\\
+
+\begin{align}
+
+\frac{\partial {\bf x}^T{\bf b}}{\partial {\bf x}} = \begin{bmatrix} \frac{\partial {\bf x}^T{\bf b}}{\partial x_1} \\ \vdots \\ {\bf x}^T{\bf b}}{\partial x_n} \end{bmatrix} = \begin{bmatrix} \frac{\partial}{\partial x_1} \big( b_1 x_2 + \dots + b_n x_n \big) \\ \vdots \\ \frac{\partial}{\partial x_n} \big( b_1 x_2 + \dots + b_n x_n \big) \end{bmatrix} = \begin{bmatrix} b_1 \\ \vdots \\ b_n \end{bmatrix} = {\bf b}
+
+\end{align}
+
+\\$$
 
 
 
