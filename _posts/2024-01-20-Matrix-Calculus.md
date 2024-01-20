@@ -15,7 +15,22 @@ The references below are very useful material for matrix calculus. The one and o
 * **Matrices** are written as upper case bold letters. For example $${\bf A}, {\bf B}, {\bf X}, ...$$. Matrices have dimensions $$m \times n$$ with $$m$$ rows and $$n$$ columns. Individual elements are indexed by double subscripts for row and column, such as $$X_{ij} \, \, (i \in \{1, \dots ,m\}, \, j \in \{1,\dots,n\})$$.
 * **Tensors** are of higher dimensions such as 3rd order tensor with dimension $$m \times n \times p$$, etc. Matrices are for example second order tensors. 
 
-Let's consider the form $${\bf x}^T{\bf b}$$
+## Review of Matrix Derivatives
+
+Let's consider the form $${\bf x}^T{\bf b}$$ where $${\bf x} \in \mathbf{R}^{n\times 1}$$ is a column vector of real numbers of dimension $$n \times 1$$ and $${\bf b}$$ is also a column vector of real numbers of dimension $$n \times 1$$. We can multiply these two vectors together by transposing $$\bf x$$
+
+$$\\
+
+\begin{align}
+
+{\bf x}^T {\bf b} = \begin{bmatrix} x_1 & \dots & x_n \end{bmatrix} \begin{bmatrix} b_1 \\ \vdots \\ x_n \end{bmatrix} = b_1x_2 + \dots + b_n x_n
+
+\end{align}
+
+\\$$
+
+
+
 
 
 
