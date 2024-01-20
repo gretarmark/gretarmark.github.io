@@ -17,7 +17,7 @@ The references below are very useful material for matrix calculus. The one and o
 
 ## Review of Matrix Derivatives
 
-Let's consider the form $${\bf x}^T{\bf b}$$ where $${\bf x} \in \mathbf{R}^{n\times 1}$$ is a column vector of real numbers of dimension $$n \times 1$$ and $${\bf b}$$ is also a column vector of real numbers of dimension $$n \times 1$$. We can multiply these two vectors together by transposing $$\bf x$$
+Let's consider the form $${\bf x}^T{\bf b}$$ where $${\bf x} \in \mathbf{R}^{n\times 1}$$ is a column vector of real numbers of dimension $$n \times 1$$ and $${\bf b}$$ is also a column vector of real numbers of dimension $$n \times 1$$. We can multiply these two vectors together by transposing $$\bf x$$ resulting in a linear combination.
 
 $$\\
 
@@ -29,7 +29,17 @@ $$\\
 
 \\$$
 
+According to [5], page 10, chapter 2.4.1, the derivative of $${\bf x}^T{\bf b}$$ is 
 
+$$\\
+
+\begin{align}
+
+\frac{\partial {\bf x}^T{\bf b}}{\partial {\bf x}} = \frac{\partial {\bf b}^T{\bf x}}{\partial {\bf x}} = {\bf b}
+
+\end{align}
+
+\\$$
 
 
 
