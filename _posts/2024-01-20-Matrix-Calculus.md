@@ -6,7 +6,7 @@ published: true
 
 Linear algebra is important topic in control theory. Therefore I am going to make a post about matrix calculus.
 
-The references below are very useful material for matrix calculus. The one and only Matrix Cookbook is found in [5], this is a document that includes a collection of facts about matrices and matters relating to them. An online vector and matrix calculator is found in [6]. And useful material is found in [1], [2], [3] and [4]. This post is built on the references below and my own work.
+The references below are very useful material for matrix calculus. The one and only Matrix Cookbook is found in [5], this is a document that includes a collection of facts about matrices and matters relating to them. An online vector and matrix calculator is found in [6] and useful material is found in [1], [2], [3] and [4]. This post is built on the references below and my own work.
 
 ## Notation
 
