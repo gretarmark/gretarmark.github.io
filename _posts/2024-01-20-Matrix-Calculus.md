@@ -44,7 +44,8 @@ this can be calculated as follows
 $$\\
 \begin{align}
 \frac{\partial {\bf x}^T{\bf b}}{\partial {\bf x}} &= \begin{bmatrix} \frac{\partial {\bf x}^T{\bf b}}{\partial x_1} \\ \vdots \\ \frac{\partial {\bf x}^T{\bf b}}{\partial x_n} \end{bmatrix} \\
-&= \begin{bmatrix} \frac{\partial}{\partial x_1} (b_1x_2 + \dots + b_nx_n) \\ \vdots \\ \frac{\partial}{\partial x_n} (b_1x_2 + \dots + b_nx_n) \end{bmatrix}
+&= \begin{bmatrix} \frac{\partial}{\partial x_1} (b_1x_2 + \dots + b_nx_n) \\ \vdots \\ \frac{\partial}{\partial x_n} (b_1x_2 + \dots + b_nx_n) \end{bmatrix} \\
+&= \begin{bmatrix} b_1 \\ \vdots \\ b_n \end{bmatrix} = {\bf b}
 \end{align}
 \\$$
 
