@@ -10,10 +10,10 @@ The references below are very useful material for matrix calculus. The one and o
 
 ## Notation
 
-* Scalars are written as lower case letters. For example $$a,x,c,k,...$$.
-* Vectors are written as lower case bold letters. For example $${\bf x}, {\bf b}, {\bf u}, ...$$. Vectors can be row vectors with dimensions $$1\times n$$ or column vectors with dimensions $$n \times 1$$. Column vectors are the default choice unless otherwise mentioned. Individual elements are indexed by subscripts, such as $$x_i \, \, (i \in \{1,\dots,n\})$$.
-* Matrices are written as upper case bold letters. For example $${\bf A}, {\bf B}, {\bf X}, ...$$. Matrices have dimensions $$m \times n$$ with $$m$$ rows and $$n$$ columns. Individual elements are indexed by double subscripts for row and column, such as $$X_{ij} \, \, (i \in \{1, \dots ,m\}, \, j \in \{1,\dots,n\})$$.
-* Tensors are of higher dimensions such as 3rd order tensor with dimension $$m \times n \times p$$, etc. Matrices are for example second order tensors. 
+* **Scalars** are written as lower case letters. For example $$a,x,c,k,...$$.
+* **Vectors** are written as lower case bold letters. For example $${\bf x}, {\bf b}, {\bf u}, ...$$. Vectors can be row vectors with dimensions $$1\times n$$ or column vectors with dimensions $$n \times 1$$. Column vectors are the default choice unless otherwise mentioned. Individual elements are indexed by subscripts, such as $$x_i \, \, (i \in \{1,\dots,n\})$$.
+* **Matrices** are written as upper case bold letters. For example $${\bf A}, {\bf B}, {\bf X}, ...$$. Matrices have dimensions $$m \times n$$ with $$m$$ rows and $$n$$ columns. Individual elements are indexed by double subscripts for row and column, such as $$X_{ij} \, \, (i \in \{1, \dots ,m\}, \, j \in \{1,\dots,n\})$$.
+* **Tensors** are of higher dimensions such as 3rd order tensor with dimension $$m \times n \times p$$, etc. Matrices are for example second order tensors. 
 
 Let's consider the form $${\bf x}^T{\bf b}$$
 
