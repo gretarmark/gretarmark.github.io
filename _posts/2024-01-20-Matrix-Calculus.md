@@ -102,7 +102,7 @@ the quadratic form becomes
 
 $$\\
 \begin{align}
- {\bf x}^T{\bf A}{\bf x} &= \begin{bmatrix} P_{11} & P_{22} & P_{33} & P_{44} \end{bmatrix} 
+ {\bf x}^T{\bf A}{\bf x} &= \begin{bmatrix} P_{11} & P_{22} & P_{33} & P_{44} \end{bmatrix} \\
 &=x_1 \sum_{i=1}^{n} a_{i1}x_i + x_2 \sum_{i=1}^{n} a_{i2}x_i + x_3 \sum_{i=1}^{n} a_{i3}x_i + x_4 \sum_{i=1}^{n} a_{i4}x_i 
 \end{align}
 \\$$
