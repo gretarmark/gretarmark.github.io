@@ -117,6 +117,23 @@ $$\\
 \end{align}
 \\$$
 
+Let's find the derivative of the quadratic form. 
+
+$$\\
+\begin{align}
+\frac{\partial {\bf x}^T{\bf A}{\bf x}}{\partial {\bf x}}  &= \begin{bmatrix} \frac{\partial {\bf x}^T{\bf A}{\bf x}}{\partial x_1} \\ \vdots \\ \frac{\partial {\bf x}^T{\bf A}{\bf x}}{\partial x_n} \end{bmatrix}
+\end{align}
+\\$$
+
+Let's consider the $$k_{th}$$ row in the above vector
+
+$$\\
+\begin{align}
+\frac{\partial {\bf x}^T{\bf A}{\bf x}}{\partial {\bf x}}  &= \frac{\partial}{\partial x_k} \left( \sum_{j=1}^{n} \sum_{i=1}^{n} a_{ij}x_i x_j \right)
+\end{align}
+\\$$
+
+
 ### ... This post is in progress.
 
 #### References
