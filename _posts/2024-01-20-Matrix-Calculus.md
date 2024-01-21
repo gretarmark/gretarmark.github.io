@@ -19,7 +19,7 @@ The references below are very useful material for matrix calculus. The one and o
 
 ### 1st order derivative
 
-Let's consider the form $${\bf x}^T{\bf b}$$ where $${\bf x} \in \mathbf{R}^{n\times 1}$$ is a column vector of real numbers of dimension $$n \times 1$$ and $${\bf b}$$ is also a column vector of real numbers of dimension $$n \times 1$$. We can multiply these two vectors together by transposing $$\bf x$$ resulting in a linear combination.
+Let's consider the form $${\bf x}^T{\bf b}$$ where $${\bf x} \in \mathbb{R}^{n\times 1}$$ is a column vector of real numbers of dimension $$n \times 1$$ and $${\bf b}$$ is also a column vector of real numbers of dimension $$n \times 1$$. We can multiply these two vectors together by transposing $$\bf x$$ resulting in a linear combination.
 
 $$\\
 
