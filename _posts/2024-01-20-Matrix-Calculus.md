@@ -8,16 +8,18 @@ Linear algebra is important topic in control theory. Therefore I am going to mak
 
 The references below are very useful material for matrix calculus. The one and only Matrix Cookbook is found in [5], this is a document that includes a collection of facts about matrices and matters relating to them. An online vector and matrix calculator is found in [6] and useful material is found in [1], [2], [3] and [4]. This post is built on the references below and my own work.
 
-## Notation
+# Notation
 
 * **Scalars** are written as lower case letters. For example $$a,x,c,k,...$$.
 * **Vectors** are written as lower case bold letters. For example $${\bf x}, {\bf b}, {\bf u}, ...$$. Vectors can be row vectors with dimensions $$1\times n$$ or column vectors with dimensions $$n \times 1$$. Column vectors are the default choice unless otherwise mentioned. Individual elements are indexed by subscripts, such as $$x_i \, \, (i \in \{1,\dots,n\})$$.
 * **Matrices** are written as upper case bold letters. For example $${\bf A}, {\bf B}, {\bf X}, ...$$. Matrices have dimensions $$m \times n$$ with $$m$$ rows and $$n$$ columns. Individual elements are indexed by double subscripts for row and column, such as $$X_{ij} \, \, (i \in \{1, \dots ,m\}, \, j \in \{1,\dots,n\})$$.
 * **Tensors** are of higher dimensions such as 3rd order tensor with dimension $$m \times n \times p$$, etc. Matrices are for example second order tensors. 
 
-## Review of Matrix Derivatives
+# Review of Matrix Derivatives
 
-### 1st order derivative
+## 1st order derivative
+
+### Linear Form
 
 Let's consider the form $${\bf x}^T{\bf b}$$ where $${\bf x} \in \mathbb{R}^{n\times 1}$$ is a column vector of real numbers of dimension $$n \times 1$$ and $${\bf b}$$ is also a column vector of real numbers of dimension $$n \times 1$$. We can multiply these two vectors together by transposing $$\bf x$$ resulting in a linear combination.
 
@@ -49,8 +51,73 @@ $$\\
 \end{align}
 \\$$
 
+### Quadratic Form
 
-... This post is in progress.
+The quadratic matrix form is given by
+
+$$\\
+\begin{align}
+{\bf x}^T{\bf A}{\bf x} &= \begin{bmatrix} x_1 & x_2 & x_3 & x_4 \end{bmatrix} \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+a_{21} & a_{22} & a_{23} & a_{24} \\
+a_{31} & a_{32} & a_{33} & a_{34} \\
+a_{41} & a_{42} & a_{43} & a_{44} 
+\end{bmatrix}
+\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix} 
+\end{align}
+\\$$
+
+Multiplying $${\bf x}^T{\bf A}$$ gives a pretty big row vector, we can define each index of that vector as
+
+$$\\
+\begin{align}
+P_1 &= a_{11}x_1 + a_{21}x_2 + a_{31}x_3 + a_{41}x_4 \\
+P_2 &= a_{12}x_1 + a_{22}x_2 + a_{32}x_3 + a_{42}x_4 \\
+P_3 &= a_{13}x_1 + a_{23}x_2 + a_{33}x_3 + a_{43}x_4 \\
+P_4 &= a_{14}x_1 + a_{24}x_2 + a_{34}x_3 + a_{44}x_4 
+\end{align}
+\\$$
+
+Now we can define the quadratic form as
+
+$$\\
+\begin{align}
+{\bf x}^T{\bf A}{\bf x} &= \begin{bmatrix} P_1 & P_2 & P_3 & P_4 \end{bmatrix} 
+\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix} \\
+&= P_1 x_1 + P_2 x_2 + P_3 x_3 + P_4 x_4.
+\end{align}
+\\$$
+
+To not get too big equation I will introduce indexes again as
+
+$$\\
+\begin{align}
+P_{11} &= x_1 (a_{11} x_1 + a_{21} x_2 + a_{31} x_3 + a_{41} x_4) \\
+P_{22} &= x_2 (a_{12} x_1 + a_{22} x_2 + a_{32} x_3 + a_{42} x_4) \\
+P_{33} &= x_3 (a_{13} x_1 + a_{23} x_2 + a_{33} x_3 + a_{43} x_4) \\
+P_{44} &= x_4 (a_{14} x_1 + a_{24} x_2 + a_{34} x_3 + a_{44} x_4) 
+\end{align}
+\\$$
+
+the quadratic form becomes
+
+$$\\
+\begin{align}
+ {\bf x}^T{\bf A}{\bf x} &= \begin{bmatrix} P_{11} & P_{22} & P_{33} & P_{44} \end{bmatrix} 
+&=x_1 \sum_{i=1}^{n} a_{i1}x_i + x_2 \sum_{i=1}^{n} a_{i2}x_i + x_3 \sum_{i=1}^{n} a_{i3}x_i + x_4 \sum_{i=1}^{n} a_{i4}x_i 
+\end{align}
+\\$$
+
+From this we can get the closed form solution
+
+$$\\
+\begin{align}
+ {\bf x}^T{\bf A}{\bf x} &= x_1 \sum_{i=1}^{n} a_{i1}x_i + \dots + x_n \sum_{i=1}^{n} a_{in}x_i \\
+ &= \sum_{j=1}^{n} x_j \sum_{i=1}^{n} a_{ij}x_i \\
+ &= \sum_{j=1}^{n} \sum_{i=1}^{n} a_{ij}x_i x_j
+\end{align}
+\\$$
+
+### ... This post is in progress.
 
 #### References
 
