@@ -129,7 +129,10 @@ Let's consider the $$k_{th}$$ row in the above vector
 
 $$\\
 \begin{align}
-\frac{\partial {\bf x}^T{\bf A}{\bf x}}{\partial {\bf x}}  &= \frac{\partial}{\partial x_k} \left( \sum_{j=1}^{n} \sum_{i=1}^{n} a_{ij}x_i x_j \right)
+\frac{\partial {\bf x}^T{\bf A}{\bf x}}{\partial {\bf x}}  &= \frac{\partial}{\partial x_k} \left( \sum_{j=1}^{n} \sum_{i=1}^{n} a_{ij}x_i x_j \right) \\
+&= \frac{\partial}{\partial x_k} \left( x_1 \sum_{i=1}^{n} a_{i1}x_i + \dots + x_k \sum_{i=1}^{n} a_{ik}x_i + \dots + x_n \sum_{i=1}^{n} a_{in}x_i \right) \\
+&= x_1 a_{k1} + \dots + \left( \sum_{i=1}^{n} a_{ik}x_i + x_k a_{kk} \right) + \dots + x_n a_{kn} \\
+&= \sum_{j=1}^{n} a_{kj}x_j + \sum_{i=1}^{n} a_{ik}x_i
 \end{align}
 \\$$
 
