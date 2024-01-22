@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Least Square
-published: true
+published: false
 ---
 
 Least square is about solving  
@@ -18,4 +18,6 @@ Maybe you can solve it as best as you can, and that's what least squares does.
 
 Let's suppose $${\bf Ax} = {\bf b}$$ has no solution. We can find the best approximate solution. This solution is called the least-squares solution.
 
-<!-- https://textbooks.math.gatech.edu/ila/least-squares.html -->
+<!-- https://textbooks.math.gatech.edu/ila/least-squares.html 
+
+https://www.youtube.com/watch?v=EnNH3SxyZEI-->
