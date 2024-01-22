@@ -84,8 +84,11 @@ x &= \frac{b}{a} \tag{1.9}.
 \end{align}
 \\$$
 
-This solution is much more straight forward and simpler.
+This solution looks a bit better and is the simplest interesting function that has a minimum. It's good practice to always look for the simplest problem to solve.
 
+Equation 1.1 have both quadratic part and a linear part. $$\frac{1}{2} {\bf x}^T{\bf A}{\bf x}$$ is the quadratic part and $${\bf x}^T{\bf b}$$ is the linear part.
+We can say that we have a quadratic form with a linear shift in eq. 1.1 just so the minimum is not at 0. If there would not be a shift  
+Again, $${\bf A}$$ must be positive definite, there cannot possibly be a minimum if $${\bf A}$$ is not positive definite. 
 
 
 
