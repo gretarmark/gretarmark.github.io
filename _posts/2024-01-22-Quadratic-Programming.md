@@ -90,6 +90,52 @@ Equation 1.1 have both quadratic part and a linear part. $$\frac{1}{2} {\bf x}^T
 We can say that we have a quadratic form with a linear shift in eq. 1.1 just so the minimum is not at 0. If there would not be a shift  
 Again, $${\bf A}$$ must be positive definite, there cannot possibly be a minimum if $${\bf A}$$ is not positive definite. 
 
+Let's recall what least-squares is. It's about finding the best approximate solution for $${\bf Ax} = {\bf b}$$, that solution is called the least-squares solution.
+It can be seen that the minimum solution of the quadratic problem above looks exactly the same as the least-squares solution.
+
+We can see for example, if we have
+
+$$\\
+\begin{align}
+f(x,y,z) = \frac{1}{2} \begin{bmatrix} x & y & z \end{bmatrix} \begin{bmatrix} 4 & 1 & 2 \\ 1 & 8 & 5 \\ 2 & 5 & 4 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} - \begin{bmatrix} x & y & z \end{bmatrix} \begin{bmatrix} 2 \\ 3 \\ 4 \end{bmatrix} \tag{1.10}.
+\end{align}
+\\$$
+
+and we solve this matrix form, we get
+
+$$\\
+\begin{align}
+f(x,y,z) = 2x^2 + 4y^2 + 2z^2 + xy + 5yz + 2zx - 2x - 3y - 4z \tag{1.11}.
+\end{align}
+\\$$
+
+the derivatives with respect to $$x,y,z$$ is
+
+$$\\
+\begin{align}
+f_x = 4x + y + 2z - 2 = 0 \tag{1.12} \\
+f_y = x + 8y + 5z - 3 = 0 \tag{1.13} \\
+f_z = 2x + 5y + 4z - 4 = 0 \tag{1.14} 
+\end{align}
+\\$$
+
+and we put this again on a matrix form
+
+$$\\
+\begin{align}
+\begin{bmatrix} 4 & 1 & 2 \\ 1 & 8 & 5 \\ 2 & 5 & 4 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \tag{1.15} 
+\end{align}
+\\$$
+
+which takes the form $${\bf Ax} = {\bf b}$$.
+
+This shows that the fundamental problem of Linear Algebra comes from from a minimization problem. Euler once said that there is nothing in nature that doesn't include minimization.
+
+To solve the least-squares problem, we can minimize eq. 1.1, pick a random number x, and the go in the direction that would make the expression in eq. 1.1 smaller. We have to move in the opposite direction of the gradient. This is called the gradient decent.
+The gradient in the equation $${\bf Ax} = {\bf b}$$ is the vector $${\bf Ax}$$.
+What we actually do is we start with a random $${\bf x}$$ and then we replace it with $${\bf x - \alpha {\bf Ax}}$$ where $${\bf x}$$ is the current location
+and $$\alpha$$ is a small step, and $${\bf Ax}$$ is the direction of the gradient. This is the most naive approach, there are much better approches that exist. This approach takes half a second to program and is called a itterative method, not as direct method as Gaussian elimination.
+There is a much less naive form that works much better and is called conjugate gradient.
 
 
 
