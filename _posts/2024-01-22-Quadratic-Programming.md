@@ -137,7 +137,7 @@ What we actually do is we start with a random $${\bf x}$$ and then we replace it
 and $$\alpha$$ is a small step, and $${\bf Ax}$$ is the direction of the gradient. This is the most naive approach, there are much better approches that exist. This approach takes half a second to program and is called a itterative method, not as direct method as Gaussian elimination.
 There is a much less naive form that works much better and is called conjugate gradient.
 
-
+Post is in progress...
 
 
 
