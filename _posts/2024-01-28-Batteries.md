@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Batteries
-published: false
+published: true
 ---
 
 When choosing a battery for some electronic devices, it is crucial to know how to read the imformation given on the various types of batteries out there.
@@ -10,6 +10,7 @@ Let's say we are going to buy a battery for a drone. The given information of th
 * 4000mAh
 * 30-40c discharge
 * 2 cell 7.4V
+* LiPo (Lithium-Polymer Ion)
 
 ![Fig 1]({{ site.baseurl }}/images/Battery/Battery_1.png "zero order"){:width=75%}  
 **Figure 1: Example of a battery.**
@@ -36,5 +37,12 @@ $$\\
 \end{align}
 \\$$
 
-A small pack like this can provide a 120A - 160A of current continuously until it discharges
+A small pack like this can provide a 120A - 160A of current continuously until it discharges, but we don't normally draw that much power. If we did, the leads will just melt and anything else pretty much. A battery like this gives plenty of energy and output capacity to operate machines like for example drones. 
+
+The battery plugs are called "JST XH" and "bullet plugs".
+LiPO batteries are not batteries where you can buy a cheap charger for. These batteries needs a bit more care than other batteries.
+It needs a high quality balanced charger, for example "Powertech Plus". Make sure you purchase it from a reputable store. 
+A balanced charger is needed to be able to charge the two cells in a balanced way. An imbalanced charge would be if one cell is charged 3.7 V and the other 4.3 V, which we don't want.
+
+The battery has two 3.7 V cells. The nominal voltage is in total $$2\cdot 3.7V = 7.4 \, V$$.  
 
