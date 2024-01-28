@@ -6,10 +6,13 @@ published: false
 
 When choosing a battery for some electronic devices, it is crucial to know how to read the imformation given on the various types of batteries out there.
 
-Let's say we are going to buy a battery for a drone. The given information on the battery is
+Let's say we are going to buy a battery for a drone. The given information of the battery in figure 1 below is
 * 4000mAh
 * 30-40c discharge
 * 2 cell 7.4V
+
+![Fig 1]({{ site.baseurl }}/images/Battery/Battery_1.png "zero order"){:width=75%}  
+**Figure 1: Example of a battery.**
 
 4000 mAh tells you how much capacity the battery have. The greater the capacity of the battery is, the heavier it become. 
 
@@ -29,7 +32,7 @@ The continuous capability of this battery to provide current is according to the
 $$\\
 \begin{align}
 30 \cdot c = 30 \cdot 4 = 120A   \tag{1.3} \\
-40 \cdot c = 40 \cdot 4 = 160A   \tag{1.3}
+40 \cdot c = 40 \cdot 4 = 160A   \tag{1.4}
 \end{align}
 \\$$
 
