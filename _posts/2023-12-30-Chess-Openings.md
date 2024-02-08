@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chess Openings
-published: true
+published: false
 ---
 
 A list of chess openings [1]:
