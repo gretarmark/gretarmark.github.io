@@ -4,7 +4,7 @@ title: Batteries
 published: true
 ---
 
-When choosing a battery for some electronic devices, it is crucial to know how to read the imformation given on the various types of batteries out there.
+When choosing a battery for electronic devices, it is crucial to know how to read the information given on the various types of batteries out there.
 
 Let's say we are going to buy a battery for a drone. The given information of the battery in figure 1 below is
 * 4000mAh
