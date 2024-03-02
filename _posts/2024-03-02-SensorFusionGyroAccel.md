@@ -4,11 +4,11 @@ title: Gyroscope & Accelerometer sensor fusion - STM32
 published: true
 ---
 
-To keep UAV's (Unmanned Aerial Vehicles) like drones balanced in the air, it is necessary to use gyroscope and accelerometer 
-together to get accurate measurements used to keep the drone stable. To do that, the process of sensor fusion is used.
-Sensor fusion is the process of merging data from multiple sensors together to reduce the amount of uncertainty in a robot navigation motion.
+To maintain balance in the air, Unmanned Aerial Vehicles (UAVs) like drones rely on sensor fusion. This process combines data from multiple sensors, including gyroscopes and accelerometers, to create a comprehensive understanding of the environment.
 
 ## USB communication using STM32 and MPU6050
+
+To begin with, it's a good step to setup the IMU sensor and do some experiments on its measurements.
 
 * D- (D minus): is part of the "voltage signal differential pair" in the USB communication protocol. In STMCubeIDE this is called "USB_OTG_FS_DM".
 * D+ (D plus): is also part of the "voltage signal differential pair" in the USB communication protocol. In STMCubeIDE this is called "USB_OTG_FS_DP".
