@@ -37,6 +37,29 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 ![Fig 3]({{ site.baseurl }}/images/SensorFusionUSB/Clockconfig_fig1.png "zero order"){:width=20%}  
 **Figure 3: Pin configuration for MPU6050.**
 
+## Software implementation
+
+* Start by initializing register addresses and variables as in figure 4.
+* Make a void function to initialize the MPU6050 IMU sensor as in figure 5.
+* Make a void function to read the accelerometer values as in figure 6.
+* Make a void function to read the gyroscope values as in figure 7.
+* Set up the while loop and run the void functions you made as show in figure 8.
+
+![Fig 4]({{ site.baseurl }}/images/SensorFusionUSB/Initialize_variables_fig1.png "zero order"){:width=20%}  
+**Figure 4: Initialize register addresses and variables for MPU6050.**
+
+![Fig 5]({{ site.baseurl }}/images/SensorFusionUSB/Void_function_init_MPU6050.png "zero order"){:width=20%}  
+**Figure 5: Void function used to initialize the MPU6050 IMU sensor.**
+
+![Fig 6]({{ site.baseurl }}/images/SensorFusionUSB/Void_function_readAccel_MPU6050.png "zero order"){:width=20%}  
+**Figure 6: Void function used to read the acceleration values from the MPU6050 IMU sensor.**
+
+![Fig 7]({{ site.baseurl }}/images/SensorFusionUSB/Void_function_readGyro_MPU6050.png "zero order"){:width=20%}  
+**Figure 7: Void function used to read the gyroscope values from the MPU6050 IMU sensor.**
+
+![Fig 8]({{ site.baseurl }}/images/SensorFusionUSB/While_MPU6050.png "zero order"){:width=20%}  
+**Figure 8: The main loop.**
+
 #### References
 
 [1] USB communication STM32. YouTube. Hamed. [Link](https://www.youtube.com/watch?v=ihIRUtQR18E)
