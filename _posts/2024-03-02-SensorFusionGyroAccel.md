@@ -73,3 +73,10 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 
 [3] Controllerstech [Link](https://controllerstech.com/send-and-receive-data-to-pc-without-uart-stm32-usb-com/)
 
+[4] Phil's Lab. I2S ADC DMA. [Link](https://www.youtube.com/watch?v=zlGSxZGwj-E&t=1270s)
+
+[5] Phil's Lab. Accelerometer & Gyroscope. [Link](https://www.youtube.com/watch?v=RZd6XDx5VXo&t=718s)
+
+[6] Phil's Lab. Filtering. [Link](https://www.youtube.com/watch?v=VDhmVrbSpqA&t=1115s)
+
+[7] Phil's Lab. First Order Low Pass EMA Filter. [Link](https://www.youtube.com/watch?v=1e_ZB8p5n6s)
