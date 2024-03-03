@@ -19,7 +19,7 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 ![Fig 1]({{ site.baseurl }}/images/SensorFusionUSB/USB_fig1.png "zero order"){:width=20%}  
 **Figure 1: USB data transfer, [Link](https://electronics.stackexchange.com/questions/407131/why-does-usb-only-use-2-lines-for-rx-tx-instead-of-multiple-data-lines).**
 
-## Seting up MPU6050 and USB communication in STM32CubeIDE using STM32407G Discovery Board
+## Setting up MPU6050 and USB communication in STM32CubeIDE using STM32407G Discovery Board
 
 * Create new project
 * Configure all peripherals automatically
