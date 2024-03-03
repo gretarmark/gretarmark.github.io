@@ -27,9 +27,13 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 * Configure the MPU6050 IMU sensor
   * Choose pin PB8 for I2C1 SCL communication to the MPU6050 device as shown in figure 2.
   * Choose pin PB7 for I2C1 SDA communication to the MPU6050 device as shown in figure 2.
-  * Go to connectivity and choose I2C in the I2C dropdown menu under GPIO settings.
+  * Go to connectivity and choose I2C in the I2C dropdown menu under GPIO settings. Also choose Fast Mode under parameter settings in I2C speed mode.
 * Configure the USB communication
-  * Go to 
+  * Go to Connectivity and choose USB_OTG_FS.
+  * Go to Mode and choose Device_Only.
+  * Be sure to check the box for Active_VBUS
+  * Next, go to Middleware and Software Packs and choose USB_DEVICE
+  * Under Class For FS IP, choose Communication Device Class (Virtual Port Com)
 
 ![Fig 2]({{ site.baseurl }}/images/SensorFusionUSB/Configuration_fig1.png "zero order"){:width=20%}  
 **Figure 2: Pin configuration for MPU6050.**
@@ -64,3 +68,4 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 
 [1] USB communication STM32. YouTube. Hamed. [Link](https://www.youtube.com/watch?v=ihIRUtQR18E)
 
+[2] Controllerstech [Link](https://controllerstech.com/how-to-interface-mpu6050-gy-521-with-stm32/)
