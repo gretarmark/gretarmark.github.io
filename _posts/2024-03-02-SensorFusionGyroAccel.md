@@ -23,7 +23,8 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 
 * Create new project
 * Configure all peripherals automatically
-* Configure the clocksettings similar to figure 3 below. I choose to have 168MHz.
+* Configure the clocksettings similar to figure 3 below. I choose to have 168MHz. It is very important to have 48MHz for the 48MHz clocks that connects to mains PLL.
+  HSE must be chosen when using USB communication.
 * Configure the MPU6050 IMU sensor
   * Choose pin PB8 for I2C1 SCL communication to the MPU6050 device as shown in figure 2.
   * Choose pin PB7 for I2C1 SDA communication to the MPU6050 device as shown in figure 2.
