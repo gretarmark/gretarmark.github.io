@@ -70,3 +70,6 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 [1] USB communication STM32. YouTube. Hamed. [Link](https://www.youtube.com/watch?v=ihIRUtQR18E)
 
 [2] Controllerstech [Link](https://controllerstech.com/how-to-interface-mpu6050-gy-521-with-stm32/)
+
+[3] Controllerstech [Link](https://controllerstech.com/send-and-receive-data-to-pc-without-uart-stm32-usb-com/)
+
