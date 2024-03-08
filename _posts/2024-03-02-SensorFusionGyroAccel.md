@@ -65,6 +65,8 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 ![Fig 8]({{ site.baseurl }}/images/SensorFusionUSB/While_MPU6050.png "zero order"){:width=20%}  
 **Figure 8: The main loop.**
 
+...Post in Progress...
+
 #### References
 
 [1] USB communication STM32. YouTube. Hamed. [Link](https://www.youtube.com/watch?v=ihIRUtQR18E)
