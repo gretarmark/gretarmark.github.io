@@ -60,12 +60,19 @@ After you import a project into STM32 Cube IDE, the IDE will track the changes a
 7. Next you can press commit push
 8. Now if you go to your Github page you will see the changes there.
 
-## 
+## Commit new project from workspace to Github repository
 
+To add project to Github do the following
+1. Open a project in STM32
+2. Right click on the project under the project explorer
+3. Choose Teams and choose share project
+4. Choose your te directory where your repository is on your local drive and click finish
+5. Now go to Git Staging. If you don't find it it's under "window" and then "show view"
+6. Now you can see your project in "unstaged changes"
+7. Press add files
+8. 
 
-You can also  
-
-
+...Post in progress...
 
 #### Useful links
 
