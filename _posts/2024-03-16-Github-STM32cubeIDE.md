@@ -83,15 +83,20 @@ After you import a project into STM32 Cube IDE, the IDE will track the changes a
 To add project to Github do the following
 1. Open a project in STM32
 2. Right click on the project under the project explorer
-3. Choose Teams and choose share project
-4. Choose your te directory where your repository is on your local drive and click finish
-5. Now go to Git Staging. If you don't find it it's under "window" and then "show view"
-6. Now you can see your project in "unstaged changes"
-7. Press add files
-8. 
+3. Choose Team and choose share project
+4. Choose your repository in the dropdown list under "Repository:"
+5. You don't really need a path unless you want it, then you can add it
+6. Press finish
+7. Now go to Git Staging. If you don't find it it's under "window" and then "show view"
+8. Now you can see your project in "unstaged changes"
+9. Press add files
+10. Now the files move to "staged changes"
+11. Write your commit message (for example: Initial commit)
+12. Press commit and push
 
-...Post in progress...
 
 #### Useful links
 
 [1] Intelligent Systems Engineer. Youtube. [Link](https://www.youtube.com/watch?v=8kc77A6so7o)
+
+[2] V Develop. Youtube. [Link](https://www.youtube.com/watch?v=XKLnnXNe_qs)
