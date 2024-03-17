@@ -36,7 +36,7 @@ If you don't have a repository on Github you should create one before you procee
 6. Under the Git Repository view select clone a repository
 7. Paste the repository url under Location->URL
 8. HOST should be github.com
-9. repository path should be for example /gitusername/STM32-Projects.git or similar
+9. repository path should be the link you copied, something like "/gitusername/STM32-Projects.git" or similar
 10. Protocol: https
 
 Now when you are asked for username and password you cannot use the same password as you use of your Github account.
