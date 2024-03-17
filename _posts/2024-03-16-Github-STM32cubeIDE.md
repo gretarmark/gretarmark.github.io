@@ -39,7 +39,7 @@ If you don't have a repository on Github you should create one before you procee
 9. repository path should be the link you copied, something like "/gitusername/STM32-Projects.git" or similar
 10. Protocol: https
 
-Now when you are asked for username and password you cannot use the same password as you use of your Github account.
+Now when you are asked for username and password you cannot use the same password you have on your Github account.
 Github changed the rules since 2021 and now you need to make tokens to access your Github through softwares like STM32 Cube IDE.
 To create a token do the following.
 
@@ -56,7 +56,6 @@ To create a token do the following.
 Now you can go back to STM32 Cube IDE
 20. For username you use your github username
 21. For password you use your generated token. Keep it save somewhere
-
 22. then press next
 23. Check the checkbox for main
 24. Choose when fetching a commit, also fetch its tags
