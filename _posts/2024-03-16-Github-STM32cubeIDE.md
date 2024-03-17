@@ -10,7 +10,7 @@ In this post I will list down the steps how to add projects to Github using STM3
 
 # Installation
 
-First of all, you will need to download EGit from the Eclipse Marketplace.
+First of all, you will need to download EGit from the Eclipse Marketplace. This is how I do this but you can also use Git for this.
 1. Open STM32 Cube IDE
 2. Go to help
 3. Choose Eclipse Marketplace
