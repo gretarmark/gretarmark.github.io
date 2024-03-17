@@ -36,12 +36,31 @@ If you don't have a repository on Github you should create one before you procee
 6. Under the Git Repository view select clone a repository
 7. Paste the repository url under Location->URL
 8. HOST should be github.com
-9. repository path should be e.g. /gitusername/STM32-Projects.git or similar
+9. repository path should be for example /gitusername/STM32-Projects.git or similar
 10. Protocol: https
-11. Authentication is your username and password for your Github account, then press next
-12. Check the checkbox for main
-13. Choose when fetching a commit, also fetch its tags
-14. Next you can choose your directory path and then press finish
+
+Now when you are asked for username and password you cannot use the same password as you use of your Github account.
+Github changed the rules since 2021 and now you need to make tokens to access your Github through softwares like STM32 Cube IDE.
+To create a token do the following.
+
+11. Log into your Github account online
+12. Go to settings under your profile picture
+13. Choose developer settings
+14. Under personal access tokens you should choose Tokens(classic)
+15. Press generate new token (classic)
+16. Give it a name
+17. Expiration can be chosen as no expiration
+18. Check the checkboxes of repo and workflow. It should be enough
+19. Generate the token
+
+Now you can go back to STM32 Cube IDE
+20. For username you use your github username
+21. For password you use your generated token. Keep it save somewhere
+
+22. then press next
+23. Check the checkbox for main
+24. Choose when fetching a commit, also fetch its tags
+25. Next you can choose your directory path and then press finish
 
 # Using EGit inside of STM32 Cube IDE
 
