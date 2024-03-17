@@ -4,9 +4,9 @@ title: Using Github with STM32 Cube IDE
 published: true
 ---
 
-I use Github a lot to store my codes. I use both private and public repositories. 
+I use Github a lot to store my codes. 
 When I started doing STM32 projects I thought it would be a great idea to store the projects on Github so the codes will not be lost.
-In this post I will list down the steps how to add code to Github using STM32 Cube IDE.
+In this post I will list down the steps how to add projects to Github using STM32 Cube IDE so you will not loose your codes.
 
 # Installation
 
