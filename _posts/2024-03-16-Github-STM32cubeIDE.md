@@ -26,7 +26,7 @@ First of all, you will need to download EGit from the Eclipse Marketplace.
 
 Now we want to get our repository on the local drive of the computer so STM32 Cube IDE will recognize the repository on Github.
 The repository will not be our workspace.
-If you don't have a repository on Github you should create one.
+If you don't have a repository on Github you should create one before you proceed further.
 
 1. Go to the repository
 2. Press code
