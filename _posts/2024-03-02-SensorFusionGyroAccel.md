@@ -44,7 +44,37 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 
 ## Software implementation
 
-* Start by initializing register addresses and variables as in figure 4.
+* Start by include header files:
+ ```C
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "usb_device.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include "usbd_cdc_if.h"
+#include "string.h"
+/* USER CODE END Includes */
+```
+
+* Include variables for the USB transfer
+ ```C
+/* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
+I2S_HandleTypeDef hi2s3;
+
+SPI_HandleTypeDef hspi1;
+
+/* USER CODE BEGIN PV */
+uint8_t USBRXDataReady = 0;
+uint8_t* USBRXDataBuffer;
+uint8_t USBRXDataLength = 0;
+/* USER CODE END PV */
+```
+
+* Initialize register addresses and variables as in figure 4.
 * Make a void function to initialize the MPU6050 IMU sensor as in figure 5.
 * Make a void function to read the accelerometer values as in figure 6.
 * Make a void function to read the gyroscope values as in figure 7.
