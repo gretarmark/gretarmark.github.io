@@ -79,6 +79,7 @@ uint8_t USBRXDataLength = 0;
 * Make a void function to read the accelerometer values as in figure 6.
 * Make a void function to read the gyroscope values as in figure 7.
 * Set up the while loop and run the void functions you made as show in figure 8.
+* If you are using sprintf you have to select "use float with printf..." as in figure 9.
 
 ![Fig 4]({{ site.baseurl }}/images/SensorFusionUSB/Initialize_variables_fig1.png "zero order"){:width=20%}  
 **Figure 4: Initialize register addresses and variables for MPU6050.**
@@ -94,6 +95,9 @@ uint8_t USBRXDataLength = 0;
 
 ![Fig 8]({{ site.baseurl }}/images/SensorFusionUSB/While_MPU6050.png "zero order"){:width=20%}  
 **Figure 8: The main loop.**
+
+![Fig 9]({{ site.baseurl }}/images/SensorFusionUSB/MPU6050_FloatingPoint.png "zero order"){:width=20%}  
+**Figure 9: Floating Point with sprintf.**
 
 ...Post in Progress...
 
