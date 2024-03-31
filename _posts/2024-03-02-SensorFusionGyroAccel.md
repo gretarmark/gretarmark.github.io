@@ -45,7 +45,8 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 ## Software implementation
 
 * Start by include header files:
- ```C
+
+ ```C++
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -59,7 +60,8 @@ To begin with, it's a good step to setup the IMU sensor and do some experiments 
 ```
 
 * Include variables for the USB transfer
- ```C
+
+ ```C++
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
 
