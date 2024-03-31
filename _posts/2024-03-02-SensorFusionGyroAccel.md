@@ -101,7 +101,7 @@ uint8_t USBRXDataLength = 0;
 ![Fig 9]({{ site.baseurl }}/images/SensorFusionUSB/MPU6050_FloatingPoint.png "zero order"){:width=20%}  
 **Figure 9: Floating Point with sprintf.**
 
-...Post in Progress...
+
 
 #### References
 
