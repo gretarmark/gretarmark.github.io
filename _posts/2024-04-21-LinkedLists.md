@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linked Lists
-published: false
+published: true
 ---
 
 Linked lists are always created in the heap, not in the stack. On the other hand, arrays can be created both on the heap and the stack.
@@ -31,8 +31,8 @@ In C language we can define a node structure using "struct" in C and its members
 ```C
 struct node
 {
-    int data;  //Can be any type e.g. float, double... integer is easiest to work with
-    node next; //Must be of its own type, "node"
+    int             data;  //Can be any type e.g. float, double... integer is easiest to work with
+    struct node     *next; //Must be of its own type, "node"
 }
 ``` 
 
