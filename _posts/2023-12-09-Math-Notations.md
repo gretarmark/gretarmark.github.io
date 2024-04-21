@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mathematical Notations
-published: true
+published: false
 ---
 
 Mathematical Notations
