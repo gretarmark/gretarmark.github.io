@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linear Algebra - Review
-published: true
+published: false
 ---
 
 Linear Algebra is fundamental in modern geometry and is probably the single most important topic in multiple areas of science. 
