@@ -13,4 +13,33 @@ The beginning of a linked list is a pointer which is usually called "first" or "
 
 In an array, all the addresses are contiguous, which means that they are side by side. But in linked lists, the addresses of each node are not necessarily side by side, they can be everywhere.
 
+## Defining a node
+
+There are two things to consider when defining a node. In each node there are "data" and a "pointer".
+Data may be any type, like integer, float, double or any other type. On the other hand, pointer is a specific type, the pointer is pointing to a node and therefore
+a pointer is a node type. Node is a pointer of its own type.
+
+Nodes contains two members
+
+* data (let's call it data)
+* pointer (let's call it next)
+
+Node structure is having data and a pointer to the next node.
+
+In C language we can define a node structure using "struct" in C and its members are data and next:
+
+```C
+struct node
+{
+    int data;  //Can be any type e.g. float, double... integer is easiest to work with
+    node next; //Must be of its own type, "node"
+}
+``` 
+
+
+
+
+
+
+
 
