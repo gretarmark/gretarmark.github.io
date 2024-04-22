@@ -26,11 +26,11 @@ Node structure is having data and a pointer to the next node.
 In C language we can define a node structure using "struct" in C and its members are data and next:
 
 ```C
-struct node
+Struct Node
 {
     int             data;  //Can be any type e.g. float, double... integer is easiest to work with
-    struct node     *next; //Must be of its own type, "node"
-}
+    Struct Node     *next; //Must be of its own type, "node"
+};
 ``` 
 A structure like above is called self-referential structure and are used in linked lists.
 For C programming language we use a struct, but in C++ we use a class.
@@ -53,9 +53,12 @@ struct node *p; //This pointer is created on the stack
 Next we will create a node on the heap:
 
 ```C
-p = malloc(sizeof(struct node)); //In C we use memory allocation function. We also need the size of the node which is 4.
+p = (Struct Node*)malloc(sizeof(Struct Node)); //In C we use memory allocation function. We also need the size of the node which is 4.
                                  //We can also just use the sizeof() function 
 ```
+
+In C++ we would just write p = new Node; instead of p = (Struct Node*)malloc(sizeof(Struct Node));. The word "new" in C++ will create a node on the heap.
+
 
 
 
