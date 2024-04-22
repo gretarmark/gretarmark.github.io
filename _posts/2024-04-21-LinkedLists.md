@@ -42,6 +42,22 @@ And the struct node type value pointer "*next" will also take 2 bytes because it
 Each node will therefore take 4 bytes. If the first byte address in a node is 300, then the next byte in it is 301, then 302 and finally, 303.
 But for pointers we only need the first byte address which would be 300.
 
+To create a node, we need first of all a pointer, because nodes have to be created inside the heap. 
+But the first pointer will always be created on the stack, the rest will be inside the heap.
+Let's create a node:
+
+```C
+struct node *p; //This pointer is created on the stack
+``` 
+
+Next we will create a node on the heap:
+
+```C
+p = malloc(sizeof(struct node)); //In C we use memory allocation function. We also need the size of the node which is 4.
+                                 //We can also just use the sizeof() function 
+```
+
+
 
 
 
