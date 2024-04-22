@@ -59,7 +59,8 @@ p = (Struct Node*)malloc(sizeof(Struct Node)); //In C we use memory allocation f
 
 In C++ we would just write p = new Node; instead of p = (Struct Node*)malloc(sizeof(Struct Node));. The word "new" in C++ will create a node on the heap.
 
-
+When a new node is created, a node structure is defined with data and next pointer.
+This new node will have an address, let's say 600. Then the value of the first pointer we created will have the value 600.
 
 
 
