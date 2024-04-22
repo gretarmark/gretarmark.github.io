@@ -5,6 +5,7 @@ published: true
 ---
 
 Linked lists are a collection of nodes where each node contains data and a pointer to the next node.
+
 Linked lists are always created in the heap, not in the stack. On the other hand, arrays can be created both on the heap and the stack.
 Linked lists are more dynamical than arrays, it's easy to increase or reduce the size of it.
 The beginning of a linked list is a pointer which is usually called "first" or "head". The pointer "first" points to the first node (or the header node) in the linked list.
@@ -60,8 +61,17 @@ p = (Struct Node*)malloc(sizeof(Struct Node)); //In C we use memory allocation f
 In C++ we would just write p = new Node; instead of p = (Struct Node*)malloc(sizeof(Struct Node));. The word "new" in C++ will create a node on the heap.
 
 When a new node is created, a node structure is defined with data and next pointer.
-This new node will have an address, let's say 600. Then the value of the first pointer we created will have the value 600.
+This new node will have an address, let's say 600. Then the value of the first pointer we created will have that value, 600.
 
+## Accessing member of a node
+
+Let's say we want to write some data into a node. 
+We can access the members of a node as follows:
+
+```C
+p->data = 10; //We access the pointer and we assign the value 10 to the register that p is pointing to
+p->next = 0; //We assign Null to the pointer part of the node, so it's not pointing anywhere
+``` 
 
 
 
