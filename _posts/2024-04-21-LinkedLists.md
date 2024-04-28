@@ -73,7 +73,7 @@ p->data = 10; //We access the pointer and we assign the value 10 to the register
 p->next = 0; //We assign Null to the pointer part of the node, so it's not pointing anywhere
 ``` 
 
-
+...Post in progress...
 
 
 
