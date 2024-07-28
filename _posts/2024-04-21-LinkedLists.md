@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linked Lists
-published: true
+published: false
 ---
 
 Linked lists are a collection of nodes where each node contains data and a pointer to the next node.
