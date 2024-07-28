@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quadratic Programming
-published: true
+published: false
 ---
 
 The quadratic programming is about minimizing the quadratic form 
