@@ -6,6 +6,10 @@ permalink: /Books/
 
 Books that I have found useful throughout my journey.
 
+## Programming
+
+* **C# Players Guide, 5th edition by R.B. Whitaker**
+
 ## Control Theory
 
 * **Optimal Control, 3rd edition by Frank, Draguna and Vassilis**
