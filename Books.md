@@ -31,3 +31,4 @@ Books that I have found useful throughout my journey.
 ## Physics
 
 * **University Physics 15th edition. Hugh and Roger**
+* **Design of Machinery 6th edition, Robert L. Norton**
