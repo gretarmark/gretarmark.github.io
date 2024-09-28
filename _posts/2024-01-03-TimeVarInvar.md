@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time Variant and Time Invariant Systems
-published: true
+published: false
 ---
 
 A Time-Invariant system can be considered as a system in which parameters do not change with time; hence, they remain constants. 
