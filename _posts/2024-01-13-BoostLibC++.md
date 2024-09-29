@@ -1,28 +1,36 @@
 ---
 layout: post
-title: Boost library for C++ - Installation
+title: Getting started with Boost library for C++
 published: True
 ---
 
-Boost is a set of libraries for the C++ programming language that provides support for tasks and structures such as linear algebra, 
+Boost is a collection of libraries for the C++ programming language that provides support for various tasks and structures, including linear algebra, 
 pseudorandom number generation, multithreading, image processing, regular expressions, and unit testing.
 
-To include the C++ Boost library [1] staticly in Visual Studio, you need to do the following steps [2]:
+# Steps to include the C++ Boost library in Visual Studio
 
-1. Start by downloading the latest version at [Boost.org](https://www.boost.org/) and unzip the file. Try to included it as close the C: as possible.
-2. Go to the directory where you saved the Boost library file ("C:\...\boost_1_84_0").
-3. Open CMD in your computer, I usually just use the "Developer Command Prompt for Visual Studio", run the following code:
-   "cd C:\codes\Toolbox\boost_1_84_0"
-4. Run the command "bootstrap".
-5. When bootstrap has done its work, it will give instruction to next step, for me it tells me to run ".\b2", do that.
-   This process will take a time.
-7. When the process is finished, it will tell you to include two paths:
-  * Compiler Include Path: C:\...\boost_1_84_0
-  * Linker Include Path: C:\...\boost_1_84_0\stage\lib
-8. Create a C++ project in Visual Studio, go to "properties", "configuration properties", under "C++/General" you should add the compiler include path from step 7
-   into "Additional Include Directories". Next you go to "Linker/General" and include the linker path inside of "Additional Library Directories"
+To include the Boost library [1] statically in Visual Studio, follow these steps [2]:
 
-Now you should be able to run the following code example in your project. This code will take a number from the user as an input ad return a lambda numbe of that input.
+1. Downloading and Unzip Boost
+  *  Start by downloading the latest version from [Boost.org](https://www.boost.org/)
+  *  Unzip the downloaded file and place it as close to the root of the C: drive as possible (e.g., "C:\...\boost_1_84_0").
+2. Ioen the Command Prompt
+  * Open the Command Prompt (CMD) on your computer. I recommend using the "Developer Command Prompt for Visual Studio"
+  * Navigate to the Boost directiory using the following command: "cd C:\codes\Toolbox\boost_1_84_0"
+3. Run Bootstrap
+  * Execute the "bootstrap" command.
+  * Once bootstrap has completed, it will provide instructions for the next steps. For example, it may instruct you to run ".\b2", do that.
+  * This process may take some time to complete.
+4. Note the paths provided
+  * After the process finishes, it will specify two paths to include in your project:
+    * Compiler Include Path: C:\...\boost_1_84_0
+    * Linker Include Path: C:\...\boost_1_84_0\stage\lib
+5. Create a C++ project in Visual Studio
+  * Go to "properties" > "configuration properties".
+    * Under "C++/General", add the compiler include path from step 4 into "Additional Include Directories".
+    * Under "Linker/General", add the linker path to "Additional Library Directories"
+6. Run Example Code
+  * You should now be able to run the following example code in your project. This code takes a number from the user as input and returns the lambda number.
 
 ```{C++}
 #include <boost/lambda/lambda.hpp>
@@ -40,7 +48,7 @@ int main()
 }
 ```
 
-Here is an output example:
+## Output example:
 
 ```{C++}
 7
