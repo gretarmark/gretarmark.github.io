@@ -74,7 +74,7 @@ $$\\
 
 \\$$
 
-This problem can be expressed in matrix form:
+This constraints of this problem can be expressed in matrix form:
 
 $$\\
 
