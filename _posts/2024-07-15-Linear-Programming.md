@@ -188,11 +188,12 @@ The arguments in the optimoption() function are as follows:
 
 <hr style="border:2px solid gray">
 -->
+
 $$\\
 
 \begin{align}
 
-{\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} -414.5455 \\ 900 \\ -188.7879 \end{bmatrix}. \tag{1.22}
+{\bf x} = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} -414.5455 \\ 900 \\ -188.7879 \end{bmatrix}. \tag{1.17}
 
 \end{align}
 
