@@ -202,7 +202,7 @@ $$\\
 As we can see, $$x_2 = 900$$ exactly meets the upper bound constraint for $$x_2$$, limiting the solution.
 
 ![Fig 1]({{ site.baseurl }}/images/LinearProgramming/LinearProgramming_MatlabOutput1.png "zero order"){:width=75%}  
-**Figure 1: Solution to the linear programming problem above. The figure shows the output from the linprog() function in Matlab.**
+**Figure 1: Solution to the linear programming problem above. The figure shows the output from the linprog() function in MATLAB.**
 
 <!--
 The solution to the optimization problem in this post is shown in figure 1. Let's analyze what it means:
