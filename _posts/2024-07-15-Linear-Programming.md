@@ -9,7 +9,7 @@ One area that I want to talk about to day is Linear Programming (LP), which is a
 Optimization techniques are widely used in control systems such as Linear Quadratic Regulator (LQR) and Model Predictive Control (MPC).
 
 <!--<hr style="border:2px solid gray">-->
-## What is Linear Programmin?
+## What is Linear Programming?
 
 Linear Programming involves optimizing (either minimizing or maximizing) a linear objective function subject to linear equality and inequality constraints.
 The formulation of a typical LP problem looks like this
