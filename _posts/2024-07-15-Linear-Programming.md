@@ -141,6 +141,8 @@ The following Matlab code is used to solve the linear optimization problem above
 
 The MATLAB code for solving this problem using the "linprog()" function is:
 
+<hr style="border:2px solid gray">
+
 ```{Matlab}
 f = [2 -4 10];
 
