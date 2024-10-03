@@ -1,20 +1,29 @@
 ---
 layout: post
-title: Image Analysis - BLOB
+title: BLOB Analysis in Image Processing
 published: true
 ---
 
-BLOB Analysis stands for "Binary Large OBject Analysis" and is a topic used in image processing and computer vision. BLOB extraction is a sub-topic about grouping pixels in an image together if they are connected and share certain common properties, such as intensity or color. BLOB extraction makes use of Connected Component Analysis (CCA) [1]. It referes to the process of identifying and labeling connected components in a binary image. In this post I will talk about CCA and how to extract objects out of an image.
+BLOB Analysis, which stands for "Binary Large Object Analysis", is a crucial topic in image processing and computer vision. 
+It involves the grouping of pixels in an image based on connectivity and shared properties, such as intensity or color.
+A key component of BLOB extraction is Connected Component Analysis (CCA) [1], which refers to the process of identifying and labeling connected components
+in a binary image.
+In this post, I will discuss CCA and how to extract objects from an image.
 
-In Connected Component Analysis, pixels are grouped together using 4- or 8-connectivity methods. This methology involves checking the connectivity from a pixel to its neighbours. The two kernels are shown in figure [1]. If 4-connectivity is used, the algorithm checks two neighbours horizontally and two neighbours vertically of each pixel. On the other hand, if 8-connectivity is used, the connectivity of all neighbours around each pixel is checked. 
+In Connected Component Analysis, pixels are grouped together using either 4-connectivity or 8-connectivity methods.
+This methodology checks the connectivity of each pixel to its neighbors. The two connectivity kernels are illustrated in Figure 1.
+In 4-connectivity, the algorithm checks two horizontal and two vertical neighbors for each pixel. 
+Conversely, 8-connectivity examines all neighboring pixels surrounding each pixel.
 
 ![Fig 1]({{ site.baseurl }}/images/BlobAnalysis_4_8_Connected.png "zero order"){:width="50%"}  
 **Figure 1: BLOB 4- and 8-Connectivity Kernels.**
 
 ![Fig 2]({{ site.baseurl }}/images/BlobAnalysis_Image1.png "zero order"){:width="40%"}  
-**Figure 2: Binary Image. Blue represents 1 and white represents 0. The coordinate system is attached to the upper left corner. In Matlab, the first pixel is at (1,1), but in a camera system the first pixel is at (0,0).**
+**Figure 2: Binary Image. In this image, blue represents a value of 1, and white represents a value of 0.
+The coordinate system is anchored to the upper left corner. 
+In Matlab, the first pixel is at (1,1), while in a camera system programmed in C, it is at (0,0).**
 
-The image in figure [2] can be implemented in Matlab by using the following matrix code snip: 
+The binary image shown in Figure 2 can be implemented in Matlab using the following matrix code snippet: 
 
 ```Matlab
 img = [0 0 0 0 0 0 1 0 0
@@ -32,22 +41,24 @@ imagesc(img);
 size(img)
 ```
 
-The function "imagesc" displays the data matrix as an image that uses the full range of colors in the colormap. The image is an $$m \times n = 10 \times 9$$ grid of pixels where $$m$$ is number of rows and $$n$$ is number of columns. The new image is shown in figure 3.
+The "imagesc" function displays the data matrix as an image, utilizing the full range of colors in the colormap. 
+The image forms an $$m \times n = 10 \times 9$$ grid of pixels, where $$m$$ is the number of rows and $$n$$ is the number of columns. 
+The resulting image is shown in Figure 3.
 
 ![Fig 3]({{ site.baseurl }}/images/BlobAnalysis_Matlab1.png "zero order"){:width="60%"}  
 **Figure 3: The image after using the Matlab function "imagesc()".**
 
-Let's now apply 4- and 8-connectivity kernels on the image using the Matlab function bwlabel(). It can be seen that using 4-connectivity, the algorithm detects 5 objects in the image. On the other hand, by applying the 8-connectivity kernel on the image, the algorithm detects 4 objects in the image as shown in figure 4.
+Next, we will apply the 4- and 8-connectivity kernels to the image using the Matlab function "bwlabel()". With 4-connectivity, the algorithm detects 5 objects in the image, while applying the 8-connectivity kernel results in the detection of 4 objects, as illustrated in Figure 4.
 
 ![Fig 4]({{ site.baseurl }}/images/BlobAnalysis_Matlab2.png "zero order"){:width="90%"}  
-**Figure 4: 4- and 8- connectivity applied to the image.**
+**Figure 4: Results of 4- and 8- connectivity applied to the image.**
 
-To visualize the image more effectively, it's advisable to use the Matlab function label2rgb() to obtain the image shown in figure [5].
+To enhance visualization, we can use the MATLAB function "label2rgb()" to generate the image shown in Figure 5.
 
 ![Fig 5]({{ site.baseurl }}/images/BlobAnalysis_Matlab3.png "zero order"){:width="100%"}  
-**Figure 5: label2rgb() applied to the image.**
+**Figure 5: Output after applying "label2rgb()".**
 
-It is possible to count the area of each object using the Matlab function regionprops(). The area of each object is as follows:
+Additionally, we can calculate the area of each object using the MATLAB function "regionprops()". The areas of the detected objects are as follows:
 
 4-Connectivity (5 objects):
 * Area of object 1: 5 pixels
@@ -65,43 +76,37 @@ It is possible to count the area of each object using the Matlab function region
 <!--The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and then scans the entire image from left to right and from top to bottom.
 At some point during the scan, an object pixel (white pixel) is encountered. At this point you can imagine yourself standing in a field covered with dry grass. -->
 
-The algorithm used to do BLOB analysis is called "The Grass-Fire Algorithm". It starts in the upper-left corner of the binary image and then scans the entire image from left to right and from top to bottom. When an object pixel is encountered, you can imagine that you are standing in that pixel and all around you is a field covered with a dry grass. Let's say you have four arms and in each of them you are holding a burning match. You then stretch out your arms and drops the burning matches. When they are dropped, they will start a fire which will spread in four different directions (right, down, left, up). This will result in a great fire where each single straw that is connected to your initial position will burn. This is the explanation of the algorithm.
+The algorithm used for BLOB analysis is called "The Grass-Fire Algorithm". It begins in the upper-left corner of the binary image, scanning from left to right and top to bottom. When an object pixel is encountered, imagine standing on that pixel in a field covered with dry grass, with four arms, each holding a burning match. As you stretch out your arms and drop the matches, a fire spreads in four different directions (right, down, left, up), burning all connected straws. This metaphor illustrates how the algorithm identifies connected components.
 
-In the binary image, the pixels of the objects are the dry grass I talked about, and the non-object pixels are water. If we use 4-connectivity, the algorithm looks into four different directions. If it finds a pixel which can be burned (object pixel), it does two things:
+In the binary image, the pixels representing objects are akin to the dry grass, while non-object pixels represent water. Using 4-connectivity, the algorithm looks in four directions for object pixels. When it finds one, it performs two actions:
 
-1. In the output image, it will give that pixel an object label (some ID).
-2. It will burn that pixel in the input image and set it to zero. Setting it to zero indicates it has been burned and therefore it will not be part of another fire.
+1. It labels the pixel in the output image with an object ID.
+2. It "burns" that pixel in the input image by setting it to zero, indicating it has been processed and will not be counted again.
 
 ![Fig 6]({{ site.baseurl }}/images/BlobAnalysis_Matlab4.png "zero order"){:width="40%"}  
-**Figure 6: The 4-connectivity Grass-Fire Algorithm applied to the binary image above.**
+**Figure 6: Application of the 4-connectivity Grass-Fire Algorithm on the binary image.**
 
-In computers, the algorithm is performed as follows:
-* The first object pixel is labeld 1, let's say it's at (1,7) as in the binary image in figure [6]. This pixel has to be marked so the computer knows it has been burned, it is marked by 1 in the lower right corner. 
-* Next, the algorithm tries to start a fire at the first neighbour (1,8), it checks if it is an object pixel, since it's not, the pixel (1,8) is not marked as a burned pixel, it's just a water.
-* The algorithm next checks pixel (2,7), since it is an object pixel it will "burn" the pixel and mark it as burned by adding 1 to the lower right corner.
-* Each time the algorithm "burns" an pixel, it will move the center of the 4-connectivity kernel to that pixel, therefore the next pixel to check is the neighbour at pixel (2,8).
-* Since (2,8) is an object pixel, the center of the 4-connectivity kernel is moved to that pixel, and pixel (2,8) is marked with 1 in the lower right corner. 
-* Next it checks pixel (2,9) and figures out it is a water. Then it checks pixel (3,8) and it burns that pixel by marking it with 1 in the lower right corner.
-* This is how the algorithm works and it scans like this through the whole image.
+The algorithm continues scanning the image in this manner.
 
+BLOB analysis serves as a foundation advanced methods in feature detection, 
+playing a crucial role in artificial intelligence systems for recognizing objects such as humans, fruits, animals, license plates, and more.
+Further exploration in this field may include topics such as:
 
-BLOB Analysis serves as the foundation for more advanced methods in feature detection, forming the basis for artificial intelligence to recognize specific objects such as humans, fruits, animals, licence plates, and anything you like. Further exploration in this field can include topics like:
 * BLOB Bounding Box
 * Bounding Box Ratio
 * Bounding Circle
 * Convex Hull
 * Compactness
-* Center of Mass for image analysis
+* Center of Mass for Image Analysis
 * Perimeter
 * Circularity
 * BLOB Classification
-* Training Data by learning the best features
-* Feature Selection and Feature Ranges
-* Evaluation of classification
-* Object labelling
-* Object recognition
-* Image segmentation
-* and much more...
+* Training Data through Feature Learning
+* Feature Selection and Ranges
+* Evaluation of Classification
+* Object Labelling
+* Object Recognition
+* Image Segmentation
 
 
 #### References
