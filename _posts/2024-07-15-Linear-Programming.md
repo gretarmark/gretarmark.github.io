@@ -167,7 +167,7 @@ In this code:
   * We set the maximum number of iterations ("MaxIterations") to 1500.
   * "OptimalityTolerance" and "ConstraintTolerance" are set to ensure precision.
 
-### Solution Analysis
+## Solution Analysis
 
 After running the MATLAB code, the output will provide the solution to the optimization problem:
   * $$x$$ gives the optimal values of the variables.
@@ -223,7 +223,7 @@ It can be seen that the solution for $$x_2 = 900$$ is exactly on the constraint 
 Linear Programming is just the beginning of constraint optimization. 
 A more useful topic in control systems is Quadratic Programming (QP).
 
-### Useful links related to Optimization Programming:
+## Useful links related to Optimization Programming:
 
 * [Princeton Lectures](https://www.princeton.edu/~aaa/Public/Teaching/ORF523/ORF523_Lec9.pdf)
 * [cvxr.com](http://cvxr.com/cvx/examples/)
