@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Programming
+title: Introduction to Linear Programming
 published: true
 ---
 
