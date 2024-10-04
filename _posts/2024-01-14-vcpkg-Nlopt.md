@@ -1,27 +1,43 @@
 ---
 layout: post
-title: Nlopt library for C++ - Installation using vcpkg
+title: Installing the Nlopt Library for C++ using vcpkg
 published: True
 ---
 
-Vcpkg is an open-source cross-platform package manager from Microsoft that simplifies the process of acquiring and managing libraries 
-and tools for C and C++ development. It helps developers download and install various libraries and dependencies needed for their projects, 
+**Vcpkg** is an open-source cross-platform package manager developed by Microsoft. 
+It simplifies the process of acquiring and managing libraries for C and C++ development. 
+This tool helps developers download and install the necessary libraries for their projects,
 making it easier to set up and maintain the development environment.
-In this post I will explain how to use Vcpkg [1] to install and include the optimization library Nlopt [2] in a Visual Studio project.
+
+In this post, I'll guide you through installing and using the **Nlopt** [2] optimization library with **Vcpkg** [1] 
+for a C++ project in Visual Studio.
+
+# Step-by-Step Installation
 
 For installation I followed the instructions in [3] and for testing the library I used a code example from [4].
 
-1. Install Vcpkg from [1] and choose a good directory for the vcpkg folder. Mine is "C:\codes\Toolbox\vcpkg".
-2. Run you windows powershell. It can be done for example by right-click inside of the vcpkg folder ("C:\codes\Toolbox\vcpkg") and choose open in terminal.
-   Make sure you are in the right folder ("vcpkg").
-4. Write "./vcpkg integrate install" (you must be inside "C:\codes\Toolbox\vcpkg") and you should get command something like this: "-DCMAKE_TOOLCHAIN_FILE=CcodesToolboxvcpkgscriptsbuildsystemsvcpkg.cmake".
-5. Save this command in a text file in the vcpkg folder to use it in the future. The text file can be called CMAKE.
-6. Write ".\vcpkg search nlopt" to see if you can use vcpkg to install that library. You can also search on the website [2].
-7. The nlopt library can be installed using ".\vcpkg install nlopt".
-8. Installed packages are found in "C:\codes\Toolbox\vcpkg\installed", but it includes all of the files thrown together.
-   To see the separately go to "C:\codes\Toolbox\vcpkg\packages".
-9. If needed, packages can be upgraded using ".\vcpkg upgrade nlopt" or ".\vcpkg upgrade nlopt --no-dry-run".
-10. Packages can be removed by using ".\vcpkg remove nlopt" or ".\vcpkg remove nlopt --recurse" for more deeper remove.
+1. **Install Vcpkg:** Download and install vcpkg from the official repository [1]. Choose a directory for the vcpkg folder. 
+I used **C:\codes\Toolbox\vcpkg** for this guide.
+2. **Open PowerShell:** Open Windows PowerShell in your vcpkg folder. 
+You can right-click inside the **"C:\codes\Toolbox\vcpkg** folder and choose "Open in Terminal".
+Make sure the terminal is in the correct directory.
+3. **Run Integration Command:** Execute the following command to integrate vcpkg with CMake: **./vcpkg integrate install**. 
+This command will return a line similar to: **-DCMAKE_TOOLCHAIN_FILE=CcodesToolboxvcpkgscriptsbuildsystemsvcpkg.cmake**.
+Save this command in a text file for future reference. You can call the file **CMAKE.txt**
+4. **Check for NLopt Package:** To see if the NLopt library is available, run: **.\vcpkg search nlopt**. 
+You can also search directly on the vcpkg website [2].
+5. **Install NLopt:** Install the NLopt library by running: **.\vcpkg install nlopt**. 
+The library will be downloaded and installed automatically. 
+6. **Manage Installed Packages:** Installed packages are located in **C:\codes\Toolbox\vcpkg\installed**, and you can see the files
+for each package in the **C:\codes\Toolbox\vcpkg\packages** directory.
+7. **Upgrading or Removing Packages:**
+  * To upgrade a package: **.\vcpkg upgrade nlopt**.
+  * Or to force an upgrade: **.\vcpkg upgrade nlopt --no-dry-run**.
+  * To remove a package: **.\vcpkg remove nlopt"**.
+    Use the **--recurse** flag for deeper removal: **.\vcpkg remove nlopt --recurse**.
+
+# Setting up NLopt in Visual Studio 
+<!-- Er kominn hingað -->
 
 To set the library up in Visual Studio do the following:
 1. Create new project
