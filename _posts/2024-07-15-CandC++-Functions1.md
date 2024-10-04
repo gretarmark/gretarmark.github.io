@@ -119,47 +119,15 @@ through their memory addresses. As a result, the values of **a** and **b** are s
 * The **&** operator retrieves the address of a variable.
 * The * operator dereferences the pointer, allowing access to the value stored at the address.
 
+**When to use pass by address:**
+* Use pass by address when you want the function to modify the original variables or when passing large data structures like arrays (to avoid copying).
 
+# 3. Pass by Reference (C++ Only)
 
-When a function is 'passed by address,' the addresses of the actual parameters are passed to the formal parameters, and these formal parameters must be pointers. Any modifications made inside the function will directly affect the values of the actual parameters.
+**Pass by reference** is a feature unique to C++. It allows a function to directly operate on the original variables without needing pointers.
+Instead of passing the memory address, we pass references, which act as **aliases** for the original variables.
 
-Dereferencing of the pointers is performed within the function by changing the values from x and y to \*x and \*y:
-
-* '&' represents an address.
-* '\*' denotes a pointer.
-* Pointers exclusively hold addresses.
-
-The output from code 2 below is as follows:
-
-* a1 = 15
-* b1 = 20
-* a2 = 20
-* b2 = 15
-
-The **swap()** function effectively swaps the values of a and b.
-
-
-
----
-
-## Pass by Reference
-
-Call or pass by reference is a powerful mechanism in C++ that is not part of the C language. In this paradigm, references serve as 'nicknames' for variables. For instance, if &x is a reference to a, and &y is a reference to b, then a is effectively x, and b is y.
-
-References do not consume additional memory; they are aliases for existing variables. In the main function, variables are named a and b, while the swap function refers to them as x and y. The manipulation occurs on the formal parameters x and y, modifying the actual parameters a and b.
-
-Although functions typically cannot access variables from other functions directly, call by reference allows the swap function to become part of the main function. This is distinct from 'pass by value' and 'pass by address,' where the swap function remains a separate entity.
-
-In practice, the machine code of the swap function is inserted directly into the main function, akin to a monolithic program. It's essential to note that call by reference is not always recommended, especially for heavy functions. It should be used judiciously, and other commonly used features, such as call by value and call by address, might be more suitable for certain scenarios.
-
-The output from code 3 below is as follows:
-
-* a1 = 15
-* b1 = 20
-* a2 = 20
-* b2 = 15
-
-Again, the **swap()** function effectively swaps the values of a and b.
+Here's how it works:
 
 ```{C++}
 // Pass by reference
@@ -170,10 +138,7 @@ void swap(int & x, int & y);
 
 int main() {
     
-    int a,b;
-
-    a = 15;
-    b = 20;
+    int a = 15, b = 20;
 
     printf("a1 = %d \n",a);
     printf("b1 = %d \n",b);
@@ -197,5 +162,24 @@ void swap(int & x, int & y)
 ```
 **Code 3: Pass by reference in C++.**
 
----
+**Explanation:**
+* In this case, the function parameters **int &x** and **int &y** are references to the original variables **a** and **b**.
+Since **x** and **y** are just nicknames for **a** and **b**, any changes made to **x** and **y** are directly reflected in the original variables.
+
+**Advantages of pass by reference:**
+* It allows you to modify the original variables without using pointers.
+* It's more readable and avoids the syntax complexities of pointers.
+
+**When to use pass by reference:**
+* Use pass by reference when you need to modify the originaly variables in C++, especially when working with
+large data structures or when you want a cleaner syntax than pointers.
+
+# Summary
+
+* **Pass by value:** A copy of the original data is passed to the function. The original data is not modified.
+* **Pass by address:** The function recieves the address of the original data and can modify it via pointers.
+* **Pass by reference (C++ only):** The function receives references (aliases) to the original data,
+allowing direct modification with cleaner syntax.
+
+
 
