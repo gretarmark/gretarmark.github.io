@@ -14,7 +14,7 @@ We will cover three methods of parameter passing:
 2. **Pass by Address (C and C++)** 
 3. **Pass by Reference (C++ only)** 
 
-## Parameter vs. Argument
+# Parameter vs. Argument
 
 Before diving into the methods, let's clear up two commonly confused terms:
 
@@ -23,9 +23,9 @@ Before diving into the methods, let's clear up two commonly confused terms:
 
 Now, let's explore the three ways you can pass parameters to a function.
 
----
+<!-- --- -->
 
-## 1. Pass by Value (C/C++)
+# 1. Pass by Value (C/C++)
 
 In the **pass by value** method, the function receives a copy of the actual values (arguments) passed in.
 This means the original variables remain unchanged, even if the function modifies its own local copies.
@@ -71,9 +71,7 @@ the original variables in **main()** remain unchanged.
 **When to use pass by value:**
 * Use pass by value when you do not need to modify the original variables and only require the function to be operate on copies of them.
 
----
-
-## 2. Pass by Address (C/C++)
+# 2. Pass by Address (C/C++)
 
 In pass by address, you pass the memory addresses of the variables instead of their values. 
 The function can then directly modify the original variables because it has access to their addresses via pointers.
@@ -89,10 +87,7 @@ void swap(int * x, int * y);
 
 int main() {
     
-    int a,b;
-
-    a = 15;
-    b = 20;
+    int a = 15, b = 20;
 
     printf("a1 = %d \n",a);
     printf("b1 = %d \n",b);
@@ -122,9 +117,9 @@ through their memory addresses. As a result, the values of **a** and **b** are s
 
 **Key Concepts:**
 * The **&** operator retrieves the address of a variable.
-* The ***** operator dereferences the pointer, allowing access to the value stored at the address.
+* The * operator dereferences the pointer, allowing access to the value stored at the address.
 
-* BLA
+
 
 When a function is 'passed by address,' the addresses of the actual parameters are passed to the formal parameters, and these formal parameters must be pointers. Any modifications made inside the function will directly affect the values of the actual parameters.
 
