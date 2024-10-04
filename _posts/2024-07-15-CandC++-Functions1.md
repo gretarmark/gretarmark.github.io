@@ -4,37 +4,33 @@ title: Parameter Passing in C and C++
 published: true
 ---
 
-Today, I am going to discuss how to pass information into a function in C and C++.
+When writing functions in C and C++, we often need to pass information into the function to perform specific tasks.
+This process is known as parameter passing.
 
-Two types of information can be passed into a function:
+In this post, I will explain how parameters are passed into functions in both C and C++, and the different ways of doing so.
+We will cover three methods of parameter passing:
 
-* **A parameter:** The variable listed inside the parentheses in the function definition.
-* **An argument:** The value sent to the function when it is called.
+1. **Pass by Value (C and C++)** 
+2. **Pass by Address (C and C++)** 
+3. **Pass by Reference (C++ only)** 
 
-There are two parameter passing methods in C and three methods in C++:
+## Parameter vs. Argument
 
-1. **Pass by value (C/C++)** 
-2. **Pass by address (C/C++)** 
-3. **Pass by reference (only in C++)** 
+Before diving into the methods, let's clear up two commonly confused terms:
+
+* **Parameter:** The variable listed in the function's definition.
+* **Argument:** The actual value or variable passed to the function when it's called.
+
+Now, let's explore the three ways you can pass parameters to a function.
 
 ---
 
-## Pass by Value
-When code 1 below is executed, the output is as follows:
+## 1. Pass by Value (C/C++)
 
-* a1 = 15
-* b1 = 15
-* a2 = 15
-* b2 = 15
+In the **pass by value** method, the function receives a copy of the actual values (arguments) passed in.
+This means the original variables remain unchanged, even if the function modifies its own local copies.
 
-This indicates that the actual parameters a and b passed into the **swap()** function were not effectively swapped. What occurred is that the parameters x and y were assigned the values of a and b. Consequently, inside the function, the values became:
-
-* x = 15
-* y = 15
-
-Although x and y were swapped within the function, these values were not returned, and they essentially 'died' after the function finished execution. As a result, a and b in the **main()** function retained their original values.
-
-'Pass by value' is suitable when you don't need to modify the actual parameters in your function, and you only need to return a result, for example, in operations like addition. The swap function is an example of a function that is not meant to be implemented using 'pass by value'.
+Let's look at an example:
     
 ```{C++}
 // Pass by Value
@@ -44,10 +40,7 @@ void swap(int x, int y);
 
 int main() {
     
-    int a,b;
-
-    a = 15;
-    b = 20;
+    int a = 15, b = 20;
 
     printf("a1 = %d \n",a);
     printf("b1 = %d \n",b);
@@ -70,26 +63,22 @@ void swap(int x, int y)
 ```
 **Code 1: Pass by value in C.**
 
+**Explanation:**
+* In this code, the **swap()** function attempts to swap the values of **a** and **b**.
+However, since the values of **a** and **b** are passed by value (i.e., only copies are passed), 
+the original variables in **main()** remain unchanged.
+
+**When to use pass by value:**
+* Use pass by value when you do not need to modify the original variables and only require the function to be operate on copies of them.
+
 ---
 
-## Pass by Address
+## 2. Pass by Address (C/C++)
 
-When a function is 'passed by address,' the addresses of the actual parameters are passed to the formal parameters, and these formal parameters must be pointers. Any modifications made inside the function will directly affect the values of the actual parameters.
+In pass by address, you pass the memory addresses of the variables instead of their values. 
+The function can then directly modify the original variables because it has access to their addresses via pointers.
 
-Dereferencing of the pointers is performed within the function by changing the values from x and y to \*x and \*y:
-
-* '&' represents an address.
-* '\*' denotes a pointer.
-* Pointers exclusively hold addresses.
-
-The output from code 2 below is as follows:
-
-* a1 = 15
-* b1 = 20
-* a2 = 20
-* b2 = 15
-
-The **swap()** function effectively swaps the values of a and b.
+Here's an example:
 
 ```{C}
 // Pass by Address
@@ -126,6 +115,35 @@ void swap(int * x, int * y)
 }
 ```
 **Code 2: Pass by address in C.**
+
+**Explanation:**
+* The **swap()** function now uses pointers (int *x and int *y). This allows it to directly modify the values of **a** and **b**
+through their memory addresses. As a result, the values of **a** and **b** are successfully swapped in **main()**.
+
+**Key Concepts:**
+* The **&** operator retrieves the address of a variable.
+* The ***** operator dereferences the pointer, allowing access to the value stored at the address.
+
+* BLA
+
+When a function is 'passed by address,' the addresses of the actual parameters are passed to the formal parameters, and these formal parameters must be pointers. Any modifications made inside the function will directly affect the values of the actual parameters.
+
+Dereferencing of the pointers is performed within the function by changing the values from x and y to \*x and \*y:
+
+* '&' represents an address.
+* '\*' denotes a pointer.
+* Pointers exclusively hold addresses.
+
+The output from code 2 below is as follows:
+
+* a1 = 15
+* b1 = 20
+* a2 = 20
+* b2 = 15
+
+The **swap()** function effectively swaps the values of a and b.
+
+
 
 ---
 
