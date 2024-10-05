@@ -105,7 +105,7 @@ double costFunction(unsigned n, const double* x, double* grad, void* data)
 
 When you run this code, you should get an output similar to:
 
-**found minimum at $$f(2,3) = 3.790613212e-16$$ \approx 0**
+found minimum at $$f(2,3) = 3.790613212e-16 \approx 0$$
 
 #### Reference
 
