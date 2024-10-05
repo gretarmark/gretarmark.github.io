@@ -30,25 +30,19 @@ A higher capacity means more energy storage, but it also makes the battery heavi
 It represents a multiplier of the battery's capacity.
 * Here's how to calculate the C rating:
   * $$C = $$ Capacity (in Ah) $$\cdot$$ Discharge Rate
-
   * For a 4000mAh battery: 
-
     $$\\
     \begin{align}
     c &= \frac{4000 \, mAh}{1000} = 4A \tag{1.1}
     \end{align}
     \\$$
-
   * Continuous discharge capability according to the rating of the battery:
-      
     $$\\
     \begin{align}
     30 \cdot c = 30 \cdot 4 = 120A   \tag{1.2} \\
     40 \cdot c = 40 \cdot 4 = 160A   \tag{1.3}
     \end{align}
     \\$$
-
-
   * This means the battery can provide 120A - 160A continuously until it's fully discharged.
 However, drawing such high current continuously may cause damage (e.g. melted leads), so it's crucial to understand the real power needs of your device.
 
