@@ -29,7 +29,7 @@ A higher capacity means more energy storage, but it also makes the battery heavi
   * The C rating shows how quickly the battery can be discharged without being damaged.
 It represents a multiplier of the battery's capacity.
   * Here's how to calculate the C rating:
-    * $$C = Capacity (in Ah) \cdot Discharge Rate$$
+    * $$C = \text{Capacity (in Ah)} \cdot \text{Discharge Rate\$$
 
       For a 4000mAh battery: 
 $$\\
@@ -42,7 +42,7 @@ c &= \frac{4000 \, mAh}{1000} = 4A \tag{1.1}
       
 $$\\
 \begin{align}
-30 \cdot c = 30 \cdot 4 = 120A   \tag{1.2}
+30 \cdot c = 30 \cdot 4 = 120A   \tag{1.2} \\
 40 \cdot c = 40 \cdot 4 = 160A   \tag{1.3}
 \end{align}
 \\$$
