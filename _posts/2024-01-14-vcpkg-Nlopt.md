@@ -39,15 +39,14 @@ for each package in the **C:\codes\Toolbox\vcpkg\packages** directory.
 # Setting up NLopt in Visual Studio 
 <!-- Er kominn hingað -->
 
-To set the library up in Visual Studio do the following:
-1. Create new project
-2. Add "#include <nlopt>" to your C++ code.
-3. Run ".\vcpkg integrate project" in Windows Powershell and copy the command you get "Install-Package "vcpkg.C.codes.Toolbox.vcpkg" -Source "C:\codes\Toolbox\vcpkg"".
-4. Follow the instructions by going to Visual Studio, "Tools/NuGet Package Manager/Package Manager Console", and paste the command in there.
-   This will install the vcpkg project.
-5. Now the library should work.
+1. **Create a new project** 
+2. **Integrate vcpkg into the project:** Run the following command in PowerShell: **.\vcpkg integrate project** and make sure to add **#include <nlopt>** to your code. Copy the generated command, which should look something like this: **"Install-Package "vcpkg.C.codes.Toolbox.vcpkg" -Source "C:\codes\Toolbox\vcpkg"**.
+Open Visual Studio, navigate to **Tools -> NuGet Package Manager -> Package Manager Console**, and paste the command there. 
+This will install the vcpkg package in your project.
 
-You can try the code from [4]:
+# Test the Installation with a Sample Code
+
+Here's a sample optimization problem using NLopt. You can test your installation with this code [4]:
 
 ```{C++}
 #include <iostream>
@@ -104,7 +103,9 @@ double costFunction(unsigned n, const double* x, double* grad, void* data)
 }
 ```
 
-The output should be "found minimum at $$f(2,3) = 3.790613212e-16$$ \approd 0".
+When you run this code, you should get an output similar to:
+
+**found minimum at $$f(2,3) = 3.790613212e-16$$ \approd 0**
 
 #### Reference
 
