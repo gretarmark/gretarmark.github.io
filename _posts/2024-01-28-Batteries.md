@@ -20,35 +20,36 @@ In Figure 1, the battery specifications are:
 # Understanding the Specifications
 
 1. **Capacity (4000mAh)**
-  * The capacity, measured in milliamp-hours (mAh), indicates how much charge the battery can hold.
+* The capacity, measured in milliamp-hours (mAh), indicates how much charge the battery can hold.
 A higher capacity means more energy storage, but it also makes the battery heavier.
-  * A 4000mAh battery can supply 4000mA of current for one hour, or 2000mA for two hours, and so on.
-  * Essentially, a higher mAh rating means the device can run longer or power a more demanding device.
+* A 4000mAh battery can supply 4000mA of current for one hour, or 2000mA for two hours, and so on.
+* Essentially, a higher mAh rating means the device can run longer or power a more demanding device.
 
 2. **Discharge Rate (30-40C)**
-  * The C rating shows how quickly the battery can be discharged without being damaged.
+* The C rating shows how quickly the battery can be discharged without being damaged.
 It represents a multiplier of the battery's capacity.
-  * Here's how to calculate the C rating:
-  **  * $$C = $$ Capacity (in Ah) $$\cdot$$ Discharge Rate
+* Here's how to calculate the C rating:
+  * $$C = $$ Capacity (in Ah) $$\cdot$$ Discharge Rate
 
-      For a 4000mAh battery: 
-$$\\
-\begin{align}
-c &= \frac{4000 \, mAh}{1000} = 4A \tag{1.1}
-\end{align}
-\\$$
+  * For a 4000mAh battery: 
 
-   ** * Continuous discharge capability according to the rating of the battery:
+    $$\\
+    \begin{align}
+    c &= \frac{4000 \, mAh}{1000} = 4A \tag{1.1}
+    \end{align}
+    \\$$
+
+  * Continuous discharge capability according to the rating of the battery:
       
-$$\\
-\begin{align}
-30 \cdot c = 30 \cdot 4 = 120A   \tag{1.2} \\
-40 \cdot c = 40 \cdot 4 = 160A   \tag{1.3}
-\end{align}
-\\$$
+    $$\\
+    \begin{align}
+    30 \cdot c = 30 \cdot 4 = 120A   \tag{1.2} \\
+    40 \cdot c = 40 \cdot 4 = 160A   \tag{1.3}
+    \end{align}
+    \\$$
 
 
-   * This means the battery can provide 120A - 160A continuously until it's fully discharged.
+  * This means the battery can provide 120A - 160A continuously until it's fully discharged.
 However, drawing such high current continuously may cause damage (e.g. melted leads), so it's crucial to understand the real power needs of your device.
 
 3. **Cell Configuration (2 cells, 7.4V)**
