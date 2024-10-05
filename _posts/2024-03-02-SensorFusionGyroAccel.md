@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Gyroscope & Accelerometer sensor fusion - STM32 
+title: Building Your Own Drone -  Getting MPU6050 measurements with STM32 - Part 3
 published: true
 ---
 
-To maintain balance in the air, Unmanned Aerial Vehicles (UAVs) like drones rely on sensor fusion. This process combines data from multiple sensors, including gyroscopes and accelerometers, to create a comprehensive understanding of the environment.
+To maintain stability in the air, Unmanned Aerial Vehicles (UAVs) such as drones rely on sensor fusion, a process that combines data from multiple sensors,
+including gyroscopes and accelerometers. This enables the UAV to better understand its environment and adjust accordingly  
 
 ## USB communication using STM32 and MPU6050
 
