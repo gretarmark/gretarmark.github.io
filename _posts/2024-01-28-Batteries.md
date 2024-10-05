@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Choose a Battery for Your Electronic Devices
+title: Building Your Own Drone - Batteries - Part 1
 published: true
 ---
 
