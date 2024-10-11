@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Your Own Drone -  Getting MPU6050 measurements with STM32 - Part 3
+title: Building Your Own Drone -  IMU Measurements - Part 3
 published: true
 ---
 
