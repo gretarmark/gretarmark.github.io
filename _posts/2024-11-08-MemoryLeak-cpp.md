@@ -8,7 +8,7 @@ C++ pointers programming challenges:
 
 ** Memory Leak
 
-In the code snip below
+Code 1 below includes a memory leak.
   
 ```{C++}
 int **arr;
@@ -18,3 +18,4 @@ arr[i] = malloc(4 * sizeof(int));
 }
 free(arr);
 ```
+**Code 1: Memory leak.**
