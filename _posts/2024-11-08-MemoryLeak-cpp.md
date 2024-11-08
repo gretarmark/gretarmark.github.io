@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C++
-published: true
+published: false
 ---
 
 C++ pointers programming challenges:
