@@ -54,9 +54,9 @@ The controller will automatically satisfy this rule while still optimizing perfo
 
 ### 4. LQR: Compute the Control Law
 
-Solve the algebraic Riccati equation to obtain the feedback gain $$K$$
+Solve the algebraic Riccati equation to obtain the feedback gain $$K$$,
 
-$$u = -Kx$$.
+$$u = -Kx$$
 
 The rows of $$K$$ determine how each actuator reacts to all system states.
 If the rows are similar, the actuators naturally coordinate.
@@ -67,7 +67,7 @@ MPC minimizes the same style of cost function but also allows constraints.
 This means actuator relationships can be defined either as:
 
 - Soft rules (penalties, like $$(u_1 - u_2)^2$$). Soft rules influence behavior but do not strictly force it. They are encoded in Q and R.
-- Hard constraints (e.g., $$u_1 = u_2$$, or $$\vert u_1 - u_2 \vert \leq \epsilon$$. 
+- Hard constraints (e.g., $$u_1 = u_2$$, or $$\vert u_1 - u_2 \vert \leq \epsilon$$). 
 
 MPC enforces these rules while predicting the future behavior of the system.
 
