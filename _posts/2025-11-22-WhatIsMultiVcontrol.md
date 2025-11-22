@@ -67,7 +67,7 @@ MPC minimizes the same style of cost function but also allows constraints.
 This means actuator relationships can be defined either as:
 
 - Soft rules (penalties, like $$(u_1 - u_2)^2$$). Soft rules influence behavior but do not strictly force it. They are encoded in Q and R.
-- Hard constraints (e.g., $$u_1 = u_2$$, or $$ |u_1 - u_2| \leq \epsilon $$. 
+- Hard constraints (e.g., $$u_1 = u_2$$, or $$|u_1 - u_2| \le \epsilon$$. 
 
 MPC enforces these rules while predicting the future behavior of the system.
 
