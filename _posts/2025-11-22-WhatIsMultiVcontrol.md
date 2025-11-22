@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is Multivariable Control?
-published: false
+published: true
 ---
 
 Multivariable control refers to controlling systems with more than one input or more than one actuator.
