@@ -83,6 +83,7 @@ MPC enforces these rules while predicting the future behavior of the system.
 
 The magnitude of the magnetic field around a wire is inversely proportional to the distance from the wire, with the field strength decreasing as the distance from the wire increases.
 
--->
+
 #### References
 [1] Robert Adams & Christopher Essex. Calculus, A Complete Course, 9th edition.
+-->
