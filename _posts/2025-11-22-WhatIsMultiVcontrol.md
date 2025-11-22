@@ -19,7 +19,7 @@ $$\dot{x}(t) = Ax(t) + Bu(t)$$
 
 or in discrete time
 
-$$\dot{x}_{k+1} = Ax_{k} + Bu_{k}$$.
+$$\dot{x}_{k+1} = Ax_{k} + Bu_{k}$$
 
 Here, $$x$$ contains all relevant states (positions, velocities, pressures, currents, etc.), and $$u$$ contains the inputs for each actuator.
 Any coupling between actuators is captured naturally inside the matrices $$A$$ and $$B$$.
