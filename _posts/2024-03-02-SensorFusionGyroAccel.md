@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building Your Own Drone -  IMU Measurements - Part 3
-published: true
+published: False
 ---
 
 To maintain stability in the air, Unmanned Aerial Vehicles (UAVs) such as drones rely on sensor fusion, a process that combines data from multiple sensors,
