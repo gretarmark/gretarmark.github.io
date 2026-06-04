@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Boost library for C++
-published: True
+published: False
 ---
 
 Boost is a collection of libraries for the C++ programming language that provides support for various tasks and structures, including linear algebra, 
