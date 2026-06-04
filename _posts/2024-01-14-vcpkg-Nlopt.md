@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing the Nlopt Library for C++ using vcpkg
-published: True
+published: False
 ---
 
 **Vcpkg** is an open-source cross-platform package manager developed by Microsoft. 
