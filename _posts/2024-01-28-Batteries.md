@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building Your Own Drone - Batteries - Part 1
-published: true
+published: False
 ---
 
 When selecting a battery for electronic devices, it's essential to understand how to interpret the information provided on various 
