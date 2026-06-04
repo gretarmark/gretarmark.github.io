@@ -10,7 +10,7 @@ I have experience across multiple industrial sectors, including data centers, wa
 
 Alongside my professional work, I actively develop personal projects to advance my expertise in control algorithm design, image analysis, AI, and embedded systems.
 
-My academic background focuses on advanced control methodologies, including Model Predictive Control (MPC), Robust Control, Stochastic Adaptive Control, Linear Quadratic Regulation (LQR), Fault-Tolerant Control, and PID control, as well as image analysis, embedded programming, power systems and AI.
+My academic background focuses on advanced control methodologies, including Model Predictive Control (MPC), Robust Control, Stochastic Adaptive Control, Linear Quadratic Regulation (LQR), Fault-Tolerant Control, and PID control, as well as image analysis, embedded programming, power systems and reinforcement learning.
 
 ### Contact Information
 
