@@ -51,12 +51,12 @@ $$
 
 where:
 
-* (x(t)) is the state vector
-* (A) is the system matrix
+* $$x(t)$$ is the state vector
+* $$A$$ is the system matrix
 
 The fundamental question is:
 
-> Will the state (x(t)) converge to zero as time approaches infinity?
+> Will the state $$x(t)$$ converge to zero as time approaches infinity?
 
 If the answer is yes, the system is said to be **asymptotically stable**.
 
@@ -72,19 +72,19 @@ $$
 V(x)=x^TPx
 $$
 
-where (P) is a symmetric matrix.
+where $$P$$ is a symmetric matrix.
 
-You can think of (V(x)) as a generalized energy function.
+You can think of $$V(x)$$ as a generalized energy function.
 
-For mechanical systems, energy consists of kinetic and potential energy. For a general linear system, the quadratic form (x^TPx) plays a similar role.
+For mechanical systems, energy consists of kinetic and potential energy. For a general linear system, the quadratic form $$x^TPx$$ plays a similar role.
 
-For (V(x)) to represent energy, it must be positive for every nonzero state:
+For $$V(x)$$ to represent energy, it must be positive for every nonzero state:
 
 $$
 P>0.
 $$
 
-This means that (P) is **positive definite**.
+This means that $$P$$ is **positive definite**.
 
 The next step is to determine whether this energy increases or decreases over time.
 
@@ -92,15 +92,10 @@ The next step is to determine whether this energy increases or decreases over ti
 
 ## Deriving the Lyapunov Stability Condition
 
-To determine how the energy changes, we compute the time derivative of (V(x)):
+To determine how the energy changes, we compute the time derivative of $$V(x)$$:
 
 $$
-\dot{V}
-=======
-
-\dot{x}^TPx
-+
-x^TP\dot{x}.
+\dot{V} = \dot{x}^TPx + x^TP\dot{x}.
 $$
 
 Substituting the system dynamics
@@ -112,12 +107,7 @@ $$
 gives
 
 $$
-\dot{V}
-=======
-
-(Ax)^TPx
-+
-x^TP(Ax).
+\dot{V} = (Ax)^TPx + x^TP(Ax).
 $$
 
 Using the transpose identity
@@ -129,21 +119,13 @@ $$
 we obtain
 
 $$
-\dot{V}
-=======
-
-x^TA^TPx
-+
-x^TPAx.
+\dot{V} = x^TA^TPx + x^TPAx.
 $$
 
-Factoring out (x^T) and (x),
+Factoring out $$x^T$$ and $$x$$,
 
 $$
-\dot{V}
-=======
-
-x^T(A^TP+PA)x.
+\dot{V} = x^T(A^TP+PA)x.
 $$
 
 This expression determines whether the system's energy increases or decreases over time.
@@ -170,7 +152,7 @@ This leads directly to the Lyapunov stability condition.
 
 ## The Lyapunov Stability Condition
 
-If there exists a matrix (P) such that
+If there exists a matrix $$P$$ such that
 
 $$
 P>0
@@ -200,13 +182,13 @@ is called a **Linear Matrix Inequality (LMI)**.
 
 To understand why, note that:
 
-* (A) is known.
-* (P) is unknown.
-* Every entry of (A^TP+PA) depends linearly on the entries of (P).
+* $$A$$ is known.
+* $$P$$ is unknown.
+* Every entry of $$A^TP+PA$$ depends linearly on the entries of $$P$$.
 
-There are no products between unknown variables and no nonlinear terms involving (P).
+There are no products between unknown variables and no nonlinear terms involving $$P$$.
 
-Because the matrix expression is linear in the unknown matrix (P), the condition is an LMI.
+Because the matrix expression is linear in the unknown matrix $$P$$, the condition is an LMI.
 
 This is one of the earliest and most important LMIs in control theory.
 
@@ -232,7 +214,7 @@ $$
 A^TP+PA=-Q.
 $$
 
-Since (Q) is known, this becomes a system of linear equations in the entries of (P).
+Since $$Q$$ is known, this becomes a system of linear equations in the entries of $$P$$.
 
 A common choice is
 
@@ -246,7 +228,7 @@ $$
 A^TP+PA=-I.
 $$
 
-If the resulting solution (P) is positive definite, then the system is stable.
+If the resulting solution $$P$$ is positive definite, then the system is stable.
 
 ---
 
@@ -255,7 +237,7 @@ If the resulting solution (P) is positive definite, then the system is stable.
 Consider
 
 $$
-A=
+A =
 \begin{bmatrix}
 -1 & 0 \
 0 & -2
@@ -265,8 +247,7 @@ $$
 and choose
 
 $$
-Q=
-I=
+Q= I=
 \begin{bmatrix}
 1 & 0 \
 0 & 1
@@ -296,8 +277,7 @@ $$
 -2p_{11} & -3p_{12} \
 -3p_{12} & -4p_{22}
 \end{bmatrix}
-=============
-
+=
 \begin{bmatrix}
 -1 & 0 \
 0 & -1
@@ -328,7 +308,7 @@ P=
 \end{bmatrix}.
 $$
 
-Since both eigenvalues are positive, (P) is positive definite.
+Since both eigenvalues are positive, $$P$$ is positive definite.
 
 Therefore, the system is asymptotically stable.
 
@@ -346,7 +326,7 @@ Examples include:
 * Robust control
 * Gain scheduling
 * Model Predictive Control (MPC)
-* (H_\infty) control
+* $$H_{\infty}$$ control
 
 The key advantage is that LMIs define **convex optimization problems**.
 
