@@ -337,7 +337,7 @@ The KYP/PR Lemma serves as a foundation for many important areas of modern contr
 * Robust control
 * Dissipativity theory
 * Integral Quadratic Constraints (IQCs)
-* (H_\infty) control
+* $$H_{\infty}$$ control
 * Modern LMI methods
 
 Many advanced control results can ultimately be traced back to extensions of the KYP Lemma.
