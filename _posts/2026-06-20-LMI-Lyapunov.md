@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "The Historical Origin of Linear Matrix Inequalities (LMIs)"
 date: 2026-06-20
@@ -7,54 +6,26 @@ categories: control-theory optimization
 published: true
 ---
 
-Imagine you are designing the control system for a drone, an autonomous vehicle, a robot, or a power plant.
+Linear Matrix Inequalities (LMIs) are among the most powerful tools in modern control theory. They appear in applications ranging from stability analysis and robust control to Model Predictive Control (MPC) and optimal controller design.
 
-Before deploying the controller, you need to answer a fundamental question:
-
-> Will the system remain stable?
-
-For simple systems, it is sometimes possible to solve the differential equations and directly examine the solution. However, for realistic engineering systems this quickly becomes impractical.
-
-More than 130 years ago, Russian mathematician Aleksandr Lyapunov developed a remarkable alternative. Instead of solving the differential equations, he proposed studying an energy-like function whose value decreases over time.
-
-This idea eventually led to one of the most important tools in modern control theory: **Linear Matrix Inequalities (LMIs)**.
-
-Today, LMIs are used in stability analysis, robust control, observer design, Model Predictive Control (MPC), and many other advanced control techniques.
-
----
-
-## A Brief Historical Perspective
-
-In 1892, Lyapunov published his doctoral dissertation *The General Problem of Stability of Motion*.
-
-At the time, stability analysis was largely based on finding explicit solutions to differential equations. Lyapunov introduced a completely different viewpoint: determine stability without solving the system itself.
-
-His approach was so powerful that it became one of the foundations of modern control theory.
-
-Although the term *Linear Matrix Inequality* would not appear until many decades later, the famous Lyapunov condition
-
-$$
-A^T P + PA < 0
-$$
-
-is now recognized as one of the earliest and most important examples of an LMI.
+Interestingly, the origins of LMIs can be traced back to the pioneering work of Russian mathematician Aleksandr Lyapunov in the late 19th century.
 
 ---
 
 ## The Stability Problem
 
-Consider the linear time-invariant system
+Consider a linear time-invariant system
 
 $$
-\dot{x}(t)=Ax(t)
+\dot{x}(t) = Ax(t)
 $$
 
 where:
 
-* $$x(t)$$ is the state vector
-* $$A$$ is the system matrix
+- $$x(t)$$ is the state vector
+- $$A$$ is the system matrix
 
-The fundamental question is:
+A fundamental question in control theory is:
 
 > Will the state $$x(t)$$ converge to zero as time approaches infinity?
 
@@ -64,38 +35,38 @@ If the answer is yes, the system is said to be **asymptotically stable**.
 
 ## Lyapunov's Revolutionary Idea
 
-Instead of solving the differential equation directly, Lyapunov proposed searching for a scalar function that behaves like an energy measure of the system.
+Around 1890, Lyapunov introduced a method for determining stability without explicitly solving the differential equation.
 
-For linear systems, a common choice is
+Instead of finding the solution $$x(t)$$, he proposed searching for a scalar function that behaves like an "energy" measure of the system. For linear systems, a common choice is
 
 $$
-V(x)=x^TPx
+V(x) = x^T P x
 $$
 
 where $$P$$ is a symmetric matrix.
 
-You can think of $$V(x)$$ as a generalized energy function.
-
-For mechanical systems, energy consists of kinetic and potential energy. For a general linear system, the quadratic form $$x^TPx$$ plays a similar role.
-
 For $$V(x)$$ to represent energy, it must be positive for every nonzero state:
 
 $$
-P>0.
+P > 0
 $$
 
-This means that $$P$$ is **positive definite**.
+meaning that $P$ is **positive definite**.
 
-The next step is to determine whether this energy increases or decreases over time.
+The next step is to examine how this energy changes over time.
 
 ---
 
-## Deriving the Lyapunov Stability Condition
+## Differentiating the Lyapunov Function
 
-To determine how the energy changes, we compute the time derivative of $$V(x)$$:
+Differentiating the Lyapunov function gives
 
 $$
-\dot{V} = \dot{x}^TPx + x^TP\dot{x}.
+\dot{V}
+=
+\dot{x}^T P x
++
+x^T P \dot{x}.
 $$
 
 Substituting the system dynamics
@@ -104,49 +75,47 @@ $$
 \dot{x}=Ax
 $$
 
-gives
+yields
 
 $$
-\dot{V} = (Ax)^TPx + x^TP(Ax).
+\dot{V}
+=
+(Ax)^T P x
++
+x^T P (Ax).
 $$
 
 Using the transpose identity
 
 $$
-(Ax)^T=x^TA^T,
+(Ax)^T = x^T A^T,
 $$
 
 we obtain
 
 $$
-\dot{V} = x^TA^TPx + x^TPAx.
+\dot{V}
+=
+x^T A^T P x
++
+x^T P A x.
 $$
 
 Factoring out $$x^T$$ and $$x$$,
 
 $$
-\dot{V} = x^T(A^TP+PA)x.
+\dot{V}
+=
+x^T(A^T P + PA)x.
 $$
 
-This expression determines whether the system's energy increases or decreases over time.
-
-If the matrix
+This is the famous Lyapunov matrix expression
 
 $$
-A^TP+PA
+A^T P + PA.
 $$
 
-is negative definite, then
-
-$$
-\dot{V}<0
-$$
-
-for every nonzero state.
-
-In other words, the energy continuously decreases, forcing the state toward the equilibrium point.
-
-This leads directly to the Lyapunov stability condition.
+The transpose $$A^T$$ appears naturally during the differentiation of the quadratic function $$V(x)=x^TPx$$.
 
 ---
 
@@ -155,18 +124,26 @@ This leads directly to the Lyapunov stability condition.
 If there exists a matrix $$P$$ such that
 
 $$
-P>0
+P > 0
 $$
 
 and
 
 $$
-A^TP+PA<0,
+A^T P + PA < 0,
 $$
 
-then the system is asymptotically stable.
+then
 
-This result is one of the most important theorems in control theory and forms the foundation of modern Lyapunov analysis.
+$$
+\dot{V} < 0
+$$
+
+for every nonzero state.
+
+This means the system energy continuously decreases, forcing the state toward the origin.
+
+Therefore, the system is asymptotically stable.
 
 ---
 
@@ -175,18 +152,18 @@ This result is one of the most important theorems in control theory and forms th
 The inequality
 
 $$
-A^TP+PA<0
+A^T P + PA < 0
 $$
 
 is called a **Linear Matrix Inequality (LMI)**.
 
 To understand why, note that:
 
-* $$A$$ is known.
-* $$P$$ is unknown.
-* Every entry of $$A^TP+PA$$ depends linearly on the entries of $$P$$.
+- $$A$$ is known.
+- $$P$$ is unknown.
+- Every entry of $$A^T P + PA$$ depends linearly on the entries of $$P$$.
 
-There are no products between unknown variables and no nonlinear terms involving $$P$$.
+There are no products between unknown variables and no nonlinear terms involving $P$.
 
 Because the matrix expression is linear in the unknown matrix $$P$$, the condition is an LMI.
 
@@ -199,33 +176,33 @@ This is one of the earliest and most important LMIs in control theory.
 Instead of solving
 
 $$
-A^TP+PA<0
+A^T P + PA < 0
 $$
 
 directly, a common approach is to choose any positive definite matrix
 
 $$
-Q>0
+Q > 0
 $$
 
 and solve the Lyapunov equation
 
 $$
-A^TP+PA=-Q.
+A^T P + PA = -Q.
 $$
 
 Since $$Q$$ is known, this becomes a system of linear equations in the entries of $$P$$.
 
-A common choice is
+A popular choice is
 
 $$
-Q=I,
+Q = I,
 $$
 
 which gives
 
 $$
-A^TP+PA=-I.
+A^T P + PA = -I.
 $$
 
 If the resulting solution $$P$$ is positive definite, then the system is stable.
@@ -237,7 +214,7 @@ If the resulting solution $$P$$ is positive definite, then the system is stable.
 Consider
 
 $$
-A =
+A=
 \begin{bmatrix}
 -1 & 0 \\
 0 & -2
@@ -247,7 +224,7 @@ $$
 and choose
 
 $$
-Q= I=
+Q=I=
 \begin{bmatrix}
 1 & 0 \\
 0 & 1
@@ -267,7 +244,7 @@ $$
 Substituting into
 
 $$
-A^TP+PA=-I
+A^T P + PA = -I
 $$
 
 gives
@@ -298,7 +275,7 @@ $$
 p_{22}=0.25.
 $$
 
-Therefore,
+Therefore
 
 $$
 P=
@@ -316,27 +293,23 @@ Therefore, the system is asymptotically stable.
 
 ## Why LMIs Became So Important
 
-The Lyapunov inequality was originally developed as a stability test, but researchers later discovered that many control design problems could be written in a similar form.
+Over the past few decades, researchers discovered that many control design problems can be expressed as LMIs.
 
 Examples include:
 
-* Stability analysis
-* State-feedback controller design
-* Observer design
-* Robust control
-* Gain scheduling
-* Model Predictive Control (MPC)
-* $$H_{\infty}$$ control
+- Stability analysis
+- State-feedback control
+- Observer design
+- Robust control
+- Gain scheduling
+- Model Predictive Control (MPC)
+- $H_\infty$ control
 
 The key advantage is that LMIs define **convex optimization problems**.
 
-Convex optimization is particularly attractive because every local optimum is also a global optimum.
+Convex problems have a single global optimum and can be solved efficiently using modern semidefinite programming solvers.
 
-Unlike many nonlinear optimization problems, convex problems can be solved efficiently and reliably using modern semidefinite programming solvers.
-
-As computing power increased during the 1990s and 2000s, LMIs became one of the central mathematical tools in control engineering and optimization.
-
-Today, many advanced control algorithms can be viewed as extensions of the same idea that Lyapunov introduced more than a century ago.
+This combination of strong mathematical guarantees and computational efficiency has made LMIs one of the foundational tools of modern control engineering.
 
 ---
 
@@ -345,7 +318,7 @@ Today, many advanced control algorithms can be viewed as extensions of the same 
 The simple condition
 
 $$
-A^TP+PA<0
+A^T P + PA < 0
 $$
 
 may look like just another matrix inequality, but it represents one of the most influential ideas in control theory.
