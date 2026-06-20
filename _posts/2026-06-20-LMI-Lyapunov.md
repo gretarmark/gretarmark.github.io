@@ -163,7 +163,7 @@ To understand why, note that:
 - $$P$$ is unknown.
 - Every entry of $$A^T P + PA$$ depends linearly on the entries of $$P$$.
 
-There are no products between unknown variables and no nonlinear terms involving $P$.
+There are no products between unknown variables and no nonlinear terms involving $$P$$.
 
 Because the matrix expression is linear in the unknown matrix $$P$$, the condition is an LMI.
 
