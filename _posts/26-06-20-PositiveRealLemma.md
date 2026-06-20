@@ -348,11 +348,14 @@ Many advanced control results can ultimately be traced back to extensions of the
 
 Three landmark results help define modern control theory:
 
-| Result                    | Connects                             |
-| ------------------------- | ------------------------------------ |
-| Lyapunov Theorem          | Stability ↔ Matrix Inequality        |
-| Positive Real (KYP) Lemma | Frequency Response ↔ State-Space LMI |
-| Separation Principle      | State Feedback ↔ Observer Design     |
+**Lyapunov Theorem**  
+Stability ↔ Matrix Inequality
+
+**Positive Real (KYP) Lemma**  
+Frequency Response ↔ State-Space LMI
+
+**Separation Principle**  
+State Feedback ↔ Observer Design
 
 The Positive Real Lemma is often regarded as one of the deepest results in control theory because it unifies two powerful perspectives:
 
