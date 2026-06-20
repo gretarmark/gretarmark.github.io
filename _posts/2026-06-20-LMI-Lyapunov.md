@@ -5,7 +5,7 @@ title: "The Historical Origin of Linear Matrix Inequalities (LMIs)"
 date: 2026-06-20
 categories: control-theory optimization
 published: true
----------------
+---
 
 Imagine you are designing the control system for a drone, an autonomous vehicle, a robot, or a power plant.
 
