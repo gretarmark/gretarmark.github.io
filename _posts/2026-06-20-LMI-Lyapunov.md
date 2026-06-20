@@ -330,3 +330,11 @@ What began as Lyapunov's method for proving stability evolved into an entire fra
 Today, LMIs form the mathematical backbone of many advanced control techniques, connecting classical stability theory with modern convex optimization.
 
 If you study modern control theory, optimization, MPC, robust control, or semidefinite programming, you will encounter LMIs repeatedly. Understanding the Lyapunov inequality is therefore one of the best starting points for learning the field.
+
+---
+
+#### References
+
+[1] Linear Matrix Inequalities in System and Control Theory, Stephen Boyd, Laurent El Ghaoui, Eric Feron, and V. Balakrishnan. [Link](https://stanford.edu/~boyd/lmibook/lmibook.pdf)
+
+[2] CVXGEN [Link](https://cvxgen.com/docs/index.html)
