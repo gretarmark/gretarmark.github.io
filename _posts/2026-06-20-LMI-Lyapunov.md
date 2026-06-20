@@ -239,7 +239,7 @@ Consider
 $$
 A =
 \begin{bmatrix}
--1 & 0 \
+-1 & 0 \\
 0 & -2
 \end{bmatrix}
 $$
@@ -249,7 +249,7 @@ and choose
 $$
 Q= I=
 \begin{bmatrix}
-1 & 0 \
+1 & 0 \\
 0 & 1
 \end{bmatrix}.
 $$
@@ -259,7 +259,7 @@ Assume
 $$
 P=
 \begin{bmatrix}
-p_{11} & p_{12} \
+p_{11} & p_{12} \\
 p_{12} & p_{22}
 \end{bmatrix}.
 $$
@@ -274,12 +274,12 @@ gives
 
 $$
 \begin{bmatrix}
--2p_{11} & -3p_{12} \
+-2p_{11} & -3p_{12} \\
 -3p_{12} & -4p_{22}
 \end{bmatrix}
 =
 \begin{bmatrix}
--1 & 0 \
+-1 & 0 \\
 0 & -1
 \end{bmatrix}.
 $$
@@ -303,7 +303,7 @@ Therefore,
 $$
 P=
 \begin{bmatrix}
-0.5 & 0 \
+0.5 & 0 \\
 0 & 0.25
 \end{bmatrix}.
 $$
