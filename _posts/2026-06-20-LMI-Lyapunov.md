@@ -22,12 +22,12 @@ $$
 
 where:
 
-- $x(t)$ is the state vector
-- $A$ is the system matrix
+- $$x(t)$$ is the state vector
+- $$A$$ is the system matrix
 
 A fundamental question in control theory is:
 
-> Will the state $x(t)$ converge to zero as time approaches infinity?
+> Will the state $$x(t)$$ converge to zero as time approaches infinity?
 
 If the answer is yes, the system is said to be **asymptotically stable**.
 
@@ -37,27 +37,27 @@ If the answer is yes, the system is said to be **asymptotically stable**.
 
 Around 1890, Lyapunov introduced a method for determining stability without explicitly solving the differential equation.
 
-Instead of finding the solution $x(t)$, he proposed searching for a scalar function that behaves like an "energy" measure of the system. For linear systems, a common choice is
+Instead of finding the solution $$x(t)$$, he proposed searching for a scalar function that behaves like an "energy" measure of the system. For linear systems, a common choice is
 
 $$
 V(x) = x^T P x
 $$
 
-where $P$ is a symmetric matrix.
+where $$P$$ is a symmetric matrix.
 
-For $V(x)$ to represent energy, it must be positive for every nonzero state:
+For $$V(x)$$ to represent energy, it must be positive for every nonzero state:
 
 $$
 P > 0
 $$
 
-meaning that $P$ is **positive definite**.
+meaning that $$P$$ is **positive definite**.
 
 The next step is to examine how this energy changes over time.
 
 ---
 
-## Where Does $A^T$ Come From?
+## Where Does $$A^T$$ Come From?
 
 Differentiating the Lyapunov function gives
 
@@ -101,7 +101,7 @@ x^T A^T P x
 x^T P A x.
 $$
 
-Factoring out $x^T$ and $x$,
+Factoring out $$x^T$$ and $$x$$,
 
 $$
 \dot{V}
@@ -115,13 +115,13 @@ $$
 A^T P + PA.
 $$
 
-The transpose $A^T$ appears naturally during the differentiation of the quadratic function $V(x)=x^TPx$.
+The transpose $$A^T$$ appears naturally during the differentiation of the quadratic function $$V(x)=x^TPx$$.
 
 ---
 
 ## The Lyapunov Stability Condition
 
-If there exists a matrix $P$ such that
+If there exists a matrix $$P$$ such that
 
 $$
 P > 0
@@ -159,13 +159,13 @@ is called a **Linear Matrix Inequality (LMI)**.
 
 To understand why, note that:
 
-- $A$ is known.
-- $P$ is unknown.
-- Every entry of $A^T P + PA$ depends linearly on the entries of $P$.
+- $$A$$ is known.
+- $$P$$ is unknown.
+- Every entry of $$A^T P + PA$$ depends linearly on the entries of $$P$$.
 
-There are no products between unknown variables and no nonlinear terms involving $P$.
+There are no products between unknown variables and no nonlinear terms involving $$P$$.
 
-Because the matrix expression is linear in the unknown matrix $P$, the condition is an LMI.
+Because the matrix expression is linear in the unknown matrix $$P$$, the condition is an LMI.
 
 This is one of the earliest and most important LMIs in control theory.
 
@@ -191,7 +191,7 @@ $$
 A^T P + PA = -Q.
 $$
 
-Since $Q$ is known, this becomes a system of linear equations in the entries of $P$.
+Since $$Q$$ is known, this becomes a system of linear equations in the entries of $$P$$.
 
 A popular choice is
 
@@ -285,7 +285,7 @@ P=
 \end{bmatrix}.
 $$
 
-Since both eigenvalues are positive, $P$ is positive definite.
+Since both eigenvalues are positive, $$P$$ is positive definite.
 
 Therefore, the system is asymptotically stable.
 
