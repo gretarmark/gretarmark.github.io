@@ -303,7 +303,7 @@ Examples include:
 - Robust control
 - Gain scheduling
 - Model Predictive Control (MPC)
-- $H_\infty$ control
+- $$H_{\infty}$$ control
 
 The key advantage is that LMIs define **convex optimization problems**.
 
