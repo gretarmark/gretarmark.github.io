@@ -5,7 +5,7 @@ date: 2026-06-20
 categories: [control-theory, optimization, lmi]
 tags: [control-theory, kyp-lemma, positive-real, passivity, lyapunov, lmi]
 description: "Learn the Positive Real (PR) Lemma, also known as the Kalman–Yakubovich–Popov (KYP) Lemma, and how it connects frequency-domain analysis, passivity, Lyapunov theory, and LMIs."
-published: true
+published: false
 ---
 
 The **Positive Real (PR) Lemma**, also known as the **Kalman–Yakubovich–Popov (KYP) Lemma**, is one of the most important results in modern control theory.
