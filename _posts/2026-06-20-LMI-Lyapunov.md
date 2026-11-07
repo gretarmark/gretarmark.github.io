@@ -3,7 +3,7 @@ layout: post
 title: "The Historical Origin of Linear Matrix Inequalities (LMIs)"
 date: 2026-06-20
 categories: control-theory optimization
-published: true
+published: false
 ---
 
 Linear Matrix Inequalities (LMIs) are among the most powerful tools in modern control theory. They appear in applications ranging from stability analysis and robust control to Model Predictive Control (MPC) and optimal controller design.
