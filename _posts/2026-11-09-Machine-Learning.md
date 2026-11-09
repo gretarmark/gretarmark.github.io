@@ -39,6 +39,8 @@ Some examples:
 | Flow rate and system pressure | Pump speed |
 | Inlet humidity and temperature | Drying time |
 
+These are illustrative examples. In a real application, the neural network would typically require historical process data, including the relevant inputs and corresponding measured outputs, to learn these relationships.
+
 ---
 
 **Work in Progress**
