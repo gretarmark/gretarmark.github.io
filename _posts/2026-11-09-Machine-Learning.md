@@ -27,6 +27,18 @@ We provide the neural network with training data consisting of inputs and their 
 
 The network does not adjust the weights so that the input matches the output. Instead, it adjusts the weights so that its predicted output approaches the expected output.
 
+# Ideas for Inputs and Outputs in Industrial Processes
+
+Neural networks can be used in industrial processes to learn relationships between different process variables and predict desired outputs.
+Some examples:
+
+| Input variables | Expected output |
+|---|---|
+| Temperature, pressure and flow rate | Energy consumption |
+| Upstream pressure and downstream pressure | Valve position |
+| Flow rate and system pressure | Pump speed |
+| Inlet humidity and temperature | Drying time |
+
 ---
 
 **Work in Progress**
