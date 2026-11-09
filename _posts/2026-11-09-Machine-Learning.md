@@ -32,12 +32,32 @@ The network does not adjust the weights so that the input matches the output. In
 Neural networks can be used in industrial processes to learn relationships between different process variables and predict desired outputs.
 Some examples:
 
-| Input variables | Expected output |
-|---|---|
-| Temperature, pressure and flow rate | Energy consumption |
-| Upstream pressure and downstream pressure | Valve position |
-| Flow rate and system pressure | Pump speed |
-| Inlet humidity and temperature | Drying time |
+<table>
+  <thead>
+    <tr>
+      <th>Input variables</th>
+      <th>Expected output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Temperature, pressure and flow rate</td>
+      <td>Energy consumption</td>
+    </tr>
+    <tr>
+      <td>Upstream and downstream pressure</td>
+      <td>Valve position</td>
+    </tr>
+    <tr>
+      <td>Flow rate and system pressure</td>
+      <td>Pump speed</td>
+    </tr>
+    <tr>
+      <td>Inlet humidity and temperature</td>
+      <td>Drying time</td>
+    </tr>
+  </tbody>
+</table>
 
 These are illustrative examples. In a real application, the neural network would typically require historical process data, including the relevant inputs and corresponding measured outputs, to learn these relationships.
 
