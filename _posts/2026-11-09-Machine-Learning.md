@@ -12,6 +12,7 @@ published: true
 .io-table { border-collapse: collapse; margin: 1.5em 0; border-top: 2px solid #333; border-bottom: 2px solid #333; }
 .io-table th, .io-table td { padding: 0.5em 1.2em; text-align: left; }
 .io-table thead th { border-bottom: 1px solid #333; }
+.io-table th:first-child, .io-table td:first-child { padding-left: 0; }
 </style>
 
 # Introduction to Neural Networks
