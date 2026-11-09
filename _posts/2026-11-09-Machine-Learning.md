@@ -8,6 +8,17 @@ description: "Learning notes on machine learning and neural networks."
 published: true
 ---
 
+<style>
+.io-table { border-collapse: collapse; margin: 1.5em 0; }
+.io-table th, .io-table td {
+  padding: 0.5em 1.2em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.io-table thead th { background: #f5f5f5; border-bottom: 2px solid #ccc; }
+.io-table tbody tr:nth-child(even) { background: #fafafa; }
+</style>
+
 # Introduction to Neural Networks
 
 A neural network is a machine learning model that learns patterns and relationships from data.
@@ -38,6 +49,7 @@ Some examples:
 | Upstream and downstream pressure    | Valve position     |
 | Flow rate and system pressure       | Pump speed         |
 | Inlet humidity and temperature      | Drying time        |
+{: .io-table}
 
 These are illustrative examples. In a real application, the neural network would typically require historical process data, including the relevant inputs and corresponding measured outputs, to learn these relationships.
 
