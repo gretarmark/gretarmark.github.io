@@ -9,14 +9,9 @@ published: true
 ---
 
 <style>
-.io-table { border-collapse: collapse; margin: 1.5em 0; }
-.io-table th, .io-table td {
-  padding: 0.5em 1.2em;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-.io-table thead th { background: #f5f5f5; border-bottom: 2px solid #ccc; }
-.io-table tbody tr:nth-child(even) { background: #fafafa; }
+.io-table { border-collapse: collapse; margin: 1.5em 0; border-top: 2px solid #333; border-bottom: 2px solid #333; }
+.io-table th, .io-table td { padding: 0.5em 1.2em; text-align: left; }
+.io-table thead th { border-bottom: 1px solid #333; }
 </style>
 
 # Introduction to Neural Networks
